@@ -9,7 +9,9 @@ Maintainer: **Albert Tan** · [Research profile](https://research.rug.nl/en/pers
 
 **Status:** version 0.1 research prototype. See the
 [roadmap](docs/ROADMAP.md), [progress record](docs/PROGRESS.md) and
-[research standard](docs/RESEARCH_STANDARD.md).
+[research standard](docs/RESEARCH_STANDARD.md). The
+[project status](docs/project_status.md) records available materials and the
+external evidence still needed.
 
 An offline register connecting scholarly propositions to their sources, pinpoint
 locations and recorded human review. It gives a legal researcher or editor a
@@ -22,6 +24,10 @@ decide whether a source supports a proposition, determine current law, or certif
 factual accuracy.
 
 ## Try it
+
+Start with the [ten-minute guide](docs/quickstart.md) for step-by-step commands,
+expected output and troubleshooting. It includes a paper route for readers
+without Python and a [generated sample report](docs/sample_report.md).
 
 Use Python 3.10 or newer. There are no third-party packages, API keys or network
 calls. Run these commands from this directory:
@@ -69,6 +75,16 @@ reviewer; it is not a judgment that the research is wrong.
 See [the schema](docs/schema.md) for the complete field specification and
 [the review method](docs/review_method.md) for a practical editorial workflow.
 
+## Source-grounded worked case
+
+The [Singapore sustainability reporting case](cases/singapore-sustainability-reporting/README.md)
+records two narrow propositions about report timing and internal review under
+SGX Mainboard rules, with four official source records and exact pinpoints.
+It retains the provisions' qualifications and identifies the versions inspected
+on 23 October 2026. Both propositions remain **unreviewed**. This AI-prepared
+example does not assess an issuer, liability or remedies; independent human
+review is outstanding. See the [case collection](cases/README.md) for scope.
+
 ## Teaching and evaluation
 
 The [55-minute teaching exercise](teaching/README.md) uses the complete
@@ -100,6 +116,12 @@ existing file unless `--force` is supplied. Even with `--force`, it refuses to
 overwrite the input ledger, including an existing hard link to that file.
 
 ## Development checks
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for bug reports, source-grounded case
+proposals, documentation feedback and pull requests. The
+[workstream guide](docs/WORKSTREAMS.md) coordinates maintenance, and the
+[release criteria](docs/release_readiness.md) define the evidence needed for
+a candidate decision.
 
 ```bash
 python -m unittest discover -s tests -v

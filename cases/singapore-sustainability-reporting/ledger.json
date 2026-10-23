@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "title": "Singapore Mainboard sustainability reporting: timing and internal review",
+  "description": "AI-prepared primary-source worked example, as inspected on 23 October 2026. Two narrow textual propositions remain unreviewed; independent human review is outstanding. No actual issuer, breach, liability or remedy is assessed.",
+  "sources": [
+    {
+      "id": "sgx-mb-711a",
+      "title": "SGX Mainboard Listing Rule 711A",
+      "url": "https://rulebook.sgx.com/rulebook/711a",
+      "source_type": "regulation",
+      "jurisdiction": "Singapore - SGX Mainboard",
+      "version": "SGX individual rule page: 01 Jan 2026 onwards",
+      "as_of": "2026-10-23",
+      "accessed": "2026-10-23",
+      "notes": "Direct official current-rule HTML opened during AI preparation. The page links amendments effective 1 January 2026; a separate publication date was not established. The schema category regulation describes an exchange listing rule here, not an Act of Parliament. Live text may change; no issuer-specific applicability or independent human review is recorded."
+    },
+    {
+      "id": "sgx-mb-711b",
+      "title": "SGX Mainboard Listing Rule 711B",
+      "url": "https://rulebook.sgx.com/rulebook/711b",
+      "source_type": "regulation",
+      "jurisdiction": "Singapore - SGX Mainboard",
+      "version": "SGX individual rule page: 01 Jan 2026 onwards",
+      "as_of": "2026-10-23",
+      "accessed": "2026-10-23",
+      "notes": "Direct official current-rule HTML opened during AI preparation; this case uses paragraph (3) only. The page links amendments effective 1 January 2026; a separate publication date was not established. The schema category regulation describes an exchange listing rule here, not an Act of Parliament. No issuer-specific applicability or independent human review is recorded."
+    },
+    {
+      "id": "sgx-mb-pn76",
+      "title": "SGX Mainboard Practice Note 7.6: Sustainability Reporting Guide",
+      "url": "https://rulebook.sgx.com/rulebook/practice-note-76-sustainability-reporting-guide",
+      "source_type": "guidance",
+      "jurisdiction": "Singapore - SGX Mainboard",
+      "version": "SGX individual practice-note page: 01 Jan 2026 onwards",
+      "as_of": "2026-10-23",
+      "accessed": "2026-10-23",
+      "notes": "Direct official guidance opened during AI preparation. Paragraphs 6.1 and 6.2 qualify the timing proposition; paragraph 5.3 qualifies the treatment of already assured aspects in internal review. Other provisions, including climate-disclosure phasing and first-report treatment for newly listed issuers, are not analysed. No independent human review is recorded."
+    },
+    {
+      "id": "sgx-mb-amend-2026",
+      "title": "SGX Sustainability Reporting: Enhancing Consistency and Comparability - Mainboard amendments effective 1 January 2026",
+      "url": "https://rulebook.sgx.com/sites/default/files/net_file_store/Mainboard_Rules_-_Sustainability_Reporting_Enhancing_Consistency_and_Comparability_%282026%29.pdf",
+      "source_type": "other",
+      "jurisdiction": "Singapore - SGX Mainboard",
+      "version": "Two-page official redline; heading states amendments effective 1 January 2026",
+      "as_of": "2026-10-23",
+      "accessed": "2026-10-23",
+      "notes": "Opened from the amendment links on both official rule pages. PDF page 1 identifies commencement and contains the Rule 711A and Rule 711B blocks. Publication date not separately established. This source supplies version context; operative wording is taken from the clean current HTML because extracted redline text can mix deletions and insertions. No independent human review is recorded."
+    }
+  ],
+  "claims": [
+    {
+      "id": "sgx-mb-report-timing",
+      "text": "In the SGX Mainboard Rule 711A version displayed for 1 January 2026 onwards, an issuer must provide its annual sustainability report to shareholders and SGX when issuing its annual report; where it has conducted external assurance on the sustainability report, the rule permits issuance within five months after financial year-end.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {
+          "source_id": "sgx-mb-711a",
+          "pinpoint": "Rule 711A, sole paragraph, clause requiring issuance with the annual report",
+          "relation": "supports"
+        },
+        {
+          "source_id": "sgx-mb-711a",
+          "pinpoint": "Rule 711A, sole paragraph, external-assurance alternative ending with the five-month period",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-pn76",
+          "pinpoint": "Practice Note 7.6, paragraph 6.1, final sentence: transitional assurance alternative",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-pn76",
+          "pinpoint": "Practice Note 7.6, paragraph 6.2, final sentence: annual-report summary when sustainability reporting follows",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-amend-2026",
+          "pinpoint": "PDF page 1, effective-date heading and Rule 711A amendment block",
+          "relation": "context"
+        }
+      ],
+      "notes": "AI-prepared textual summary only; independent HUMAN review outstanding. The guidance identifies the assurance alternative as transitional and adds a summary requirement if the sustainability report follows the annual report. No specific issuer, reporting period, waiver, first-report obligation or later change has been assessed. No claim is made about sanctions or a private cause of action."
+    },
+    {
+      "id": "sgx-mb-internal-review",
+      "text": "SGX Mainboard Rule 711B(3) requires internal review of an issuer's sustainability reporting process. Its second sentence permits additional independent external assurance of the report; that sentence does not itself make the additional assurance mandatory.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {
+          "source_id": "sgx-mb-711b",
+          "pinpoint": "Rule 711B(3), first sentence: internal review of the sustainability reporting process",
+          "relation": "supports"
+        },
+        {
+          "source_id": "sgx-mb-711b",
+          "pinpoint": "Rule 711B(3), second sentence: additional independent external assurance",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-pn76",
+          "pinpoint": "Practice Note 7.6, paragraph 5.3, final paragraph: risk-based treatment of externally assured aspects",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-amend-2026",
+          "pinpoint": "PDF page 1, effective-date heading and Rule 711B amendment block, paragraph (3)",
+          "relation": "context"
+        }
+      ],
+      "notes": "AI-prepared textual summary only; independent HUMAN review outstanding. Paragraph 5.3 of the guidance qualifies whether already assured aspects need further internal review under a risk-based approach. This proposition does not establish that external assurance is optional under every applicable law or instrument, nor determine whether any issuer's process meets the requirement. No liability or remedy is inferred."
+    }
+  ]
+}
