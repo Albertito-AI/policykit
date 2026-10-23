@@ -1,7 +1,7 @@
 # Working on RegNav
 
-Read the README and the current roadmap and progress record before changing the
-project. Keep each change useful, bounded and reviewable.
+Read the README, current roadmap, progress record and `docs/WORKSTREAMS.md`
+before changing the project. Keep each change useful, bounded and reviewable.
 
 - Preserve the offline, standard-library implementation unless a dependency has
   a concrete, documented benefit.

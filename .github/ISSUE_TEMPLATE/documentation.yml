@@ -1,0 +1,57 @@
+name: Documentation or usability feedback
+description: Report a concrete obstacle, unclear instruction or clearly labelled suggestion.
+title: "[Docs/usability] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us which task or instruction needs attention. Read CONTRIBUTING.md and RIGHTS.md in the repository root.
+        Distinguish something you observed from an idea you have not tested.
+        Paper, spreadsheet and command-line experiences are all relevant.
+        Do not publish participant forms, personal, student or client data, private manuscripts, credentials or identifying screenshots.
+  - type: input
+    id: location
+    attributes:
+      label: Page, section or task
+      description: Give the file path and heading or a public repository link. Include the version or commit if known.
+      placeholder: "teaching/learner_handout.md, section 5; version or commit if known"
+    validations:
+      required: true
+  - type: dropdown
+    id: basis
+    attributes:
+      label: Basis of this feedback
+      options:
+        - Observed while using the tool or materials
+        - Observed while reviewing the documentation
+        - Suggestion I have not tested
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: Task and difficulty
+      description: Describe the task, the route used and the point of confusion. If this is an untested suggestion, state the anticipated difficulty rather than inventing an observation.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What would make the instruction or output clearer?
+      description: Explain the information you needed. A proposed wording change is helpful but not required.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome and help received
+      description: Optional. Say whether you completed the task, needed help or stopped. Include only actual observations. Do not infer learning gains or general effectiveness from one session.
+    validations:
+      required: false
+  - type: checkboxes
+    id: public_content
+    attributes:
+      label: Public-content check
+      options:
+        - label: I have removed personal, student and client data, private manuscript content, credentials and identifying material.
+          required: true

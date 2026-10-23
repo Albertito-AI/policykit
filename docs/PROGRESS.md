@@ -38,9 +38,10 @@ reviewer identity, browser interface or evaluated legal dataset. Source URLs
 are checked for structure only. Existing review declarations can become stale
 when a user edits the JSON.
 
-Next: design and test record-change comparison before building a real legal
-worked case. Record concrete progress here; do not generate commits solely to
-increase visible activity.
+At this stage, record-change comparison was the next technical priority.
+The later entries below record parallel documentation and case preparation.
+Record concrete progress here; do not generate commits solely to increase
+visible activity.
 
 
 ### Teaching materials and external pilot preparation
@@ -75,3 +76,48 @@ Next technical action: record-change comparison remains first in the roadmap.
 Next evaluation action: arrange the three volunteer sessions and record actual
 observations under the prepared protocol. Do not substitute invented sessions
 or repeated self-testing for external evidence.
+
+### First-use, source-case and contribution preparation
+
+Added a ten-minute first-use guide with expected warnings, exit statuses, CSV
+export, troubleshooting and a paper route. Added an unedited generated sample
+report from the existing fictional fixture. The suggested timing has not been
+measured with independent users.
+
+Added the first real-source case: two narrow SGX Mainboard propositions, four
+official source records and exact provision or page references. The preparation
+pass opened Rules 711A and 711B, Practice Note 7.6 and the linked amendment PDF.
+It distinguished the 1 January 2026 version labels from the access date and
+retained the relevant qualifications. Both propositions remain `unreviewed`;
+no human review declaration, issuer-specific assessment or legal validation
+has been recorded.
+
+Added three issue forms, contribution guidance and a pull-request template.
+These distinguish actual observations from untested suggestions, preserve
+rights and provide concrete routes for reproducible bugs, source cases and
+documentation feedback. No issues or comments were created to simulate
+external activity. The project status page records the independent evidence
+still needed, while workstream guidance and release criteria coordinate
+maintenance without requiring an artificial stream of commits or releases.
+
+Verification on Python 3.12.14: the unchanged fictional fixture returned zero
+errors and three expected warnings; strict validation exited 2. Its generated
+Markdown exactly matched the saved sample report; CSV export contained a
+header and four evidence rows. The fixture was unchanged. The Singapore case
+returned zero errors and two expected `UNREVIEWED_CLAIM` warnings; Markdown
+report generation succeeded. Those case checks establish structure only.
+
+The three issue forms passed a duplicate-key-rejecting YAML parse and local
+checks against GitHub's documented form fields. The forms have not been
+verified in GitHub's rendered issue-creation interface. Relative documentation
+links were checked. Code, tests, citation version and the rights notice were
+unchanged. The preceding merged teaching change's
+[CI run](https://github.com/Albertito-AI/policykit/actions/runs/39947205410)
+passed on Python 3.10, 3.12 and 3.14; the new pull request's checks must be
+inspected separately before merge.
+
+Next technical action: implement bounded record-change comparison. Next case
+action: obtain an actual human review of the two prepared propositions before
+expanding coverage. Next evaluation action: collect the three pilot sessions'
+observations under the existing protocol. Maintenance should respond to those
+results and substantive reports, rather than manufacturing evidence of use.

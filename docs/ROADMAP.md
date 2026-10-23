@@ -11,9 +11,11 @@ Asian jurisdictions. Build reusable methods before expanding coverage.
 Version 0.1 provides an offline evidence ledger, structural validation,
 Markdown and CSV reports, a synthetic worked example and regression tests.
 The code has no external runtime dependency. A complete fictional teaching
-exercise and an external usability protocol are also available. Real-world
-usefulness, educational benefit and legal dataset quality still require
-evaluation.
+exercise, external usability protocol, first-use guide and contribution routes
+are available. A narrow Singapore case records two unreviewed propositions
+against official primary sources. Real-world usefulness, educational benefit
+and legal dataset quality still require evaluation. See the
+[project status](project_status.md) for the evidence baseline.
 
 ## Next work in priority order
 
@@ -22,10 +24,13 @@ evaluation.
    Record when prior review should be reconsidered. Add cases for substantive
    edits, metadata-only edits and renamed identifiers. Do not silently change
    a person's review declaration.
-2. **Create one source-grounded worked case.** Select a narrow sustainability
-   disclosure question in Singapore or Thailand, record current primary sources
-   and exact pinpoints, and state the interpretive limits. Keep human review
-   status accurate. Start with a small, inspectable set of propositions.
+2. **Obtain human review of the first worked case.** The
+   [Singapore example](../cases/singapore-sustainability-reporting/README.md)
+   now records two narrow propositions, inspected primary sources and exact
+   pinpoints. Both remain unreviewed. A reviewer should examine the source
+   versions, reporting-period limits and each evidence relationship before
+   entering an actual declaration. Do not expand case volume ahead of this
+   review or represent an AI inspection as completed human assessment.
 3. **Run the first external usability pilot.** Use the prepared
    [protocol](evaluation_protocol.md) with three independent volunteers. Record
    task completion, assistance, misunderstandings and reproducible difficulties
@@ -39,16 +44,18 @@ evaluation.
 5. **Extend the legal comparison.** Add the second jurisdiction when the first
    worked case is stable. Distinguish disclosure duties, supervision, liability,
    standing and remedies. Record disagreements rather than forcing equivalence.
-6. **Prepare a citable release.** Review rights, documentation, evaluation and
-   outstanding defects. Use a stable version and an archival record if an
-   appropriate connection and rights permit it. No DOI has yet been assigned.
+6. **Prepare a citable release.** Follow the
+   [release criteria](release_readiness.md), including rights, documentation,
+   evaluation limits and outstanding defects. Use a stable version and an
+   archival record if an appropriate connection and rights permit it. No DOI
+   has yet been assigned.
 
 ## Proposed first twelve weeks
 
 | Period | Intended outcome | Evidence needed |
 | --- | --- | --- |
 | Weeks 1 to 2 | Reliable ledger and record-change design | Passing relevant checks and reproducible example |
-| Weeks 3 to 4 | One narrow legal worked case | Opened primary sources, pinpoints and documented limits |
+| Weeks 3 to 4 | Human review of the first narrow legal case | Actual review of source versions, pinpoints and documented limits |
 | Weeks 5 to 8 | Usability pilot and targeted revision | Actual task observations and a correction record |
 | Weeks 9 to 12 | Evaluated demonstration and release decision | Complete documentation, rights review and honest results |
 

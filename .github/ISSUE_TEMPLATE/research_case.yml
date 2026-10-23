@@ -1,0 +1,81 @@
+name: Source-grounded research case
+description: Propose a narrow research question with primary sources, pinpoints and limits.
+title: "[Research case] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose one inspectable question or a small set of propositions. Read CONTRIBUTING.md, RIGHTS.md and docs/RESEARCH_STANDARD.md.
+        A proposal is not a completed human review or a finding of legal accuracy.
+        Link to public primary sources instead of uploading whole publications or private manuscripts.
+        Do not include personal, student or client data, credentials or confidential material.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and proposed proposition
+      description: State the question narrowly and distinguish source wording, your interpretation and any proposal for reform.
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction and scope
+      description: Identify the jurisdiction, relevant actors and period. Label any fictional setting explicitly.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary-source register
+      description: For each source, give its title, issuing institution, public URL, source type and exact version or date. Distinguish publication, commencement and consultation dates; state what is unknown.
+      placeholder: |
+        Source identifier:
+        Title and issuing institution:
+        Public primary-source URL:
+        Source type and version:
+        Relevant dates and their meanings:
+        Date consulted:
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Pinpoints and reasoning
+      description: Give exact provisions, paragraphs or pages. Explain how each passage supports, qualifies, contradicts or provides context for the proposition. Identify translation status where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Contrary evidence and unresolved questions
+      description: State known limitations, competing readings and missing authority. Do not infer an absence of legal rights or remedies merely from silence in one source.
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Review actually performed
+      description: State which passages you personally examined and what remains unreviewed. If no substantive review has occurred, say so. Do not invent another person's review or use AI output as a completed human declaration.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Original material, reused material and permissions
+      description: Identify what you wrote, what is linked or reused, and any known permission or attribution requirements. Clarify uncertain rights before substantial reuse; do not upload private permission correspondence. This field creates no contributor licence agreement or copyright assignment.
+    validations:
+      required: true
+  - type: textarea
+    id: next_step
+    attributes:
+      label: Suggested next step
+      description: Optional. Suggest one bounded action, such as checking one provision or drafting a small ledger example.
+    validations:
+      required: false
+  - type: checkboxes
+    id: public_content
+    attributes:
+      label: Public-content check
+      options:
+        - label: I have removed personal, student and client data, private manuscript content, credentials and confidential information.
+          required: true
