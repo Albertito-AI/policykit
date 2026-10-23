@@ -69,6 +69,20 @@ reviewer; it is not a judgment that the research is wrong.
 See [the schema](docs/schema.md) for the complete field specification and
 [the review method](docs/review_method.md) for a practical editorial workflow.
 
+## Teaching and evaluation
+
+The [55-minute teaching exercise](teaching/README.md) uses the complete
+fictional source packet to practise tracing a proposition to evidence,
+identifying qualifications and disagreement, and explaining the limits of a
+software report. It includes a learner handout, facilitator answer key,
+descriptive assessment rubric and blank feedback form. A paper or spreadsheet
+route requires no Python installation.
+
+The [external usability protocol](docs/evaluation_protocol.md) defines five
+tasks for an initial three-volunteer pilot. The materials are original,
+AI-assisted and unevaluated. No participants have been tested or educational
+benefits demonstrated in this release. See [RIGHTS.md](RIGHTS.md) before reuse.
+
 ## Outputs and file handling
 
 Markdown reports contain an evidence matrix, a source register, human-review

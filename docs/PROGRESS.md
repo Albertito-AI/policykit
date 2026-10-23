@@ -41,3 +41,37 @@ when a user edits the JSON.
 Next: design and test record-change comparison before building a real legal
 worked case. Record concrete progress here; do not generate commits solely to
 increase visible activity.
+
+
+### Teaching materials and external pilot preparation
+
+Added a complete 55-minute exercise, with 45- and 60-minute variants, a learner
+handout, facilitator answer key, descriptive rubric and blank feedback form.
+The exercise supplies the full fictional source packet and supports paper or
+spreadsheet use as well as an optional command-line demonstration.
+
+Added a protocol for an initial three-volunteer external usability pilot.
+It records five tasks, assistance, obstacles and observation limits. Completed
+participant records remain private. Public issues may contain only sanitised
+reproduction steps using the fictional material. No volunteers have completed
+this pilot and no outcome or adoption claims are made.
+
+Verification on Python 3.12.14: all 24 existing regression tests passed. All
+five source paragraphs in the learner handout match the training source
+packet exactly. The report snapshot matches the fixture's identifiers,
+propositions, pinpoints and declared review statuses. Normal validation
+returned zero errors and three expected warnings; strict validation exited
+with code 2. Markdown and CSV reports were generated successfully, with four
+CSV evidence rows. Relative Markdown links resolve. An independent internal
+review checked source interpretation, the answer key, review declarations,
+rights and the treatment of participant data, with no blocking issues found.
+This internal review is not external peer review or educational validation.
+
+The code, source fixtures and rights notice are unchanged. These original,
+AI-assisted materials do not reproduce the ANSWERABLE manuscript and do not
+imply involvement or endorsement by its co-author or a publisher.
+
+Next technical action: record-change comparison remains first in the roadmap.
+Next evaluation action: arrange the three volunteer sessions and record actual
+observations under the prepared protocol. Do not substitute invented sessions
+or repeated self-testing for external evidence.
