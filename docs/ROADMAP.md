@@ -10,8 +10,10 @@ Asian jurisdictions. Build reusable methods before expanding coverage.
 
 Version 0.1 provides an offline evidence ledger, structural validation,
 Markdown and CSV reports, a synthetic worked example and regression tests.
-The code has no external runtime dependency. Real-world usefulness and legal
-dataset quality still require evaluation.
+The code has no external runtime dependency. A complete fictional teaching
+exercise and an external usability protocol are also available. Real-world
+usefulness, educational benefit and legal dataset quality still require
+evaluation.
 
 ## Next work in priority order
 
@@ -24,9 +26,13 @@ dataset quality still require evaluation.
    disclosure question in Singapore or Thailand, record current primary sources
    and exact pinpoints, and state the interpretive limits. Keep human review
    status accurate. Start with a small, inspectable set of propositions.
-3. **Evaluate a complete research task.** Compare a conventional source table
-   with the ledger on the same materials. Define observable errors and review
-   time in advance. Document a pilot honestly before making benefit claims.
+3. **Run the first external usability pilot.** Use the prepared
+   [protocol](evaluation_protocol.md) with three independent volunteers. Record
+   task completion, assistance, misunderstandings and reproducible difficulties
+   privately. Revise concrete defects and report bounded, anonymous results.
+   The manual-first sequence is not a controlled comparison and cannot establish
+   a productivity or learning benefit. Design any later comparative evaluation
+   separately.
 4. **Improve entry and review.** Choose a CSV import or an accessible browser
    editor only after observing where users struggle. Preserve offline access
    and the JSON record. Check import ambiguities and export fidelity.
@@ -51,7 +57,10 @@ work when actual defects, user feedback or source availability justify it.
 
 ## Other programmes
 
-Legal education with AI is a possible second programme. A future teaching
-exercise can use this ledger to examine what a written answer reveals about
-understanding. Sports governance can supply later case studies. Neither adds
-new obligations to this prototype before the core workflow is useful.
+The [teaching exercise](../teaching/README.md) is a first, unevaluated resource
+for legal education with AI. It examines how a written answer can be traced
+to sources and revised when its claims exceed the evidence. The next teaching
+action is to observe a small pilot using the prepared protocol, then revise
+the instructions in response to actual difficulties. These materials are
+separate from the coauthored ANSWERABLE book project. Sports governance can
+supply later case studies once the core workflow is useful.
