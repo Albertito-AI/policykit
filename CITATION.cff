@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the version of RegNav Evidence Ledger that you actually use. Citation metadata does not grant a reuse licence."
+type: software
+title: "RegNav Evidence Ledger"
+authors:
+  - family-names: "Tan"
+    given-names: "Sin Hon Albert"
+    orcid: "https://orcid.org/0009-0001-8996-7933"
+version: "0.1.0"
+repository-code: "https://github.com/Albertito-AI/policykit"
+url: "https://github.com/Albertito-AI/policykit"
+abstract: "An offline research prototype that checks evidence-register structure and exports proposition-to-source matrices. Human-review declarations are recorded explicitly. The software does not verify legal or factual truth."
+keywords:
+  - legal research
+  - evidence
+  - research software
+  - sustainability reporting
