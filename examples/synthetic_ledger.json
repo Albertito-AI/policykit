@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "title": "Synthetic training example: recording an internal review procedure",
+  "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+  "sources": [
+    {
+      "id": "SRC-draft-a",
+      "title": "Synthetic internal procedure, draft A (training fixture)",
+      "url": "https://example.org/regnav-training/draft-a",
+      "source_type": "other",
+      "jurisdiction": "Fictional training setting",
+      "version": "Draft A",
+      "as_of": "2025-01-01",
+      "accessed": "2025-01-02",
+      "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+    },
+    {
+      "id": "SRC-draft-b",
+      "title": "Synthetic internal procedure, draft B (training fixture)",
+      "url": "https://example.org/regnav-training/draft-b",
+      "source_type": "other",
+      "jurisdiction": "Fictional training setting",
+      "version": "Draft B",
+      "as_of": "2025-01-01",
+      "accessed": "2025-01-02",
+      "notes": "A deliberately inconsistent mock draft for the training exercise."
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLAIM-logging",
+      "text": "Draft A states that requests are entered in a log before review.",
+      "review_status": "checked",
+      "evidence": [
+        {"source_id": "SRC-draft-a", "pinpoint": "A.2", "relation": "supports"}
+      ],
+      "review": {
+        "reviewer": "Synthetic reviewer (training fixture)",
+        "date": "2025-01-02",
+        "note": "Example of a user-declared review record. No real reviewer is represented."
+      }
+    },
+    {
+      "id": "CLAIM-remedy",
+      "text": "The drafts provide a further review procedure after an initial decision.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {"source_id": "SRC-draft-b", "pinpoint": "", "relation": "context"}
+      ],
+      "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+    },
+    {
+      "id": "CLAIM-timing",
+      "text": "The draft procedure specifies a response within five working days.",
+      "review_status": "contested",
+      "evidence": [
+        {"source_id": "SRC-draft-a", "pinpoint": "A.3", "relation": "supports"},
+        {"source_id": "SRC-draft-b", "pinpoint": "B.2", "relation": "contradicts"}
+      ],
+      "review": {
+        "reviewer": "Synthetic reviewer (training fixture)",
+        "date": "2025-01-02",
+        "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+      }
+    }
+  ]
+}
