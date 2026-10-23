@@ -57,6 +57,19 @@ class CLITests(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertNotIn("Traceback", result.stderr)
 
+    def test_oversized_json_integer_has_readable_error(self):
+        limit = getattr(sys, "get_int_max_str_digits", lambda: 0)()
+        if not limit:
+            self.skipTest("This interpreter does not enforce an integer conversion limit.")
+        digits = "9" * max(5000, limit + 1)
+        self.path.write_text('{"value":' + digits + "}", encoding="utf-8")
+        result = self.run_cli("validate", self.path)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("Cannot decode ledger", result.stderr)
+        self.assertIn("integer string conversion", result.stderr)
+        self.assertNotIn("Traceback", result.stderr)
+        self.assertEqual(result.stdout, "")
+
     def test_report_stdout_file_and_input_protection(self):
         self.write(ledger())
         result = self.run_cli("report", self.path, "--format", "csv")

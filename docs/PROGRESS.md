@@ -21,7 +21,7 @@ assumed to be part of this implementation.
 
 ### Verification
 
-The implementation was tested locally on Python 3.12.14. All 23 regression
+The implementation was tested locally on Python 3.12.14. All 24 regression
 tests passed. The training example returned zero errors and three expected
 warnings. Markdown and CSV generation succeeded. The workflow specifies
 Python 3.10, 3.12 and 3.14; its results are recorded in GitHub Actions and must

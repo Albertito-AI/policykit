@@ -83,12 +83,16 @@ def load_ledger(path: str | Path) -> Any:
             return json.load(
                 handle, object_pairs_hook=_unique_object, parse_constant=_reject_constant
             )
+    except LedgerReadError:
+        raise
     except json.JSONDecodeError as exc:
         raise LedgerReadError(
             f"Invalid JSON at line {exc.lineno}, column {exc.colno}: {exc.msg}."
         ) from exc
     except (OSError, UnicodeError, RecursionError) as exc:
         raise LedgerReadError(f"Cannot read ledger: {exc}.") from exc
+    except ValueError as exc:
+        raise LedgerReadError(f"Cannot decode ledger: {exc}.") from exc
 
 
 def validate(ledger: Any) -> ValidationResult:
