@@ -99,20 +99,61 @@ certification.
 python -m unittest discover -s tests -p test_source_watch.py -v
 ```
 
-## Express interest in a product pilot
+## Consider an evaluation
 
-The proposed product is a maintained source-to-claim change-checking component,
-initially run in a customer's own environment. No production subscription,
-service-level commitment or commercial licence is offered by this experiment.
+Start with the [generated fictional report](sample_report.json). You can inspect
+it here without installing anything or providing contact details. In this
+example, a local rule file changed and its linked claim is flagged for review.
+The report does not decide whether that claim remains correct.
 
-To discuss a pilot, contact Albert through his
-[institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/).
-Describe the recurring task, approximate source-file count, desired integration
-and how you currently detect stale evidence. Do not send client/student files,
-credentials or confidential documents. A discussion is not a purchase.
+### Is this the problem you need to solve?
 
-Before further expansion, seek independent attempts to reproduce the demo and
-concrete evidence that a team needs this workflow. Build an adapter only for a
-verified use case. The [existing rights statement](../../RIGHTS.md) applies;
-public visibility does not grant a new licence. The experiment does not reproduce
-or commercially repackage either forthcoming book.
+| Your situation | Present fit |
+| --- | --- |
+| You maintain recurring reports or a knowledge base with explicit source-to-claim links | A candidate for evaluation; the practical benefit is untested |
+| Your existing tools already identify every affected claim reliably | An additional component may be unnecessary |
+| You need live website monitoring, automatic source-to-claim mapping or legal verification | Those functions are not provided |
+| You cannot run local Python or have no one to maintain the supplied links | Begin with the saved report; the current executable may not fit your workflow |
+
+Someone must create and maintain the source-to-claim links. Include that work
+when judging usefulness; detecting changed bytes does not itself save time.
+The [rights statement](../../RIGHTS.md) remains unchanged. Public visibility is
+not a general reuse licence. Discuss the scope and permission for an executable
+evaluation or commercial use with the maintainer before proceeding.
+
+### Describe one recurring task
+
+To enquire, use the contact route on
+[Albert Tan's institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/).
+Suggested subject: **Source Watch evaluation enquiry**. These three lines are
+sufficient to start a discussion; approximate answers or "unknown" are useful.
+
+```text
+The report or knowledge base we maintain:
+How often its source files change and roughly how many there are:
+How we currently find affected statements, and the difficulty we encounter:
+```
+
+Do not send confidential documents, client or student data, credentials,
+source-file paths or account information. A general workflow description is
+enough. Keep commercial enquiries out of public GitHub issues. There is no
+payment, purchase obligation or newsletter enrolment at this enquiry stage.
+
+### Before agreeing a pilot
+
+A possible pilot would use a small, agreed test collection in the participant's
+own environment. Its written scope should specify the permission, source and
+claim limits, deliverable, assistance, acceptance check and any price before
+work begins. No production subscription, service-level commitment, commercial
+licence or paid pilot is offered by this page.
+
+Use the same disclosed materials to examine unchanged, changed and unavailable
+sources. Record setup, mapping and review effort as well as errors and requests
+for help. Compare with the participant's existing workflow before claiming a
+benefit. A successful fictional demonstration is not independent adoption,
+security assurance or legal validation.
+
+If a maintained component later proves useful, any continuation would require
+separately agreed terms. An enquiry or evaluation does not authorise recurring
+charges. This experiment is separate from both forthcoming books and carries
+no claim of publisher, coauthor or institutional endorsement.
