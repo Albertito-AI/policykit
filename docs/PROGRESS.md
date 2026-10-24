@@ -121,3 +121,36 @@ action: obtain an actual human review of the two prepared propositions before
 expanding coverage. Next evaluation action: collect the three pilot sessions'
 observations under the existing protocol. Maintenance should respond to those
 results and substantive reports, rather than manufacturing evidence of use.
+
+## 24 October 2026
+
+### Read-only record-change comparison
+
+Implemented `regnav_evidence compare before.json after.json` with optional
+machine-readable `--json` output. It first requires both snapshots to pass
+existing structural validation. The command compares stable identifiers,
+source version and other substantive source fields, proposition text and notes,
+evidence links, review declarations and ledger-level metadata. It ignores
+display order, identifies metadata-only access-date changes, and treats
+identifier renames as removal plus addition rather than inferring identity.
+Previously `checked` or `contested` propositions receive a recheck flag
+when a material part of their recorded basis changes. Neither source file nor
+any review declaration is modified.
+
+Added ten focused synthetic comparison tests and two CLI regression tests,
+including invalid snapshot handling and non-mutation. The ten focused
+comparison tests passed locally with Python 3.13.5. Existing test and workflow
+results for this branch must be confirmed in GitHub Actions; a local unit
+result is not a claim that all supported Python versions have passed.
+
+The tool compares recorded metadata and links. It does not detect unrecorded
+changes at a source URL, verify quotations, fetch law, authenticate a reviewer,
+or determine whether a previous review remains sound. A changed access date
+alone does not imply substantive source alteration. Changes to notes are
+conservatively treated as potentially material because they can affect the
+recorded interpretation.
+
+Next technical action: investigate actual usability or comparison defects
+before expanding features. Next legal evidence action: obtain a real human
+review of the two unreviewed Singapore propositions. External adoption and
+educational benefit remain untested.
