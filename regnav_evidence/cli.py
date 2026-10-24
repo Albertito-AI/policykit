@@ -8,6 +8,7 @@ from pathlib import Path
 import sys
 
 from . import __version__
+from .changes import compare_ledgers, text_report
 from .reports import csv_report, markdown_report
 from .validation import LedgerReadError, NOTICE, SCHEMA_VERSION, load_ledger, validate
 
@@ -28,6 +29,10 @@ def parser() -> argparse.ArgumentParser:
     report.add_argument("--format", choices=("markdown", "csv"), default="markdown")
     report.add_argument("--output", type=Path)
     report.add_argument("--force", action="store_true", help="Allow replacement of an existing report, never the input ledger.")
+    compare = commands.add_parser("compare", help="Identify potentially stale review declarations between two snapshots.")
+    compare.add_argument("before", type=Path, help="Earlier ledger snapshot.")
+    compare.add_argument("after", type=Path, help="Revised ledger snapshot.")
+    compare.add_argument("--json", action="store_true", help="Emit a machine-readable comparison.")
     return result
 
 
@@ -49,6 +54,25 @@ def main(argv: list[str] | None = None) -> int:
             print(f"error: cannot create ledger: {exc}", file=sys.stderr)
             return 1
         print(f"Created {args.path}. Add source records and propositions before review.")
+        return 0
+    if args.command == "compare":
+        try:
+            earlier = load_ledger(args.before)
+            revised = load_ledger(args.after)
+        except LedgerReadError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        for label, value in (("before", earlier), ("after", revised)):
+            checked = validate(value)
+            if checked.errors:
+                for item in checked.errors:
+                    print(f"error: {label}: {item.code} {item.path}: {item.message}", file=sys.stderr)
+                return 1
+        comparison = compare_ledgers(earlier, revised)
+        if args.json:
+            print(json.dumps(comparison, ensure_ascii=False, indent=2))
+        else:
+            sys.stdout.write(text_report(comparison))
         return 0
     try:
         ledger = load_ledger(args.path)
