@@ -85,7 +85,8 @@ report from the existing fictional fixture. The suggested timing has not been
 measured with independent users.
 
 Added the first real-source case: two narrow SGX Mainboard propositions, four
-official source records and exact pinpoints. The preparation pass opened Rules 711A and 711B, Practice Note 7.6 and the linked amendment PDF.
+official source records and exact provision or page references. The preparation
+pass opened Rules 711A and 711B, Practice Note 7.6 and the linked amendment PDF.
 It distinguished the 1 January 2026 version labels from the access date and
 retained the relevant qualifications. Both propositions remain `unreviewed`;
 no human review declaration, issuer-specific assessment or legal validation
