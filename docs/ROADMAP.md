@@ -89,8 +89,11 @@ claim identifiers. It is isolated from the ledger schema and command interface.
 A runnable fictional demo and generated report make the proposed behaviour
 inspectable without receiving confidential material or paying for a hosted service.
 
-The next gate is independent reproduction and a concrete recurring user need,
-not more speculative features. Record missing sources, false-positive friction,
+The next gate is independent reproduction under an agreed permission and a
+concrete recurring user need, not more speculative features. The root README
+now leads to the generated report and a short evaluation enquiry route. Record
+actual enquiries and permissions separately from completed evaluations or paid
+work. Record missing sources, false-positive friction,
 requested integrations and the limits of any observation. Do not build a hosted
 API, external-source crawler or new dependency merely to fill a schedule.
 The existing human source-review and teaching-pilot priorities remain outstanding.

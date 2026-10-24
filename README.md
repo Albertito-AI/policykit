@@ -75,6 +75,17 @@ legal source, invalidate a declaration or certify renewed review. A successful
 comparison exits `0`, even when substantive differences are reported; invalid
 snapshots exit `1`. See the [comparison instructions](docs/quickstart.md#after-editing-a-ledger-compare-saved-snapshots).
 
+## Source-file changes: a separate experiment
+
+Does a changed source leave a statement in your report needing another look?
+[Source Watch](experiments/source_watch/README.md) compares explicitly listed
+local files with a saved baseline and identifies their linked claim IDs.
+[Inspect the generated fictional example](experiments/source_watch/sample_report.json)
+without installing anything or providing contact details. The
+[evaluation guide](experiments/source_watch/README.md#consider-an-evaluation)
+explains fit, limits and how to discuss a bounded pilot. This is an experiment,
+not a production service or a determination that a legal claim is wrong.
+
 ## Record a proposition
 
 1. Enter the exact source version or the date of the material consulted. Supply
@@ -151,7 +162,7 @@ CSV formula handling, Markdown escaping, command exit codes and file protection.
 
 ## Scope of this prototype
 
-The first release supports one JSON schema and local command-line use. It has
+The core ledger supports one JSON schema and local command-line use. It has
 no browser interface, authenticated multiuser workflow, automatic source
 retrieval, source-change detection or persistent review history. It does not
 validate a court citation format or generate an OSCOLA bibliography. A URL that
