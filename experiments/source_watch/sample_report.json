@@ -1,0 +1,21 @@
+{
+  "schema": "regnav-source-watch/0.1",
+  "observation": "RECHECK_REQUIRED",
+  "affected_claim_ids": [
+    "training-claim-1"
+  ],
+  "files": [
+    {
+      "id": "training-rule",
+      "path": "fictional-rule.txt",
+      "status": "CHANGED_BYTES",
+      "claim_ids": [
+        "training-claim-1"
+      ],
+      "baseline_sha256": "ea59c49e5a747ce09938c8932895959030152200206cce38f39c470cc7bc199c",
+      "current_sha256": "8de8310059679100fe372d2f3207755d0694a75f707409a5c2e53c5ccd74abae",
+      "reason": null
+    }
+  ],
+  "limits": "Byte comparison of listed local files only; no source authentication, current-law check, legal conclusion or human-review declaration."
+}
