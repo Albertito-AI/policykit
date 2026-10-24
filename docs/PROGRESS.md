@@ -85,8 +85,7 @@ report from the existing fictional fixture. The suggested timing has not been
 measured with independent users.
 
 Added the first real-source case: two narrow SGX Mainboard propositions, four
-official source records and exact provision or page references. The preparation
-pass opened Rules 711A and 711B, Practice Note 7.6 and the linked amendment PDF.
+official source records and exact pinpoints. The preparation pass opened Rules 711A and 711B, Practice Note 7.6 and the linked amendment PDF.
 It distinguished the 1 January 2026 version labels from the access date and
 retained the relevant qualifications. Both propositions remain `unreviewed`;
 no human review declaration, issuer-specific assessment or legal validation
@@ -197,3 +196,27 @@ or legal correctness. Baseline integrity and semantic review remain external.
 The next action is to observe independent reproduction and establish a recurring
 user need before implementing a hosted adapter. No participant, paid customer,
 external adoption, security certification or commercial licence is claimed.
+
+### Source Watch discovery and evaluation path
+
+Added a direct entry to the separate Source Watch experiment from the root
+README, with a link to its existing generated fictional report. Replaced its
+short pilot-interest paragraph with a fit check, a three-line enquiry prompt and
+a description of the matters to agree before any pilot. Readers can inspect the
+report without installing software or supplying contact details. The evaluation
+route now explicitly preserves the existing reuse restrictions and distinguishes
+an enquiry from permission, a contract or payment.
+
+This is a documentation-only change. Source code, dependencies, tests, fixtures,
+review declarations, rights and citation metadata are unchanged. The new Markdown
+passages were parsed locally on Python 3.13.5 and their five relative link targets
+checked against the inspected repository tree; the evaluation heading matches the
+new anchor. These checks cover the edited passages, not a live-browser usability
+test. The full remote diff and applicable automated check results are separate
+review evidence. No local software regression suite was rerun for these prose
+changes. No independent visitor, enquiry, pilot completion, conversion increase
+or revenue is established by publication of this path.
+
+Next action: inspect genuine evaluation enquiries and obtain the necessary
+permission before any executable pilot. Record whether a recurring need and
+usable result are observed before expanding the component.
