@@ -125,6 +125,37 @@ Do not copy that identity into a real record. Only a person who actually perform
 a review should record their own declaration and its limits. RegNav does not
 read sources, compare quotations or decide whether a recorded relation is right.
 
+## After editing a ledger: compare saved snapshots
+
+Keep the earlier valid JSON ledger as a separate file, for example
+`ledger-before.json`. After editing its working copy, compare them:
+
+```bash
+python -m regnav_evidence compare ledger-before.json my-ledger.json
+python -m regnav_evidence compare ledger-before.json my-ledger.json --json
+```
+
+Both files must pass the structural validator. The comparison reports added,
+removed and modified sources and propositions, changes to evidence links and
+review declarations, and which **previously checked or contested** propositions
+may need renewed human attention. It does not change either input file.
+The exit code is 0 when the comparison succeeds, including when differences
+exist, and 1 if either snapshot cannot be read or is structurally invalid.
+
+A change to a source's version, URL, title, jurisdiction, source type, legal
+reference date or interpretive notes is conservatively treated as material.
+A change only to its `accessed` date is metadata-only. Editing proposition
+text, links or notes is material; changing only the reviewer declaration is
+reported separately. Reordering sources, propositions or evidence links is not
+a substantive change. If an identifier changes, RegNav shows one removal and
+one addition. It does not guess that they denote the same record.
+
+A **RECONSIDER PRIOR REVIEW** marker is a prompt for a person to inspect the
+changed materials and decide what the previous declaration still supports.
+It neither removes that declaration nor performs a fresh review. A new
+`checked` value remains only the person's own declaration. This comparison
+checks records and never fetches the underlying legal sources.
+
 ## No-Python paper route
 
 You can do the same source-reading task without installing or running anything.

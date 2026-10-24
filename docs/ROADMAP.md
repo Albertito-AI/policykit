@@ -9,7 +9,8 @@ Asian jurisdictions. Build reusable methods before expanding coverage.
 ## Current component
 
 Version 0.1 provides an offline evidence ledger, structural validation,
-Markdown and CSV reports, a synthetic worked example and regression tests.
+Markdown and CSV reports, read-only comparison of saved snapshots,
+a synthetic worked example and regression tests.
 The code has no external runtime dependency. A complete fictional teaching
 exercise, external usability protocol, first-use guide and contribution routes
 are available. A narrow Singapore case records two unreviewed propositions
@@ -17,34 +18,39 @@ against official primary sources. Real-world usefulness, educational benefit
 and legal dataset quality still require evaluation. See the
 [project status](project_status.md) for the evidence baseline.
 
+## Completed safeguard: compare saved ledger versions
+
+The read-only `compare` command identifies substantive changes to propositions,
+evidence links and source records and flags potentially stale prior declarations.
+Metadata-only access-date and review-declaration updates are distinguished.
+Identifiers are matched literally; any renamed identifier is recorded as a
+removal and addition. No reviewer is authenticated and no review status is
+changed by the command. Further refinement should be driven by actual review
+friction rather than speculative features.
+
 ## Next work in priority order
 
-1. **Protect review history when records change.** Design a comparison command
-   that identifies modified propositions, source versions and evidence links.
-   Record when prior review should be reconsidered. Add cases for substantive
-   edits, metadata-only edits and renamed identifiers. Do not silently change
-   a person's review declaration.
-2. **Obtain human review of the first worked case.** The
+1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
    now records two narrow propositions, inspected primary sources and exact
    pinpoints. Both remain unreviewed. A reviewer should examine the source
    versions, reporting-period limits and each evidence relationship before
    entering an actual declaration. Do not expand case volume ahead of this
    review or represent an AI inspection as completed human assessment.
-3. **Run the first external usability pilot.** Use the prepared
+2. **Run the first external usability pilot.** Use the prepared
    [protocol](evaluation_protocol.md) with three independent volunteers. Record
    task completion, assistance, misunderstandings and reproducible difficulties
    privately. Revise concrete defects and report bounded, anonymous results.
    The manual-first sequence is not a controlled comparison and cannot establish
    a productivity or learning benefit. Design any later comparative evaluation
    separately.
-4. **Improve entry and review.** Choose a CSV import or an accessible browser
+3. **Improve entry and review.** Choose a CSV import or an accessible browser
    editor only after observing where users struggle. Preserve offline access
    and the JSON record. Check import ambiguities and export fidelity.
-5. **Extend the legal comparison.** Add the second jurisdiction when the first
+4. **Extend the legal comparison.** Add the second jurisdiction when the first
    worked case is stable. Distinguish disclosure duties, supervision, liability,
    standing and remedies. Record disagreements rather than forcing equivalence.
-6. **Prepare a citable release.** Follow the
+5. **Prepare a citable release.** Follow the
    [release criteria](release_readiness.md), including rights, documentation,
    evaluation limits and outstanding defects. Use a stable version and an
    archival record if an appropriate connection and rights permit it. No DOI

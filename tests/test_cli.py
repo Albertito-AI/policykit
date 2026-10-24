@@ -104,6 +104,36 @@ class CLITests(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertEqual(before, self.path.read_bytes())
 
+    def test_compare_reports_stale_review_without_mutating_ledger(self):
+        before = ledger()
+        self.write(before)
+        revised_path = self.path.parent / "revised.json"
+        changed = json.loads(json.dumps(before))
+        changed["sources"][0]["version"] = "2"
+        revised_path.write_text(json.dumps(changed), encoding="utf-8")
+        result = self.run_cli("compare", self.path, revised_path, "--json")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        report = json.loads(result.stdout)
+        self.assertEqual(report["summary"]["prior_reviews_to_reconsider"], 1)
+        self.assertEqual(report["claims"][0]["id"], "CLAIM-a")
+        self.assertEqual(json.loads(self.path.read_text()), before)
+        self.assertEqual(json.loads(revised_path.read_text()), changed)
+
+    def test_compare_rejects_invalid_snapshot(self):
+        before = ledger()
+        self.write(before)
+        revised_path = self.path.parent / "revised.json"
+        revised_path.write_text('{"title":"bad","title":"duplicate"}', encoding="utf-8")
+        result = self.run_cli("compare", self.path, revised_path)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("Duplicate JSON key", result.stderr)
+        self.assertEqual(result.stdout, "")
+        revised_path.write_text('{"schema_version":"1.0"}', encoding="utf-8")
+        result = self.run_cli("compare", self.path, revised_path)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("after: MISSING_FIELD", result.stderr)
+
+
 
 if __name__ == "__main__":
     unittest.main()
