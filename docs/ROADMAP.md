@@ -41,6 +41,8 @@ friction rather than speculative features.
    [protocol](evaluation_protocol.md) with three independent volunteers. Record
    task completion, assistance, misunderstandings and reproducible difficulties
    privately. Revise concrete defects and report bounded, anonymous results.
+   Keep the answer key linked from the manual quickstart for post-task checking;
+   do not supply it before observed responses, and record earlier exposure.
    The manual-first sequence is not a controlled comparison and cannot establish
    a productivity or learning benefit. Design any later comparative evaluation
    separately.
