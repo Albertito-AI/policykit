@@ -221,3 +221,14 @@ or revenue is established by publication of this path.
 Next action: inspect genuine evaluation enquiries and obtain the necessary
 permission before any executable pilot. Record whether a recurring need and
 usable result are observed before expanding the component.
+
+### Contributor routing for the Source Watch experiment
+
+The contributor guide now distinguishes public, synthetic Source Watch bug and
+usability reports from private evaluation, rights and commercial enquiries.
+This closes a routing ambiguity following the new demonstration entry in the
+root README. The guide provides a path without implying an executable licence
+or inviting confidential workflow details into public issues. Source Watch,
+issue templates, rights, software, fixtures and publication status are unchanged.
+Documentation links and the existing code example require independent checks;
+no external enquiry, pilot, customer or revenue follows from this correction.
