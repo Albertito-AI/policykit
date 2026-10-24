@@ -28,6 +28,28 @@ results. The [teaching pack](teaching/README.md) and
 [usability protocol](docs/evaluation_protocol.md) provide bounded activities
 for collecting actual observations.
 
+## Source Watch: report an issue or enquire privately
+
+The separate [Source Watch experiment](experiments/source_watch/README.md)
+compares listed local files against a saved baseline. Its
+[fictional generated report](experiments/source_watch/sample_report.json)
+can be inspected without installing software or providing contact details.
+
+For an observed error or unclear instruction, use the public bug or documentation
+issue form with a synthetic example. Name the Source Watch command and file,
+state what actually happened and remove local paths and confidential information.
+For an evaluation involving organisational workflows, permission to run or reuse
+the executable, pricing or a commercial arrangement, contact the maintainer
+through the [institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
+instead. A brief, non-confidential description of the recurring task is enough
+for an initial enquiry. Do not place commercial correspondence, customer details
+or private source files in public issues.
+
+The public repository and its issue forms grant no general right to copy,
+execute, redistribute or license this unlicensed software. Agree the applicable
+permission and scope before an executable evaluation. An enquiry is not an
+approved pilot, a sale or an invitation to repeated marketing contact.
+
 ## Reproduce a software problem
 
 Use the supplied fictional ledger or construct the smallest synthetic example
