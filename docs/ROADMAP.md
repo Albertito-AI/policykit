@@ -101,3 +101,8 @@ API, external-source crawler or new dependency merely to fill a schedule.
 The existing human source-review and teaching-pilot priorities remain outstanding.
 No subscription, commercial licence, production service or customer adoption is
 established by this experiment. Preserve the existing rights statement.
+
+## Public website link
+
+The README now links to [Albert Tan's website](https://www.alberttansinhon.com/).
+At the next public-link review, check that this canonical address still resolves.
