@@ -233,3 +233,14 @@ issue templates, rights, software, fixtures and publication status are unchanged
 Both linked repository assets were read back by exact path and confirmed to
 exist. No executable command changed, so no local runtime tests were rerun.
 No external enquiry, pilot, customer or revenue follows from this correction.
+
+### Canonical website link
+
+Added the maintainer's [website](https://www.alberttansinhon.com/) to the
+README's introductory links, retaining the institutional profile and ORCID.
+The destination returned HTTP 200 with normal TLS certificate verification.
+This change affects documentation only; no code or executable examples changed,
+and no local runtime tests were rerun.
+
+Next maintenance action: check the canonical website address during the next
+public-link review. The existing research and evaluation priorities continue.

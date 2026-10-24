@@ -4,7 +4,8 @@ RegNav means Regulatory Navigator. This repository develops research tools for
 examining the evidence behind legal propositions, beginning with the questions
 raised by sustainability reporting and legal accountability in Asia.
 
-Maintainer: **Albert Tan** · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
+Maintainer: **Albert Tan** · [Website](https://www.alberttansinhon.com/)
+· [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
 · [ORCID](https://orcid.org/0009-0001-8996-7933)
 
 **Status:** version 0.1 research prototype. See the
