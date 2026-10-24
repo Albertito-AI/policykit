@@ -57,6 +57,24 @@ command-line usage errors also use exit `2`. Warnings may represent a legitimate
 unresolved disagreement. A strict failure therefore identifies work for a human
 reviewer; it is not a judgment that the research is wrong.
 
+## Compare two saved versions
+
+After saving an earlier snapshot of a ledger, use the new read-only comparison
+command to identify changes that may make recorded reviews stale:
+
+```bash
+python -m regnav_evidence compare ledger-before.json ledger-after.json
+python -m regnav_evidence compare ledger-before.json ledger-after.json --json
+```
+
+Both snapshots must be structurally valid. The tool distinguishes source-version,
+proposition and evidence-link changes from access-date and review-declaration
+edits. It flags previously reviewed propositions for **human reconsideration**
+when their substantive record changes. It does not edit either ledger, check the
+legal source, invalidate a declaration or certify renewed review. A successful
+comparison exits `0`, even when substantive differences are reported; invalid
+snapshots exit `1`. See the [comparison instructions](docs/quickstart.md#after-editing-a-ledger-compare-saved-snapshots).
+
 ## Record a proposition
 
 1. Enter the exact source version or the date of the material consulted. Supply
