@@ -90,7 +90,9 @@ A runnable fictional demo and generated report make the proposed behaviour
 inspectable without receiving confidential material or paying for a hosted service.
 
 The next gate is independent reproduction under an agreed permission and a
-concrete recurring user need, not more speculative features. The root README
+concrete recurring user need, not more speculative features. CONTRIBUTING.md
+now distinguishes public synthetic bug reports from private Source Watch
+rights, evaluation and commercial enquiries. The root README
 now leads to the generated report and a short evaluation enquiry route. Record
 actual enquiries and permissions separately from completed evaluations or paid
 work. Record missing sources, false-positive friction,
