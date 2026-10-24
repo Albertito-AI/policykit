@@ -79,3 +79,20 @@ action is to observe a small pilot using the prepared protocol, then revise
 the instructions in response to actual difficulties. These materials are
 separate from the coauthored ANSWERABLE book project. Sports governance can
 supply later case studies once the core workflow is useful.
+
+## Bounded technical experiment: source-file changes
+
+On 24 October 2026 the maintainer requested a separate technology-product
+experiment alongside the research programme. [Source Watch](../experiments/source_watch/README.md)
+checks byte changes in explicitly listed local files and returns their linked
+claim identifiers. It is isolated from the ledger schema and command interface.
+A runnable fictional demo and generated report make the proposed behaviour
+inspectable without receiving confidential material or paying for a hosted service.
+
+The next gate is independent reproduction and a concrete recurring user need,
+not more speculative features. Record missing sources, false-positive friction,
+requested integrations and the limits of any observation. Do not build a hosted
+API, external-source crawler or new dependency merely to fill a schedule.
+The existing human source-review and teaching-pilot priorities remain outstanding.
+No subscription, commercial licence, production service or customer adoption is
+established by this experiment. Preserve the existing rights statement.
