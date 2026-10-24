@@ -168,6 +168,14 @@ Open the links in a browser, or print the pages beforehand.
 | Minutes 5 to 9 | Answer the three questions above on paper. Record the source label and pinpoint beside each answer. | Three reasoned notes, including unresolved points. |
 | Minutes 9 to 10 | Explain why four evidence rows represent three propositions, and why `checked` is not legal verification. | A short account of the report's limits. |
 
+**Self-check after you finish:** The [facilitator's source-grounded answer
+key](../teaching/facilitator_guide.md#answer-key-the-four-source-tasks)
+identifies the relevant passages and explains alternative relation labels.
+Write your own answers first. If you take part in the proposed
+[external usability pilot](evaluation_protocol.md), do not consult the key
+before the observed tasks. Record any earlier exposure when interpreting the
+pilot results.
+
 This route lets you inspect a generated report; it does not claim that you ran
 the validator or exported a file. The [learner handout](../teaching/learner_handout.md)
 contains the sources, a fuller table and a paragraph-revision exercise for a
