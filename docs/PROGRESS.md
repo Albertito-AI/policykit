@@ -47,7 +47,7 @@ visible activity.
 ### Teaching materials and external pilot preparation
 
 Added a complete 55-minute exercise, with 45- and 60-minute variants, a learner
-handout, facilitator answer key, descriptive rubric and blank feedback form.
+handout, facilitator answer key, descriptive assessment rubric and blank feedback form.
 The exercise supplies the full fictional source packet and supports paper or
 spreadsheet use as well as an optional command-line demonstration.
 
@@ -170,3 +170,30 @@ further-review procedure or rule selecting a governing draft. This internal
 source/document check does not establish independent usability, educational
 benefit or actual external adoption. The next adoption step remains the
 three-volunteer observational pilot using the existing protocol.
+
+### Isolated source-file change experiment
+
+Following the maintainer's request for a bounded technology-product experiment,
+added `experiments/source_watch/` without changing the core ledger schema, CLI,
+review declarations, citation version or rights statement. The utility snapshots
+SHA-256 digests for explicitly listed local files and returns affected claim IDs
+when later bytes change or a file cannot be observed. It does not fetch sources,
+determine whether a change matters legally or run as a hosted monitoring service.
+
+Seventeen focused tests passed locally on Python 3.13.5, including malformed
+inputs, duplicate keys and IDs, traversal/symlink rejection, file-size limits,
+missing sources, linked-claim selection, non-mutation, exact hashes and command
+exit codes 0/1/2. Output creation refuses an existing path. The fictional demo
+was actually run and its JSON output saved unchanged as `sample_report.json`.
+A direct local clone failed DNS resolution; repository reads and writes used
+the connected GitHub service. Local verification therefore covers this isolated
+experiment, not a newly cloned full local suite. Remote CI is separate evidence.
+
+The threat boundary is a trusted, stable local directory. This is not a sandbox
+against malicious concurrent filesystem changes. Unchanged bytes establish only
+identity with the saved baseline, not current law, authenticity, complete coverage
+or legal correctness. Baseline integrity and semantic review remain external.
+
+The next action is to observe independent reproduction and establish a recurring
+user need before implementing a hosted adapter. No participant, paid customer,
+external adoption, security certification or commercial licence is claimed.
