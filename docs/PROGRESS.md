@@ -154,3 +154,19 @@ Next technical action: investigate actual usability or comparison defects
 before expanding features. Next legal evidence action: obtain a real human
 review of the two unreviewed Singapore propositions. External adoption and
 educational benefit remain untested.
+
+### Manual first-use self-check
+
+The no-Python quickstart now links directly to the existing source-grounded
+facilitator answer key for use **after** the learner has completed the source
+questions. This closes a navigational gap without changing the fictional
+sources, CLI, reports, human-review declarations or rights. The roadmap
+retains the key as post-task material and requires any prior exposure during
+an observational pilot to be recorded.
+
+Checked the source packet, answer-key heading and relative links. The packet
+states five working days in A.3 and ten working days in B.2, and supplies no
+further-review procedure or rule selecting a governing draft. This internal
+source/document check does not establish independent usability, educational
+benefit or actual external adoption. The next adoption step remains the
+three-volunteer observational pilot using the existing protocol.
