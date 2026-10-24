@@ -230,5 +230,6 @@ This closes a routing ambiguity following the new demonstration entry in the
 root README. The guide provides a path without implying an executable licence
 or inviting confidential workflow details into public issues. Source Watch,
 issue templates, rights, software, fixtures and publication status are unchanged.
-Documentation links and the existing code example require independent checks;
-no external enquiry, pilot, customer or revenue follows from this correction.
+Both linked repository assets were read back by exact path and confirmed to
+exist. No executable command changed, so no local runtime tests were rerun.
+No external enquiry, pilot, customer or revenue follows from this correction.
