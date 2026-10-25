@@ -329,3 +329,25 @@ Next action: qualify an actual operator response and one permissioned independen
 reproduction. Preserve the one-off nature of previous invitations; do not repeat
 mentions to manufacture activity. No new participant, collaboration, registry
 listing, buyer or payment is established by this entry-point improvement.
+
+### Evidence-handover development record
+
+Recorded a public technical plan with six stable work-item IDs, implementation
+conditions, exclusions and eighteen proposed acceptance cases. Linked it from the
+roadmap so future development can distinguish existing components from conditional
+extensions. All new capability work remains specified or deferred; the acceptance
+cases remain `NOT_RUN`. No source code, executable tests, schema, dependencies,
+fixtures, rights or citation metadata changed.
+
+Locally checked the new Markdown and appended passages for rendering, relative
+link targets, six unique work-item IDs, eighteen unique case IDs, valid case-to-work
+references and preservation of the source design's not-run states. Screened the
+new text for private correspondence, customer names, private workspace links and
+financial details. These are documentation checks, not runtime, professional-review
+or independent-user tests. No local software regression suite was rerun. Remote
+diff review and any automatically triggered CI are separate evidence.
+
+Next action: qualify one permitted task and use existing behaviour where adequate;
+otherwise agree an explicit export contract before starting RN-M01. Preserve prior
+progress history and do not infer a delivery, deployment, customer or paid outcome
+from publication of this plan.
