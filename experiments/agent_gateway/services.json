@@ -1,0 +1,33 @@
+{
+  "schema": "regnav-agent-catalogue/0.1",
+  "operator": {
+    "name": "Albert Tan Sin Hon",
+    "repository": "https://github.com/Albertito-AI/policykit",
+    "website": "https://www.alberttansinhon.com/"
+  },
+  "status": "local_prototype",
+  "services": [
+    {
+      "id": "source-watch-local",
+      "purpose": "Identify supplied claim IDs linked to changed or unobserved local source files.",
+      "protocol": "MCP",
+      "protocol_version": "2025-11-25",
+      "transport": "stdio",
+      "tool": "source_watch_check",
+      "configuration": "Operator selects the source root and existing baseline at process launch; callers cannot select paths.",
+      "input": "Empty object; no caller-controlled filesystem locations.",
+      "output": "Source Watch JSON report with byte statuses, supplied claim IDs, relative source paths and hashes.",
+      "network_access": false,
+      "writes_source_files": false,
+      "human_review_performed": false,
+      "public_endpoint": null,
+      "payments_enabled": false,
+      "commercial_offer": null,
+      "limits": "No source authentication, live-law monitoring, semantic verification, automatic claim mapping or legal certification. The client may transmit returned metadata to its own model provider."
+    }
+  ],
+  "external_partners": [],
+  "rights_url": "https://github.com/Albertito-AI/policykit/blob/main/RIGHTS.md",
+  "reuse": "Existing rights are unchanged. Public source visibility and this catalogue grant no new execution or commercial licence.",
+  "discovery_note": "Project-specific catalogue, not an A2A Agent Card or a registered marketplace listing. No external collaboration or customer adoption is established."
+}

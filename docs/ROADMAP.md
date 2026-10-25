@@ -116,3 +116,21 @@ established by this experiment. Preserve the existing rights statement.
 
 The README now links to [Albert Tan's website](https://www.alberttansinhon.com/).
 At the next public-link review, check that this canonical address still resolves.
+
+## Agent interoperability: one bounded first connection
+
+The maintainer requested this integration on 25 October 2026. The
+[local MCP gateway](../experiments/agent_gateway/README.md) now makes the existing
+Source Watch check callable by a permitted local client without granting caller
+control of paths, shell commands or the baseline. The
+[network proposal](AGENT_NETWORK.md) and technical issue form provide an opt-in
+route; the catalogue records no external partners, public endpoint or payment.
+
+The next gate is one independent, permissioned MCP-client reproduction with
+fictional inputs and an actual recurring workflow to assess. Record client and
+protocol versions, setup effort, output interpretation and unresolved defects.
+A public registry entry requires its own packaging, namespace, rights and
+verification steps. External delegation needs separate authentication and task
+controls. Do not describe the local prototype as a deployed marketplace or
+substitute simulated exchanges for partners or customers. Existing human source
+review and teaching-pilot priorities remain unchanged.
