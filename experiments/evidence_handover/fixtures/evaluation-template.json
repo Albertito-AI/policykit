@@ -1,0 +1,36 @@
+{
+  "record_type": "blank_independent_evaluation_template",
+  "status": "NOT_RUN",
+  "participant_reference": null,
+  "permission_reference": null,
+  "client_and_version": null,
+  "task_and_acceptance_conditions": null,
+  "materials_and_versions": null,
+  "reference_judgement_and_disagreements": null,
+  "existing_workflow": {
+    "setup_minutes": null,
+    "mapping_minutes": null,
+    "checking_minutes": null,
+    "correction_minutes": null,
+    "assistance_minutes": null,
+    "maintenance_minutes": null,
+    "completed_tasks": null,
+    "observed_tasks": null,
+    "consequential_errors": null
+  },
+  "handover_workflow": {
+    "setup_minutes": null,
+    "mapping_minutes": null,
+    "checking_minutes": null,
+    "correction_minutes": null,
+    "assistance_minutes": null,
+    "maintenance_minutes": null,
+    "completed_tasks": null,
+    "observed_tasks": null,
+    "consequential_errors": null
+  },
+  "order_and_material_help": null,
+  "result_and_next_decision": null,
+  "publication_permission": null,
+  "limits": "Complete privately with actual observations. Null is unknown, never an invented zero. A small observational exercise does not establish causal productivity gains."
+}

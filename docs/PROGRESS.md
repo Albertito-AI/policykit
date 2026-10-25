@@ -351,3 +351,43 @@ Next action: qualify one permitted task and use existing behaviour where adequat
 otherwise agree an explicit export contract before starting RN-M01. Preserve prior
 progress history and do not infer a delivery, deployment, customer or paid outcome
 from publication of this plan.
+
+### Experimental implementation of the evidence-handover plan
+
+Following the maintainer's explicit instruction to implement the six recorded
+items for testing, added one isolated workflow under experiments/evidence_handover/.
+It uses a RegNav-owned fictional export contract, not a presumed customer format.
+The adapter retains the entire export as a validated sidecar and generates only
+unreviewed core-schema records. The existing ledger comparator, Source Watch,
+text-safe renderers and MCP lifecycle are reused without modifying their files.
+
+Implemented separate source, record, process and supplied-inventory observations;
+exact scope-field and supplied-anchor checks; declared assurance-set consistency;
+version-specific supplied declarations and new-file history extension; JSON,
+Markdown and CSV views; and an opt-in operator-configured MCP handover tool. No
+source-text parsing, causal model diagnosis, professional assurance, authenticated
+reviewer identity, remote endpoint, payment function or runtime dependency is added.
+The original specification remains linked at its immutable pre-implementation commit.
+
+Forty-seven focused tests passed locally on Python 3.13.5. They include executable
+versions of all eighteen disclosed engineering cases and regressions for malformed
+input, safe paths, file limits, immutable inputs, exclusive outputs, history,
+command exit codes and a real local subprocess protocol exchange. The benchmark
+runner separately executed the eighteen cases and generated a receipt with source
+hashes. The actual fictional demo reproduced its saved sample, a deterministic
+view of selected report fields rather than an operational snapshot. Blank independent
+comparison records remain NOT_RUN; no human review or participant is invented.
+
+Direct git network access failed DNS resolution. The inspected dependencies were
+reconstructed locally and their Git blob identities matched the remote source.
+This local result covers the new focused suite, not a complete fresh local clone.
+The existing GitHub workflow discovers the new tests and must be inspected at the
+actual reviewed head before merge. Documentation, fixture JSON and new-file privacy
+checks were also performed. Remote CI is separate evidence, not presumed from a
+local pass. No official MCP SDK/client test or independent-user evaluation ran.
+
+Next action: evaluate the disclosed contract and handover with one permitted
+independent operator, document actual setup and review effort, and repair concrete
+failures with regression tests. Continue bounded evidence-led improvement rather
+than automatically growing the feature list. Existing rights, code/schema,
+source-review declarations, private material and financial records remain unchanged.

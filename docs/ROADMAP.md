@@ -141,17 +141,22 @@ task and agree the necessary permissions before an independent test. Record a
 reply, a completed evaluation and a paid agreement separately; do not count this
 navigation improvement as external use or a new participant.
 
-## Proposed evidence-handover improvements
+## Experimental evidence-handover implementation
 
-The [evidence-handover development plan](EVIDENCE_HANDOVER_PLAN.md) records six
-conditional work items and eighteen proposed acceptance cases. They are specified,
-not implemented; the cases are `NOT_RUN`. This links the proposed export mapping,
-source/record/process comparison, scope checks, review history, evaluation and
-later agent integration without advertising them as existing capabilities.
+The [evidence-handover plan](EVIDENCE_HANDOVER_PLAN.md) now records the actual
+implementation stage of all six items. The [local experiment](../experiments/evidence_handover/README.md)
+accepts one explicit JSON contract, maps it to the unchanged ledger schema and
+retains scope/process metadata separately. It composes source, record and process
+observations, preserves supplied review history and offers an opt-in local MCP tool.
+The eighteen disclosed engineering cases now have runnable tests and a generated
+result; independent workflow evaluation remains outstanding.
 
-The next action is to qualify one permitted task and inspect the actual inputs.
-Use the existing tools first where they already meet that need. For a justified
-export adapter, agree one versioned format and acceptance check before implementing
-RN-M01. Core development owns the implementation and adoption owns independent
-workflow observations. Preserve current human source-review and usability
-priorities, offline use, existing rights and truthful review declarations.
+The next action is one permitted independent reproduction and inspection of an
+actual export. Do not claim customer compatibility from the fictional contract.
+Use existing simpler tools when adequate. Fix observed defects before expanding
+parsers, hosted services or protocols. Each material change needs a regression,
+focused checks, updated benchmark evidence, full-diff review and applicable CI.
+Preserve the original design in Git history, core-development/adoption ownership,
+current human-review priorities, offline use, existing rights and no invented
+human declarations. No deployment, professional assurance or commercial outcome
+follows from internal implementation.

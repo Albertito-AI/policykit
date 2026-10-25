@@ -1,0 +1,109 @@
+{
+  "kind": "internal_synthetic_engineering_benchmark",
+  "python": "3.13.5",
+  "independent_participants": null,
+  "professional_reference_validation": "NOT_PERFORMED",
+  "limits": "Disclosed cases test software behaviour, not blind generalisation, professional assurance or productivity.",
+  "files_sha256": {
+    "experiments/evidence_handover/workflow.py": "5e7615b2df82931f945bbf6bcf016ad694995bb80d49c955ba630adb84d64a10",
+    "experiments/evidence_handover/cli.py": "81fa67e718059b5c4f4990b8c17a224f6e094e492c79b4e4d8b882a58b256bb5",
+    "experiments/evidence_handover/server.py": "81a9434126b93971a8f6fa4f902b4432d42aa800651d64644a46d810a8e6c726",
+    "experiments/evidence_handover/demo.py": "4469342d237727c07f44ea89432a911dae747e64b538a924398768a94755c788",
+    "experiments/evidence_handover/benchmark.py": "57b6c5fdfab89415cd03cda2b50f617d43b2a3199d6f11973dbd55056ebc0e99",
+    "tests/test_evidence_handover.py": "71f00b7746252efc5aa6349333a193878a5c21453a2065e2b640df59c640752d"
+  },
+  "case_count": 18,
+  "passed": 18,
+  "cases": [
+    {
+      "id": "B01",
+      "test": "test_B01_unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B02",
+      "test": "test_B02_cosmetic_source_change_retained",
+      "status": "PASS"
+    },
+    {
+      "id": "B03",
+      "test": "test_B03_one_value_and_filewide_attention",
+      "status": "PASS"
+    },
+    {
+      "id": "B04",
+      "test": "test_B04_unit_change",
+      "status": "PASS"
+    },
+    {
+      "id": "B05",
+      "test": "test_B05_period_change",
+      "status": "PASS"
+    },
+    {
+      "id": "B06",
+      "test": "test_B06_boundary_change",
+      "status": "PASS"
+    },
+    {
+      "id": "B07",
+      "test": "test_B07_extraction_only_change",
+      "status": "PASS"
+    },
+    {
+      "id": "B08",
+      "test": "test_B08_process_only_change",
+      "status": "PASS"
+    },
+    {
+      "id": "B09",
+      "test": "test_B09_anchor_ambiguity_and_location",
+      "status": "PASS"
+    },
+    {
+      "id": "B10",
+      "test": "test_B10_explicit_assurance_set_mismatch",
+      "status": "PASS"
+    },
+    {
+      "id": "B11",
+      "test": "test_B11_not_located_is_not_unassured",
+      "status": "PASS"
+    },
+    {
+      "id": "B12",
+      "test": "test_B12_missing_source",
+      "status": "PASS"
+    },
+    {
+      "id": "B13",
+      "test": "test_B13_explicit_new_unwatched_source",
+      "status": "PASS"
+    },
+    {
+      "id": "B14",
+      "test": "test_B14_duplicate_identity",
+      "status": "PASS"
+    },
+    {
+      "id": "B15",
+      "test": "test_B15_renamed_id_is_removal_addition",
+      "status": "PASS"
+    },
+    {
+      "id": "B16",
+      "test": "test_B16_embedded_instructions_are_data",
+      "status": "PASS"
+    },
+    {
+      "id": "B17",
+      "test": "test_B17_historical_declaration_is_preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "B18",
+      "test": "test_B18_safe_rendering",
+      "status": "PASS"
+    }
+  ]
+}
