@@ -102,8 +102,8 @@ inspectable without receiving confidential material or paying for a hosted servi
 The next gate is independent reproduction under an agreed permission and a
 concrete recurring user need, not more speculative features. CONTRIBUTING.md
 now distinguishes public synthetic bug reports from private Source Watch
-rights, evaluation and commercial enquiries. The root README
-now leads to the generated report and a short evaluation enquiry route. Record
+rights, evaluation and commercial enquiries.
+The root README now leads to the generated report and a short evaluation enquiry route. Record
 actual enquiries and permissions separately from completed evaluations or paid
 work. Record missing sources, false-positive friction,
 requested integrations and the limits of any observation. Do not build a hosted
@@ -140,3 +140,18 @@ and existing pilot invitation. Use that route to qualify one operator's actual
 task and agree the necessary permissions before an independent test. Record a
 reply, a completed evaluation and a paid agreement separately; do not count this
 navigation improvement as external use or a new participant.
+
+## Proposed evidence-handover improvements
+
+The [evidence-handover development plan](EVIDENCE_HANDOVER_PLAN.md) records six
+conditional work items and eighteen proposed acceptance cases. They are specified,
+not implemented; the cases are `NOT_RUN`. This links the proposed export mapping,
+source/record/process comparison, scope checks, review history, evaluation and
+later agent integration without advertising them as existing capabilities.
+
+The next action is to qualify one permitted task and inspect the actual inputs.
+Use the existing tools first where they already meet that need. For a justified
+export adapter, agree one versioned format and acceptance check before implementing
+RN-M01. Core development owns the implementation and adoption owns independent
+workflow observations. Preserve current human source-review and usability
+priorities, offline use, existing rights and truthful review declarations.
