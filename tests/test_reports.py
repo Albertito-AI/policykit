@@ -41,6 +41,17 @@ class ReportTests(unittest.TestCase):
         self.assertIn("User-declared", report)
         self.assertIn("does not verify", report)
 
+    def test_gfm_strikethrough_markers_remain_literal(self):
+        value = ledger()
+        value["title"] = "Ledger ~~archived~~"
+        value["claims"][0]["text"] = "An ~~excluded~~ qualification remains recorded."
+        value["sources"][0]["title"] = "Source ~~draft~~"
+        report = markdown_report(value, validate(value))
+        self.assertTrue(report.startswith(r"# Ledger \~\~archived\~\~"))
+        self.assertIn(r"\~\~excluded\~\~", report)
+        self.assertIn(r"\~\~draft\~\~", report)
+        self.assertNotIn("~~excluded~~", report)
+
     def test_unlinked_claims_and_unused_sources_remain_visible(self):
         value = ledger()
         value["claims"][0]["review_status"] = "unreviewed"
