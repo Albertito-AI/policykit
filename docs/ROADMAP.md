@@ -43,7 +43,7 @@ problems rather than adding speculative export formats.
 1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
    now records two narrow propositions, inspected primary sources and exact
-   pinpoints. Both propositions remain unreviewed. A reviewer should examine the source
+   pinpoints. Both remain unreviewed. A reviewer should examine the source
    versions, reporting-period limits and each evidence relationship before
    entering an actual declaration. Do not expand case volume ahead of this
    review or represent an AI inspection as completed human assessment.
