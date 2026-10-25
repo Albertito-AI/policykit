@@ -43,7 +43,7 @@ problems rather than adding speculative export formats.
 1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
    now records two narrow propositions, inspected primary sources and exact
-   pinpoints. Both remain unreviewed. A reviewer should examine the source
+   pinpoints. Both propositions remain unreviewed. A reviewer should examine the source
    versions, reporting-period limits and each evidence relationship before
    entering an actual declaration. Do not expand case volume ahead of this
    review or represent an AI inspection as completed human assessment.
@@ -134,3 +134,9 @@ verification steps. External delegation needs separate authentication and task
 controls. Do not describe the local prototype as a deployed marketplace or
 substitute simulated exchanges for partners or customers. Existing human source
 review and teaching-pilot priorities remain unchanged.
+
+The root README now links directly to the gateway, generated exchange, catalogue
+and existing pilot invitation. Use that route to qualify one operator's actual
+task and agree the necessary permissions before an independent test. Record a
+reply, a completed evaluation and a paid agreement separately; do not count this
+navigation improvement as external use or a new participant.
