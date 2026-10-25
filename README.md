@@ -87,6 +87,25 @@ without installing anything or providing contact details. The
 explains fit, limits and how to discuss a bounded pilot. This is an experiment,
 not a production service or a determination that a legal claim is wrong.
 
+## For research and reporting agents
+
+The [local MCP gateway](experiments/agent_gateway/README.md) lets a permitted
+client request the Source Watch check for an operator-selected collection.
+Start with the [generated fictional exchange](experiments/agent_gateway/sample_exchange.json)
+and [capability catalogue](experiments/agent_gateway/services.json) to inspect
+the result and its limits. The current transport is local stdio, with no public
+execution endpoint or automated billing.
+
+The [collaboration guide](docs/AGENT_NETWORK.md) explains the proposed handover
+and the evidence needed before external delegation. To discuss one recurring
+workflow, use the existing [agent-pilot invitation](https://github.com/Albertito-AI/policykit/issues/12).
+State the client/version, the non-confidential task and the result you need.
+Keep source documents, private paths, credentials and billing details out of
+public comments. Read [RIGHTS.md](RIGHTS.md) before any execution or integration;
+an enquiry grants no additional permission. Any paid scope requires separately
+agreed terms. An independently reproduced result, actual collaboration and
+payment must be evidenced separately.
+
 ## Record a proposition
 
 1. Enter the exact source version or the date of the material consulted. Supply
@@ -199,4 +218,3 @@ The original README linked these materials:
 These links are retained for continuity. The archives are separate legacy
 material, have not been reviewed as part of this prototype, and are not
 dependencies of the evidence ledger.
-
