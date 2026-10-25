@@ -22,7 +22,7 @@ COLUMNS = [
 def markdown_text(value: str) -> str:
     """Keep user text inside its table cell and render HTML/Markdown literally."""
     value = html.escape(value, quote=True).replace("\r\n", " ").replace("\n", " ").replace("\r", " ")
-    return re.sub(r"([\\|`*_\[\]])", r"\\\1", value)
+    return re.sub(r"([\\|`*_~\[\]])", r"\\\1", value)
 
 
 def csv_text(value: str) -> str:

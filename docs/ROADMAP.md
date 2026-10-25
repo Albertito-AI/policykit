@@ -28,6 +28,16 @@ removal and addition. No reviewer is authenticated and no review status is
 changed by the command. Further refinement should be driven by actual review
 friction rather than speculative features.
 
+## Evidence-export integrity
+
+Markdown evidence reports should retain the literal wording of recorded
+propositions and source titles, including GitHub-flavoured Markdown's
+strikethrough delimiters (`~~`). A targeted exporter regression protects
+these delimiters from being interpreted as deletions in the rendered report.
+The JSON remains the authoritative record; exported formatting is not evidence
+that any proposition is correct. Follow up on concrete user-reported rendering
+problems rather than adding speculative export formats.
+
 ## Next work in priority order
 
 1. **Obtain human review of the first worked case.** The

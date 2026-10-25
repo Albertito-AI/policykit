@@ -244,3 +244,27 @@ and no local runtime tests were rerun.
 
 Next maintenance action: check the canonical website address during the next
 public-link review. The existing research and evaluation priorities continue.
+
+## 25 October 2026
+
+### Literal evidence text in Markdown exports
+
+Reproduced a concrete presentation defect in GitHub-flavoured Markdown:
+a proposition containing `~~excluded~~` renders the enclosed words as
+struck through, even though the original ledger records those characters
+literally. A changed visual emphasis can misrepresent a research note in an
+evidence matrix.
+
+Extended the existing table-cell escaping in `regnav_evidence/reports.py` to
+include `~` and added a focused regression for a ledger title, proposition
+and source title. The change is confined to the rendered Markdown view;
+JSON records, source links, review declarations, CSV output and schema are
+unchanged. An offline renderer demonstration using Python 3.13.5 and Mistune
+3.2.1 confirmed the before/after distinction; this local demonstration was
+not the repository's full regression suite. No runtime dependency was added.
+
+Next action: verify the proposed branch through GitHub Actions, inspect the
+reviewed diff and merge only if checks pass. The separate priorities remain
+actual human review of the first Singapore case and independent first-use
+observations. Neither export escaping nor CI demonstrates legal accuracy,
+external adoption or commercial demand.
