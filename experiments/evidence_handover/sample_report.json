@@ -1,0 +1,107 @@
+{
+  "context": "Internal fictional demonstration; not a customer trial or professional review.",
+  "view": "Selected actual report fields; not an operational snapshot.",
+  "report": {
+    "before_snapshot_id": "762255ea1003c6fcd2627a224eee0b9fe554cda6131d7340d72ae953a3165460",
+    "after_snapshot_id": "e61b1ed087db3509e87e4be8f04150af660f4fcdf8d764990c9473757e0886af",
+    "source_watch": {
+      "schema": "regnav-source-watch/0.1",
+      "observation": "RECHECK_REQUIRED",
+      "affected_claim_ids": [
+        "claim1",
+        "claim2"
+      ],
+      "files": [
+        {
+          "id": "report",
+          "path": "fictional-report.txt",
+          "status": "CHANGED_BYTES",
+          "claim_ids": [
+            "claim1",
+            "claim2"
+          ],
+          "baseline_sha256": "de759c450b6b913a47beaefc61823d100d04bc89966687af03d9fc03857d513d",
+          "current_sha256": "caacf9ca242c2540f73a33be46b281f587cde817ec21e886e73777295f1a7bd8",
+          "reason": null
+        },
+        {
+          "id": "statement",
+          "path": "fictional-statement.txt",
+          "status": "UNCHANGED_BYTES",
+          "claim_ids": [
+            "claim1",
+            "claim2"
+          ],
+          "baseline_sha256": "df21d33c420a63fbed2039080ecc0165ea3ac515c184e8cc8516622bfa80af8c",
+          "current_sha256": "df21d33c420a63fbed2039080ecc0165ea3ac515c184e8cc8516622bfa80af8c",
+          "reason": null
+        }
+      ],
+      "limits": "Byte comparison of listed local files only; no source authentication, current-law check, legal conclusion or human-review declaration."
+    },
+    "field_changes": [
+      {
+        "claim_id": "claim1",
+        "field": "scope.value",
+        "before": "100",
+        "after": "125"
+      }
+    ],
+    "process_observations": [
+      {
+        "field": "model",
+        "before": "fictional-model-1",
+        "after": "fictional-model-1",
+        "observation": "UNCHANGED_DECLARATION"
+      },
+      {
+        "field": "parser",
+        "before": "fictional-parser-1",
+        "after": "fictional-parser-1",
+        "observation": "UNCHANGED_DECLARATION"
+      },
+      {
+        "field": "prompt",
+        "before": "fictional-prompt-1",
+        "after": "fictional-prompt-1",
+        "observation": "UNCHANGED_DECLARATION"
+      },
+      {
+        "field": "rules",
+        "before": "fictional-rules-1",
+        "after": "fictional-rules-1",
+        "observation": "UNCHANGED_DECLARATION"
+      }
+    ],
+    "attention": [
+      {
+        "claim_id": "claim1",
+        "code": "CHANGED_BYTES",
+        "detail": "Linked source observation: report"
+      },
+      {
+        "claim_id": "claim1",
+        "code": "RECORDED_CLAIM_MATERIAL",
+        "detail": "Proposition text changed"
+      },
+      {
+        "claim_id": "claim1",
+        "code": "SCOPE_CHANGED",
+        "detail": "Explicitly supplied field: value"
+      },
+      {
+        "claim_id": "claim2",
+        "code": "CHANGED_BYTES",
+        "detail": "Linked source observation: report"
+      }
+    ],
+    "coverage": {
+      "sources": 2,
+      "records": 2,
+      "source_contents_parsed": false,
+      "anchor_matches_verified": false,
+      "scope_is_supplied_metadata": true,
+      "unlisted_sources_discovered": false
+    }
+  }
+}

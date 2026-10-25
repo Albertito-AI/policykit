@@ -1,0 +1,136 @@
+{
+  "schema_version": "regnav-handover-export/0.1",
+  "title": "FICTIONAL handover exercise",
+  "sources": [
+    {
+      "id": "report",
+      "title": "FICTIONAL emissions report",
+      "url": "https://example.invalid/fictional-report.txt",
+      "source_type": "other",
+      "jurisdiction": "FICTIONAL",
+      "version": "training-v1",
+      "path": "fictional-report.txt"
+    },
+    {
+      "id": "statement",
+      "title": "FICTIONAL scope statement",
+      "url": "https://example.invalid/fictional-statement.txt",
+      "source_type": "other",
+      "jurisdiction": "FICTIONAL",
+      "version": "training-v1",
+      "path": "fictional-statement.txt"
+    }
+  ],
+  "records": [
+    {
+      "id": "claim1",
+      "text": "FICTIONAL: reported Scope 1 emissions are 100 tCO2e for Facility A in 2025.",
+      "evidence": [
+        {
+          "source_id": "report",
+          "pinpoint": "Fictional page 2, table 1",
+          "relation": "supports",
+          "anchor": {
+            "physical_page": 2,
+            "printed_page": "1",
+            "locator": "Fictional paragraph 1",
+            "quote": "FICTIONAL training text",
+            "match_count": 1
+          }
+        },
+        {
+          "source_id": "statement",
+          "pinpoint": "Fictional page 1",
+          "relation": "qualifies",
+          "anchor": {
+            "physical_page": 1,
+            "printed_page": "0",
+            "locator": "Fictional paragraph 1",
+            "quote": "FICTIONAL training text",
+            "match_count": 1
+          }
+        }
+      ],
+      "scope": {
+        "value": "100",
+        "unit": "tCO2e",
+        "period": "2025",
+        "entity": "Fictional Example Ltd",
+        "boundary": "Facility A"
+      },
+      "assurance": {
+        "status": "reported",
+        "statement_source_id": "statement",
+        "declared_coverage": [
+          "Scope 1",
+          "Scope 2"
+        ],
+        "asserted_coverage": [
+          "Scope 1"
+        ],
+        "level": "Fictional limited assurance wording",
+        "period": "2025"
+      }
+    },
+    {
+      "id": "claim2",
+      "text": "FICTIONAL: reported Scope 2 emissions are 200 tCO2e for Facility A in 2025.",
+      "evidence": [
+        {
+          "source_id": "report",
+          "pinpoint": "Fictional page 2, table 1",
+          "relation": "supports",
+          "anchor": {
+            "physical_page": 2,
+            "printed_page": "1",
+            "locator": "Fictional paragraph 1",
+            "quote": "FICTIONAL training text",
+            "match_count": 1
+          }
+        },
+        {
+          "source_id": "statement",
+          "pinpoint": "Fictional page 1",
+          "relation": "qualifies",
+          "anchor": {
+            "physical_page": 1,
+            "printed_page": "0",
+            "locator": "Fictional paragraph 1",
+            "quote": "FICTIONAL training text",
+            "match_count": 1
+          }
+        }
+      ],
+      "scope": {
+        "value": "200",
+        "unit": "tCO2e",
+        "period": "2025",
+        "entity": "Fictional Example Ltd",
+        "boundary": "Facility A"
+      },
+      "assurance": {
+        "status": "reported",
+        "statement_source_id": "statement",
+        "declared_coverage": [
+          "Scope 1",
+          "Scope 2"
+        ],
+        "asserted_coverage": [
+          "Scope 2"
+        ],
+        "level": "Fictional limited assurance wording",
+        "period": "2025"
+      }
+    }
+  ],
+  "process": {
+    "parser": "fictional-parser-1",
+    "model": "fictional-model-1",
+    "prompt": "fictional-prompt-1",
+    "rules": "fictional-rules-1"
+  },
+  "inventory": [
+    "fictional-report.txt",
+    "fictional-statement.txt"
+  ]
+}
