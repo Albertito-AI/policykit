@@ -1,0 +1,71 @@
+{
+  "context": "Internal fictional subprocess demonstration, not an external agent or customer.",
+  "protocol_version": "2025-11-25",
+  "tools": [
+    "regnav_capabilities",
+    "source_watch_check"
+  ],
+  "reports": {
+    "unchanged": {
+      "schema": "regnav-source-watch/0.1",
+      "observation": "UNCHANGED_BYTES",
+      "affected_claim_ids": [],
+      "files": [
+        {
+          "id": "training-source",
+          "path": "fictional-rule.txt",
+          "status": "UNCHANGED_BYTES",
+          "claim_ids": [
+            "training-claim"
+          ],
+          "baseline_sha256": "eb2abb884f87912c315fbf6e8f9a694732ae76926edce330e506adb60c2a6659",
+          "current_sha256": "eb2abb884f87912c315fbf6e8f9a694732ae76926edce330e506adb60c2a6659",
+          "reason": null
+        }
+      ],
+      "limits": "Byte comparison of listed local files only; no source authentication, current-law check, legal conclusion or human-review declaration."
+    },
+    "changed": {
+      "schema": "regnav-source-watch/0.1",
+      "observation": "RECHECK_REQUIRED",
+      "affected_claim_ids": [
+        "training-claim"
+      ],
+      "files": [
+        {
+          "id": "training-source",
+          "path": "fictional-rule.txt",
+          "status": "CHANGED_BYTES",
+          "claim_ids": [
+            "training-claim"
+          ],
+          "baseline_sha256": "eb2abb884f87912c315fbf6e8f9a694732ae76926edce330e506adb60c2a6659",
+          "current_sha256": "531551ab3ccfd079b083d64065147b03f9cfd245291216ee9ca4ea200bfab2db",
+          "reason": null
+        }
+      ],
+      "limits": "Byte comparison of listed local files only; no source authentication, current-law check, legal conclusion or human-review declaration."
+    },
+    "unavailable": {
+      "schema": "regnav-source-watch/0.1",
+      "observation": "RECHECK_REQUIRED",
+      "affected_claim_ids": [
+        "training-claim"
+      ],
+      "files": [
+        {
+          "id": "training-source",
+          "path": "fictional-rule.txt",
+          "status": "NOT_OBSERVED",
+          "claim_ids": [
+            "training-claim"
+          ],
+          "baseline_sha256": "eb2abb884f87912c315fbf6e8f9a694732ae76926edce330e506adb60c2a6659",
+          "current_sha256": null,
+          "reason": "Missing, unreadable, unsafe or unstable source file"
+        }
+      ],
+      "limits": "Byte comparison of listed local files only; no source authentication, current-law check, legal conclusion or human-review declaration."
+    }
+  }
+}

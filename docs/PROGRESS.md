@@ -268,3 +268,41 @@ reviewed diff and merge only if checks pass. The separate priorities remain
 actual human review of the first Singapore case and independent first-use
 observations. Neither export escaping nor CI demonstrates legal accuracy,
 external adoption or commercial demand.
+
+### Operator-scoped local agent gateway
+
+Following the maintainer's explicit request for agent-to-agent collaboration,
+added an isolated MCP stdio interface to the existing Source Watch check. The
+operator selects a baseline and trusted source directory at startup; the client
+cannot replace that configuration or request arbitrary paths, URLs or commands.
+The gateway exposes capability metadata and a read-only check, targeting MCP
+protocol version 2025-11-25. It adds no runtime dependencies, network listener,
+payment capability, source edits or human-review declarations.
+
+Added a machine-readable project catalogue, an actual generated fictional
+subprocess exchange, integration instructions and an opt-in public technical
+issue form. The catalogue contains no invented external partners or endpoint.
+The network design distinguishes a callable local tool from third-party discovery,
+external task delegation and commercial operation. Existing rights and the
+coauthored book's boundaries are preserved.
+
+Twenty-five focused tests passed locally on Python 3.13.5, covering lifecycle,
+version negotiation, exact underlying output, unchanged/changed/unavailable
+sources, non-mutation, rejected path and command inputs, input limits and error
+privacy. The demo was run and its output matched the saved exchange. The reused
+Source Watch file matched its inspected remote Git blob SHA exactly. New relative
+documentation links and the issue-form YAML were checked locally. Direct GitHub
+network access failed DNS resolution, so connector reads/writes were used. No
+full local repository suite, official MCP SDK/client test, independent agent
+trial or live issue-form rendering is claimed; remote CI is separate evidence.
+
+The boundary remains a trusted, stable filesystem. The gateway is not a hostile
+filesystem sandbox or an authenticated multi-tenant service. Returned metadata
+may be transmitted by the client to its own model provider. No raw manuscript,
+client data, credentials or financial plan was published by this change.
+
+Next action: obtain one permitted independent client reproduction with fictional
+material, record setup effort and interpretation errors, and fix observed
+interoperability defects before adding network transport or registry distribution.
+No registered marketplace, external partnership, deployment, adoption or payment
+is established by this internal implementation.
