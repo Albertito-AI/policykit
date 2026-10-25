@@ -134,3 +134,9 @@ verification steps. External delegation needs separate authentication and task
 controls. Do not describe the local prototype as a deployed marketplace or
 substitute simulated exchanges for partners or customers. Existing human source
 review and teaching-pilot priorities remain unchanged.
+
+The root README now links directly to the gateway, generated exchange, catalogue
+and existing pilot invitation. Use that route to qualify one operator's actual
+task and agree the necessary permissions before an independent test. Record a
+reply, a completed evaluation and a paid agreement separately; do not count this
+navigation improvement as external use or a new participant.
