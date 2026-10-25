@@ -306,3 +306,26 @@ material, record setup effort and interpretation errors, and fix observed
 interoperability defects before adding network transport or registry distribution.
 No registered marketplace, external partnership, deployment, adoption or payment
 is established by this internal implementation.
+
+### Direct entry for agent operators
+
+The inspected root README linked Source Watch but did not lead directly to its
+MCP gateway. Added a short agent-operator entry linking the existing gateway,
+generated fictional exchange, capability catalogue, collaboration guide and
+pilot invitation. The entry asks for a non-confidential client/version, task and
+desired result, while retaining execution permissions and private commercial
+terms as separate decisions. It creates no new service or licence.
+
+The new Markdown section was parsed locally with Python 3.13.5 and Mistune 3.2.1.
+Its five relative targets matched the inspected remote tree; all six links and
+the heading rendered in the local HTML. The existing invitation was read back,
+and no comments were present at that observation. These are documentation and
+link-target checks, not a browser usability test, notification-delivery check or
+independent agent reproduction. No software tests were rerun locally for this
+prose-only change. The full remote diff and applicable CI results require review
+before merge.
+
+Next action: qualify an actual operator response and one permissioned independent
+reproduction. Preserve the one-off nature of previous invitations; do not repeat
+mentions to manufacture activity. No new participant, collaboration, registry
+listing, buyer or payment is established by this entry-point improvement.
