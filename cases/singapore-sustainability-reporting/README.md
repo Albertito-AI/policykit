@@ -13,10 +13,11 @@ separately triggered market disclosures under Rule 703?
 
 The [ledger](ledger.json) contains two modest textual propositions, identified as
 `sgx-mb-report-timing` and `sgx-mb-internal-review`. It uses real primary sources;
-there is no fictional issuer, alleged breach or adjudicated dispute. The example
-is limited to the versions SGX displayed as applicable from 1 January 2026,
-consulted on **23 October 2026**. Applicability to a particular issuer, reporting
-period, waiver or listing history has not been determined.
+there is no fictional issuer, alleged breach or adjudicated dispute. The two original rules and Practice Note 7.6 use SGX versions displayed as
+applicable from 1 January 2026, first consulted on **23 October 2026** and
+reopened on **26 October 2026**. The separate Rule 703 section was inspected
+on 26 October without assuming an undisplayed version marker. Applicability
+to a particular issuer, reporting period, waiver or listing history is unknown.
 
 Climate-disclosure phasing, IFRS/ISSB requirements, Catalist rules, statutory
 causes of action, liability, sanctions and remedies are outside this case. The
@@ -104,8 +105,8 @@ provisions linked here supply the present case's legal reference points.
 
 **Fictional teaching contrast (no decided facts):** a report might be factually
 accurate while evidence of the required internal review is missing. That is an
-**evidence gap**, not proof of non-performance. Separately, a permitted later
-annual report date would not settle whether a distinct known development
+**evidence gap**, not proof of non-performance. Separately, permitted later
+sustainability-report issuance would not settle whether a distinct known development
 required timely disclosure under Rule 703. Only an appropriately qualified
 reviewer using the applicable instruments and contemporaneous records could
 reach a fact-specific conclusion. No expert reference decision has been
