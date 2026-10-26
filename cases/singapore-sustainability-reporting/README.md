@@ -58,6 +58,10 @@ established. The live URLs may change, and this case does not preserve a license
 full-text snapshot or certify later changes. Its `as_of` metadata does not itself
 prove that a provision applies to a particular report.
 
+## Common law decisions relevant to possible civil claims
+
+The [issue-specific common law authority map](common-law-authorities.md) records three opened Singapore Court of Appeal judgments and one English comparative decision concerning negligence, deceit and directors' duties. It identifies claimants, required legal questions and qualifications. It does **not** convert SGX reporting duties into private causes of action, and the two JSON ledger propositions remain `unreviewed`. Subsequent judicial treatment and statutory remedies still need separate checks.
+
 ## Evidence relationships and limits
 
 - **Timing and continuing disclosure:** Rule 711A supports the ordinary annual
