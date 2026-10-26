@@ -46,12 +46,23 @@
       "as_of": "2026-10-23",
       "accessed": "2026-10-23",
       "notes": "Opened from the amendment links on both official rule pages. PDF page 1 identifies commencement and contains the Rule 711A and Rule 711B blocks. Publication date not separately established. This source supplies version context; operative wording is taken from the clean current HTML because extracted redline text can mix deletions and insertions. No independent human review is recorded."
+    },
+    {
+      "id": "sgx-mb-703",
+      "title": "SGX Mainboard Listing Rule 703: Disclosure of Material Information",
+      "url": "https://rulebook.sgx.com/rulebook/disclosure-material-information-0",
+      "source_type": "regulation",
+      "jurisdiction": "Singapore - SGX Mainboard",
+      "version": "Current SGX Mainboard section presentation inspected 26 October 2026; no separate effective-date label displayed on this section",
+      "as_of": "2026-10-26",
+      "accessed": "2026-10-26",
+      "notes": "Direct SGX Mainboard provision opened 26 October 2026. Rule 703(1)(a)-(b) has separate market-announcement triggers; paragraphs (2)-(3) state exceptions or conditions. This cross-reference qualifies the annual sustainability-report timing proposition only. It does not determine any issuer's reporting obligation, breach, enforcement action, private right or remedy. Source type regulation indicates an exchange listing rule, not an Act of Parliament."
     }
   ],
   "claims": [
     {
       "id": "sgx-mb-report-timing",
-      "text": "In the SGX Mainboard Rule 711A version displayed for 1 January 2026 onwards, an issuer must provide its annual sustainability report to shareholders and SGX when issuing its annual report; where it has conducted external assurance on the sustainability report, the rule permits issuance within five months after financial year-end.",
+      "text": "In the SGX Mainboard Rule 711A version displayed for 1 January 2026 onwards, an issuer must provide its annual sustainability report to shareholders and SGX when issuing its annual report; where it has conducted external assurance on the sustainability report, the rule permits issuance within five months after financial year-end. That annual-report timetable does not resolve a separate immediate-disclosure question under Mainboard Rule 703.",
       "review_status": "unreviewed",
       "evidence": [
         {
@@ -62,6 +73,16 @@
         {
           "source_id": "sgx-mb-711a",
           "pinpoint": "Rule 711A, sole paragraph, external-assurance alternative ending with the five-month period",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-703",
+          "pinpoint": "Mainboard Rule 703(1)(a)-(b), read with the exceptions in Rule 703(2)-(3)",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sgx-mb-pn76",
+          "pinpoint": "Practice Note 7.6, paragraph 1.2, preserving distinct Rule 703 disclosures",
           "relation": "qualifies"
         },
         {
@@ -80,7 +101,7 @@
           "relation": "context"
         }
       ],
-      "notes": "AI-prepared textual summary only; independent HUMAN review outstanding. The guidance identifies the assurance alternative as transitional and adds a summary requirement if the sustainability report follows the annual report. No specific issuer, reporting period, waiver, first-report obligation or later change has been assessed. No claim is made about sanctions or a private cause of action."
+      "notes": "AI-prepared textual summary only; independent HUMAN review outstanding. The guidance identifies the assurance alternative as transitional and adds a summary requirement if the sustainability report follows the annual report. No specific issuer, reporting period, waiver, first-report obligation or later change has been assessed. No claim is made about sanctions or a private cause of action. Rule 703 cross-check added 26 October 2026: a report deadline does not by itself answer whether known information meets the separate market-announcement conditions; the paragraph (2)-(3) exceptions have not been factually assessed."
     },
     {
       "id": "sgx-mb-internal-review",
@@ -108,7 +129,7 @@
           "relation": "context"
         }
       ],
-      "notes": "AI-prepared textual summary only; independent HUMAN review outstanding. Paragraph 5.3 of the guidance qualifies whether already assured aspects need further internal review under a risk-based approach. This proposition does not establish that external assurance is optional under every applicable law or instrument, nor determine whether any issuer's process meets the requirement. No liability or remedy is inferred."
+      "notes": "AI-prepared textual summary only; independent HUMAN review outstanding. Paragraph 5.3 of the guidance qualifies whether already assured aspects need further internal review under a risk-based approach. This proposition does not establish that external assurance is optional under every applicable law or instrument, nor determine whether any issuer's process meets the requirement. No liability or remedy is inferred. The fact that report contents appear correct, or that an external assurance report exists, is not itself evidence that the required internal review occurred. A risk-based decision under Practice Note 7.6 paragraph 5.3 and any contemporaneous review records must be separately examined; none is supplied here."
     }
   ]
 }

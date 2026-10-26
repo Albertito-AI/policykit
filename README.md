@@ -128,7 +128,8 @@ See [the schema](docs/schema.md) for the complete field specification and
 
 The [Singapore sustainability reporting case](cases/singapore-sustainability-reporting/README.md)
 records two narrow propositions about report timing and internal review under
-SGX Mainboard rules, with four official source records and exact pinpoints.
+SGX Mainboard rules, with five official source records and exact pinpoints, including a narrowly
+qualified Rule 703 disclosure-timing cross-check.
 It retains the provisions' qualifications and identifies the versions inspected
 on 23 October 2026. Both propositions remain **unreviewed**. This AI-prepared
 example does not assess an issuer, liability or remedies; independent human

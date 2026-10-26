@@ -42,11 +42,13 @@ problems rather than adding speculative export formats.
 
 1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
-   now records two narrow propositions, inspected primary sources and exact
-   pinpoints. Both remain unreviewed. A reviewer should examine the source
-   versions, reporting-period limits and each evidence relationship before
-   entering an actual declaration. Do not expand case volume ahead of this
-   review or represent an AI inspection as completed human assessment.
+   retains two unreviewed propositions, now including a narrow Mainboard
+   Rule 703 qualification so an annual sustainability-report deadline is not
+   mistaken for a waiver of separately triggered market disclosure. A reviewer
+   should test the issuer's period, any assurance condition, actual internal
+   review evidence, Rule 703 thresholds and exceptions, and each source link
+   before declaring completion. The five-source case remains AI-prepared:
+   do not expand case volume ahead of independent human review.
 2. **Run the first external usability pilot.** Use the prepared
    [protocol](evaluation_protocol.md) with three independent volunteers. Record
    task completion, assistance, misunderstandings and reproducible difficulties

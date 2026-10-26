@@ -391,3 +391,36 @@ independent operator, document actual setup and review effort, and repair concre
 failures with regression tests. Continue bounded evidence-led improvement rather
 than automatically growing the feature list. Existing rights, code/schema,
 source-review declarations, private material and financial records remain unchanged.
+
+### Singapore case: annual reporting versus immediate market disclosure (26 October 2026)
+
+The existing first case already supported Rule 711A report timing and Rule
+711B(3) internal review, but its source map did not expressly separate the
+annual timetable from the Mainboard Rule 703 immediate-disclosure analysis.
+Refined the same two **unreviewed** propositions rather than adding a new case.
+The 26 October primary-source pass reopened SGX Mainboard Rules 711A and 711B,
+Practice Note 7.6 (notably paragraphs 1.2, 5.3, 6.1, 6.2 and 6.4), and inspected
+Mainboard Rule 703(1)-(3). The 23 October amendment redline was not re-opened,
+and its earlier access date remains unchanged. The additional Rule 703 source
+was recorded with its actual 26 October inspection date and without inventing
+an effective-date marker on the section page.
+
+The editorial improvement separates: (i) annual-report timing from possible
+immediate market announcements; (ii) reported content from evidence of an
+internal-review process; and (iii) reporting and metric scope from supervision,
+liability, claimant standing and remedy. The distinctions are consistent with
+Tan's published 2026 comparative-accountability framework, but that article's
+30 July legal cut-off and scholarship are not substitutes for the current SGX
+sources. A short factual-intake matrix records unknown issuer, reporting-period,
+review-process and Rule 703 facts; a clearly fictional contrast illustrates
+why missing review records do not prove non-performance. No actual issuer,
+violation, external assurance decision or professional review is claimed.
+
+Files affected: the existing Singapore case ledger and guide, the root case
+pointer, this history entry and the legal-review priority. The case retains two
+unreviewed claims and five pinpointed source records. Validate the updated
+ledger and regenerate its matrix; inspect the actual branch CI and diff before
+merging. A structural pass cannot establish legal correctness. Next action:
+independent qualified review of both claims, all five sources, the additional
+Rule 703 relationship and the precise period/application assumptions before
+any checked declaration or case expansion.
