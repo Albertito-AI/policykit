@@ -418,9 +418,10 @@ violation, external assurance decision or professional review is claimed.
 
 Files affected: the existing Singapore case ledger and guide, the root case
 pointer, this history entry and the legal-review priority. The case retains two
-unreviewed claims and five pinpointed source records. Validate the updated
-ledger and regenerate its matrix; inspect the actual branch CI and diff before
-merging. A structural pass cannot establish legal correctness. Next action:
+unreviewed claims and five pinpointed source records. Added a scoped CI step to validate the updated ledger and generate Markdown
+and CSV matrices alongside the existing synthetic checks. Inspect the actual
+branch result and diff before merging; no passing result is inferred merely
+from adding a command. A structural pass cannot establish legal correctness. Next action:
 independent qualified review of both claims, all five sources, the additional
 Rule 703 relationship and the precise period/application assumptions before
 any checked declaration or case expansion.

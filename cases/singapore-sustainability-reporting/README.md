@@ -134,9 +134,11 @@ Local verification on 23 October 2026, using Python 3.12.14:
 | `report --format markdown` (one run) | Exit 0; matrix produced for 4 sources and 2 unreviewed propositions; both review warnings retained |
 
 These are historical **23 October** results for the earlier four-source ledger.
-The five-source version requires its own validation and report reproduction;
-any GitHub CI pass is a software check, not independent legal review. Neither
-proposition has been declared checked by a human reviewer.
+The five-source version is included in the repository's case-validation and
+Markdown/CSV export steps on GitHub Actions; inspect the applicable run at the
+precise commit before claiming a pass. These are structural software checks,
+not independent legal review. Neither proposition has been declared checked
+by a human reviewer.
 
 ## Rights and attribution
 
