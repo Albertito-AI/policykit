@@ -425,3 +425,7 @@ from adding a command. A structural pass cannot establish legal correctness. Nex
 independent qualified review of both claims, all five sources, the additional
 Rule 703 relationship and the precise period/application assumptions before
 any checked declaration or case expansion.
+
+### Singapore case: bounded common law authority map
+
+Added `cases/singapore-sustainability-reporting/common-law-authorities.md`, linked from the existing case README. On 26 October 2026 an AI source-inspection pass opened three Singapore Court of Appeal judgments (*Spandeck*, *Panatron* and *Ho Kang Peng*) and one English House of Lords judgment (*Hedley Byrne*). The map identifies negligence, deceit and company-directed directors' duties, with judgment pinpoints and distinct claimant, standing and remedy questions. English law is labelled comparative rather than controlling; no case is presented as a sustainability-reporting holding. The two original SGX ledger propositions and their unreviewed statuses are unchanged. No new statutory causes of action, issuer-specific findings, current-law completeness, or human review is claimed. Next: independent qualified human review and subsequent-treatment/statutory checks before further ledger expansion.
