@@ -40,6 +40,14 @@ problems rather than adding speculative export formats.
 
 ## Next work in priority order
 
+The maintainer's 28 October instruction adds a parallel, implemented technical
+workstream: the [local ESG workbench](ESG_WORKBENCH.md). Its next actionable
+item is a permissioned independent report-pair evaluation and a live,
+operator-configured model test. Measure anchor correctness, field coverage,
+OCR/table errors and review effort; use those results to prioritise further
+engineering. Do not equate implemented functions with commercial-platform parity.
+The source-review and teaching evaluation priorities below remain outstanding.
+
 1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
    retains two unreviewed propositions, now including a narrow Mainboard

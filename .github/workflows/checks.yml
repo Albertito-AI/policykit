@@ -33,6 +33,17 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
+      - name: Install optional document and spreadsheet parsers
+        run: python -m pip install '.[pdf,tables,excel,test]'
+      - name: Exercise optional parsers and workbench integration
+        run: |
+          python -m unittest tests.test_esg_ingest tests.test_esg_tabular tests.test_esg_workflow -v
+          python examples/esg/make_demo.py /tmp/regnav-demo-input
+          python -m regnav_esg run /tmp/regnav-demo-input/fictional_2024.pdf /tmp/regnav-demo-input/fictional_2025.pdf --output /tmp/regnav-demo-output --source-url https://example.org/fictional-2024 --source-url https://example.org/fictional-2025 --jurisdiction FICTIONAL
+          python -m regnav_evidence validate /tmp/regnav-demo-output/ledger.json --json
+          python -m regnav_esg inventory examples/esg/inventory.json
+          python -m regnav_esg materiality examples/esg/materiality.json
+          python -m regnav_esg plan examples/esg/plan.json
       - name: Validate and export the training example
         run: |
           python -m regnav_evidence validate examples/synthetic_ledger.json --json

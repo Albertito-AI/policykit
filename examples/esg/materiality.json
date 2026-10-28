@@ -1,0 +1,94 @@
+{
+  "_notice": "FICTIONAL TRAINING DATA. Factors, sources, scores, people and budgets are invented solely to demonstrate software behaviour; they are not real-world guidance.",
+  "standards": [
+    {
+      "framework": "Fictional Disclosure Framework",
+      "version": "v1",
+      "code": "METRIC-01",
+      "title": "Fictional requirement to document metric evidence",
+      "source": {
+        "url": "https://example.org/fictional-standard",
+        "version": "v1",
+        "pinpoint": "fictional paragraph METRIC-01"
+      },
+      "notice": "FICTIONAL TRAINING DATA. Factors, sources, scores, people and budgets are invented solely to demonstrate software behaviour; they are not real-world guidance."
+    }
+  ],
+  "rubrics": {
+    "financial": {
+      "rubric_id": "fictional-financial-screen",
+      "version": "v1",
+      "rationale": "Operator-supplied fictional rubric for arithmetic demonstration; not a standard or legal threshold",
+      "dimensions": [
+        "magnitude",
+        "likelihood"
+      ],
+      "scale_min": "0",
+      "scale_max": "5",
+      "threshold": "3",
+      "aggregation": "weighted_mean",
+      "weights": {
+        "magnitude": "0.75",
+        "likelihood": "0.25"
+      }
+    },
+    "impact": {
+      "rubric_id": "fictional-impact-screen",
+      "version": "v1",
+      "rationale": "Operator-supplied fictional rubric for arithmetic demonstration; not a standard or legal threshold",
+      "dimensions": [
+        "magnitude",
+        "likelihood"
+      ],
+      "scale_min": "0",
+      "scale_max": "5",
+      "threshold": "3",
+      "aggregation": "weighted_mean",
+      "weights": {
+        "magnitude": "0.75",
+        "likelihood": "0.25"
+      }
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "fictional-water",
+      "title": "Fictional water topic",
+      "standard_refs": [
+        {
+          "framework": "Fictional Disclosure Framework",
+          "version": "v1",
+          "code": "METRIC-01"
+        }
+      ],
+      "financial": {
+        "scores": {
+          "magnitude": "1",
+          "likelihood": "2"
+        },
+        "rationale": "Fictional operator assessment of possible financial effects",
+        "evidence": [
+          {
+            "source_id": "fictional-report",
+            "version": "v1",
+            "pinpoint": "page 2"
+          }
+        ]
+      },
+      "impact": {
+        "scores": {
+          "magnitude": "5",
+          "likelihood": "4"
+        },
+        "rationale": "Fictional operator assessment of possible impacts",
+        "evidence": [
+          {
+            "source_id": "fictional-report",
+            "version": "v1",
+            "pinpoint": "page 3"
+          }
+        ]
+      }
+    }
+  ]
+}

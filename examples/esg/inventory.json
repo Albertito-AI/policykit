@@ -1,0 +1,148 @@
+{
+  "_notice": "FICTIONAL TRAINING DATA. Factors, sources, scores, people and budgets are invented solely to demonstrate software behaviour; they are not real-world guidance.",
+  "inventory_id": "fictional-inventory",
+  "period_start": "2025-01-01",
+  "period_end": "2025-12-31",
+  "reporting_boundary": {
+    "id": "fictional-boundary",
+    "description": "Fictional entity facilities A and B",
+    "consolidation_approach": "operational_control"
+  },
+  "factors": [
+    {
+      "factor_id": "fictional-fuel",
+      "version": "v1",
+      "value": "2.5",
+      "activity_unit": "L",
+      "output_unit": "kgCO2e",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "source": {
+        "url": "https://example.org/fictional-factor-table",
+        "version": "v1",
+        "pinpoint": "fictional table row 1"
+      }
+    },
+    {
+      "factor_id": "fictional-electricity-location",
+      "version": "v1",
+      "value": "0.25",
+      "activity_unit": "kWh",
+      "output_unit": "kgCO2e",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "source": {
+        "url": "https://example.org/fictional-factor-table",
+        "version": "v1",
+        "pinpoint": "fictional table row 2"
+      }
+    },
+    {
+      "factor_id": "fictional-electricity-market",
+      "version": "v1",
+      "value": "0.1",
+      "activity_unit": "kWh",
+      "output_unit": "kgCO2e",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "source": {
+        "url": "https://example.org/fictional-factor-table",
+        "version": "v1",
+        "pinpoint": "fictional table row 3"
+      }
+    },
+    {
+      "factor_id": "fictional-freight",
+      "version": "v1",
+      "value": "0.1",
+      "activity_unit": "tonne-km",
+      "output_unit": "kgCO2e",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "source": {
+        "url": "https://example.org/fictional-factor-table",
+        "version": "v1",
+        "pinpoint": "fictional table row 4"
+      }
+    },
+    {
+      "factor_id": "fictional-biogenic",
+      "version": "v1",
+      "value": "1.8",
+      "activity_unit": "kg",
+      "output_unit": "kgCO2",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "source": {
+        "url": "https://example.org/fictional-factor-table",
+        "version": "v1",
+        "pinpoint": "fictional table row 5"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activity_id": "fictional-fuel",
+      "entity_id": "fictional-entity",
+      "facility_id": "A",
+      "date": "2025-06-30",
+      "quantity": "100",
+      "unit": "L",
+      "factor_id": "fictional-fuel",
+      "factor_version": "v1",
+      "scope": 1,
+      "biogenic": false
+    },
+    {
+      "activity_id": "fictional-electricity-location",
+      "entity_id": "fictional-entity",
+      "facility_id": "A",
+      "date": "2025-06-30",
+      "quantity": "2",
+      "unit": "MWh",
+      "factor_id": "fictional-electricity-location",
+      "factor_version": "v1",
+      "scope": 2,
+      "biogenic": false,
+      "scope2_basis": "location_based"
+    },
+    {
+      "activity_id": "fictional-electricity-market",
+      "entity_id": "fictional-entity",
+      "facility_id": "A",
+      "date": "2025-06-30",
+      "quantity": "2",
+      "unit": "MWh",
+      "factor_id": "fictional-electricity-market",
+      "factor_version": "v1",
+      "scope": 2,
+      "biogenic": false,
+      "scope2_basis": "market_based"
+    },
+    {
+      "activity_id": "fictional-freight",
+      "entity_id": "fictional-entity",
+      "facility_id": "B",
+      "date": "2025-06-30",
+      "quantity": "1000",
+      "unit": "tonne-km",
+      "factor_id": "fictional-freight",
+      "factor_version": "v1",
+      "scope": 3,
+      "biogenic": false,
+      "scope3_category": 4
+    },
+    {
+      "activity_id": "fictional-biogenic",
+      "entity_id": "fictional-entity",
+      "facility_id": "B",
+      "date": "2025-06-30",
+      "quantity": "10",
+      "unit": "kg",
+      "factor_id": "fictional-biogenic",
+      "factor_version": "v1",
+      "scope": 1,
+      "biogenic": true
+    }
+  ]
+}

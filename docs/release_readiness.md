@@ -8,7 +8,21 @@ not proof of a published GitHub release, archival deposit or DOI.
 This page defines the evidence needed to decide whether a particular commit
 is ready for a release. It does not schedule automatic publication.
 
-## Current evidence and gaps
+## Software update on 28 October 2026
+
+The [ESG workbench](ESG_WORKBENCH.md) is an added, separately invoked research
+implementation. The full public code suite passed 237 tests locally on Python
+3.12.14 at preparation of this update. Actual local exercises covered PDF text,
+OCR, table extraction, XLSX, the fictional end-to-end workflow and a 217-page
+public PDF. Model-provider tests used mocked responses; no live model accuracy
+or independent user benefit was established. The wheel built locally. Inspect
+the pull request's exact-head CI before treating a later revision as verified.
+
+The table below is retained as the historical 23 October evidence baseline;
+its 24-test result does not describe the expanded current suite. No release,
+DOI or production-readiness decision follows from the new implementation.
+
+## Historical evidence and continuing gaps
 
 | Area | Evidence available on 23 October 2026 | Remaining limitation |
 | --- | --- | --- |
@@ -18,7 +32,7 @@ is ready for a release. It does not schedule automatic publication.
 | Teaching | Complete fictional [exercise](../teaching/README.md) and [three-volunteer pilot protocol](evaluation_protocol.md) | No educational benefit or independent usability result has been demonstrated |
 | Rights and attribution | Explicit [rights notice](../RIGHTS.md), citation metadata and contribution guidance | No general reuse licence or DOI has been supplied; any archival distribution requires appropriate rights |
 
-The package does not retrieve sources, authenticate reviewers, establish
+The core ledger does not retrieve sources, authenticate reviewers, establish
 current law, determine whether a passage supports a proposition or invalidate
 stale review declarations after an edit. Release notes must retain these
 material limits.

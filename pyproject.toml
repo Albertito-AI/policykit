@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regnav-workbench"
+version = "0.1.0"
+description = "Evidence-preserving local ESG workbench and scholarly evidence ledger"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Albert Tan"}]
+license = {text = "All rights reserved. See RIGHTS.md; no general reuse licence is granted."}
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf>=5,<7"]
+tables = ["pdfplumber>=0.11,<0.12"]
+excel = ["openpyxl>=3.1,<4"]
+test = ["reportlab>=4,<5"]
+
+[project.scripts]
+regnav-evidence = "regnav_evidence.cli:main"
+regnav-esg = "regnav_esg.cli:main"
+
+[tool.setuptools]
+license-files = ["RIGHTS.md"]
+
+[tool.setuptools.packages.find]
+include = ["regnav_evidence*", "regnav_esg*"]
+exclude = ["regnav_expert*", "tests*", "experiments*"]

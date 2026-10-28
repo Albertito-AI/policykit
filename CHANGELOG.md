@@ -21,3 +21,14 @@ synthetic training material, regression tests and project documentation.
 This version introduces no automatic legal-source verification, validated
 legal dataset or claim of independent evaluation. Earlier starter archives
 remain linked separately in the README.
+# Unreleased: optional ESG workbench
+
+- Added a separate local ESG workbench without changing the core ledger schema.
+- Added page-preserving PDF/text ingestion, optional OCR and tables, exact
+  quotation locations, rule-based candidate extraction and local retrieval.
+- Added explicit CSV/XLSX activity import, versioned-factor emissions arithmetic,
+  separate materiality screening perspectives and accountable action plans.
+- Added an opt-in model extraction adapter with checked source quotations and
+  conservative literal-field validation. Live model evaluation remains pending.
+- Added offline HTML/Markdown/CSV/JSON outputs, core-ledger integration and
+  reproducible fictional examples. No professional judgement is automated.

@@ -1,6 +1,6 @@
 # Project status and evidence of use
 
-**Baseline: 23 October 2026.** This page separates available materials from
+**Software update: 28 October 2026. External-evidence baseline: 23 October 2026.** This page separates available materials from
 evidence about their usefulness. Update it when substantive evidence changes,
 not merely because another scheduled check has run.
 
@@ -9,8 +9,9 @@ not merely because another scheduled check has run.
 | Resource | What can be inspected | What has not been established |
 | --- | --- | --- |
 | [Evidence ledger](../README.md) | Offline Python commands, schema, fictional fixture and regression tests | Legal truth, source authenticity and completed human review are not determined by the software |
+| [ESG workbench](ESG_WORKBENCH.md) | Local PDF/OCR/table/text processing, cited extraction and retrieval, explicit activity calculations, materiality screening, planning and an offline HTML view | Independent accuracy, commercial parity, live model performance, hosted collaboration and professional assurance remain unestablished |
 | [Getting started](quickstart.md) | Ten-minute suggested route, generated sample output, CSV export and a paper alternative | The timing is a guide, not a measured usability result |
-| [Singapore case](../cases/singapore-sustainability-reporting/README.md) | Four official source records and two narrow propositions with qualifications and pinpoints | Both propositions remain unreviewed; no issuer's compliance or liability is assessed |
+| [Singapore case](../cases/singapore-sustainability-reporting/README.md) | Five official source records and two narrow propositions with qualifications and pinpoints, plus a separate authority map | Both propositions remain unreviewed; no issuer's compliance or liability is assessed |
 | [Teaching pack](../teaching/README.md) | Fictional source packet, learner tasks, facilitator guide and descriptive rubric | No learning gain or effectiveness result has been demonstrated |
 | [Pilot protocol](evaluation_protocol.md) | Five tasks for an initial three-volunteer usability exercise | The external sessions have not yet been conducted |
 | [Contribution routes](../CONTRIBUTING.md) | Bug, source-case and documentation forms, with a pull-request template | Providing a route does not establish a contributor community |

@@ -1,4 +1,4 @@
-# RegNav Evidence Ledger
+# RegNav Evidence Ledger and ESG Workbench
 
 RegNav means Regulatory Navigator. This repository develops research tools for
 examining the evidence behind legal propositions, beginning with the questions
@@ -20,9 +20,36 @@ repeatable way to see which propositions still need attention.
 
 This is a working Python prototype. It checks the structure of the record and
 exports an evidence matrix. A `checked` entry records a person's declaration that
-they reviewed it. The software does not retrieve sources, compare quotations,
+they reviewed it. The core ledger alone does not retrieve sources, compare quotations,
 decide whether a source supports a proposition, determine current law, or certify
 factual accuracy.
+
+## New optional ESG workbench
+
+The [ESG workbench](docs/ESG_WORKBENCH.md) adds local PDF, text and Markdown
+ingestion; page-preserving Markdown; optional OCR and table extraction; cited
+candidate extraction; local page retrieval; CSV/XLSX activity import; explicit
+emissions calculations; separate financial and impact materiality screening;
+exact supplied-standard lookup; and gap-based action planning. An offline HTML
+view links candidates to their retained source pages and exports unreviewed
+records to the original ledger. It is a research implementation, not an
+independently validated ESG platform or professional assurance service.
+
+```bash
+python examples/esg/make_demo.py demo-input
+python -m regnav_esg run demo-input/fictional_2024.pdf demo-input/fictional_2025.pdf --output demo-output
+python -m regnav_esg inventory examples/esg/inventory.json
+python -m regnav_esg materiality examples/esg/materiality.json
+python -m regnav_esg plan examples/esg/plan.json
+```
+
+Open `demo-output/report.html` locally. All demo inputs are fictional. PDF input
+requires optional `pypdf` or the installed `pdftotext` command. For Python PDF,
+table and spreadsheet support, install `python -m pip install '.[pdf,tables,excel]'`.
+Text/Markdown and the original ledger still use the standard library. Optional
+model-assisted extraction requires an explicitly selected model, credentials
+and network opt-in; its provider contract has mocked tests, not a live accuracy
+evaluation. See the guide for commands, contracts, limits and feature status.
 
 ## Try it
 

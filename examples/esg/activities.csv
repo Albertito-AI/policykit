@@ -1,0 +1,6 @@
+activity_id,entity_id,facility_id,date,quantity,unit,factor_id,factor_version,scope,scope2_basis,scope3_category,biogenic
+fictional-fuel,fictional-entity,A,2025-06-30,100,L,fictional-fuel,v1,1,,,false
+fictional-electricity-location,fictional-entity,A,2025-06-30,2,MWh,fictional-electricity-location,v1,2,location_based,,false
+fictional-electricity-market,fictional-entity,A,2025-06-30,2,MWh,fictional-electricity-market,v1,2,market_based,,false
+fictional-freight,fictional-entity,B,2025-06-30,1000,tonne-km,fictional-freight,v1,3,,4,false
+fictional-biogenic,fictional-entity,B,2025-06-30,10,kg,fictional-biogenic,v1,1,,,true

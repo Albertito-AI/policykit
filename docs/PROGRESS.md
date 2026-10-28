@@ -439,3 +439,49 @@ Under the 26 October owner instruction to continue issue-selected common law res
 The research uses an analytical distinction reflected in Albert Tan's published *Converging Standards, Divergent Accountability* (online 1 October 2026; legal cut-off 30 July 2026): reporting duties, representations, claimant reliance and liability must be assessed separately. This is a scholarly organising method, not a judicial holding or an ESG-specific decided case. Primary judgments were inspected through the official Singapore Judiciary eLitigation database on 28 October 2026. Later treatment was sampled only. Direct retrieval of the current consolidated Companies Act from Singapore Statutes Online returned HTTP 403; period-specific legislation, the recorded *Zhuang* appeal, statutory investor remedies and contractual assurance duties remain unverified. The law is not declared exhaustive or certified current in all respects. No actual issuer or litigant, independent human legal review, released product or independently used case is asserted.
 
 This is a documentation/source-map change. Verification consists of the primary judgment inspection, source and pinpoint review, scoped GitHub diff, retained-ledger identity/status checks and any repository CI that can actually be tied to the exact branch/merge commit. Structural validation of an unchanged ledger would not validate the new judicial interpretation. Next review: confirm the present Companies Act text and relevant appeal/subsequent treatment, then seek independent human review of the source-to-question map before any checked ledger claim or issuer-specific conclusion.
+
+### Local ESG workbench implementation
+
+Under the maintainer's explicit 28 October implementation instruction, added
+`regnav_esg` alongside the unchanged original evidence ledger. The new package
+reads local PDFs/text/Markdown, retains page and parser provenance, optionally
+performs local English OCR and geometric table extraction, produces page-labelled
+Markdown, locates quotations, retrieves pages and extracts configurable candidate
+passages. It imports explicit activity records from CSV/XLSX, calculates emissions
+using supplied versioned factors, screens financial and impact perspectives
+separately, resolves exact supplied standards references and generates action
+plans from supplied gaps. An offline HTML view and an adapter to unreviewed
+core-ledger context records make the workflow reproducible.
+
+The optional model adapter makes no request without explicit network opt-in,
+model selection and credentials. Its tests use mocked Responses API outputs.
+Quotation presence and literal numeric-field checks do not establish semantic
+support. No live model performance is claimed. The configurable materiality
+rubric uses exact rational arithmetic for threshold decisions and separately
+records rounded display scores. Missing activity evidence and unobserved scope
+buckets remain explicit; a factor citation is not proof of an activity quantity.
+
+The original 126 tests passed before the change. The expanded public suite
+passed 237 tests locally on Python 3.12.14. Actual local exercises covered
+text-PDF extraction, an image-only OCR fixture, geometric table cells, XLSX,
+two original fictional report PDFs, source navigation targets and core-ledger
+validation. A complete 8,366,023-byte public CDL 2025 report was processed as
+217 physical pages and 703,197 text characters. Its default rule results reached
+the disclosed twenty-candidate cap in each of ten fields; this demonstrates
+execution, not completeness or measured accuracy. The initial incomplete
+download was rejected. Real company source contents and outputs are not included
+in this repository. A local wheel build succeeded.
+
+AI-assisted adversarial code review identified and repaired altered captured
+values, source/extraction mismatches, malformed imported records, invisible CSV
+formula prefixes, falsey invalid assessment inputs, a materiality rounding edge
+case and Markdown table literal-text changes. Regression cases accompany these
+repairs. This development review is not independent professional or human
+validation. Public files contain original code and clearly fictional fixtures;
+private research, client data and proprietary rule packs are excluded.
+
+Next action: inspect exact-head CI, then evaluate a permitted report pair with
+independently checked reference data and an operator-configured model. Record
+precision, recall, abstentions, missing coverage and review effort separately.
+No hosted service, customer adoption, full platform parity, assurance opinion or
+automated legal judgement is established.
