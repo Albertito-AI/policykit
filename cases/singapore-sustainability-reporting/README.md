@@ -60,7 +60,7 @@ prove that a provision applies to a particular report.
 
 ## Common law decisions relevant to possible civil claims
 
-The [issue-specific common law authority map](common-law-authorities.md) records three opened Singapore Court of Appeal judgments and one English comparative decision concerning negligence, deceit and directors' duties. It identifies claimants, required legal questions and qualifications. It does **not** convert SGX reporting duties into private causes of action, and the two JSON ledger propositions remain `unreviewed`. Subsequent judicial treatment and statutory remedies still need separate checks.
+The [issue-specific common law authority map](common-law-authorities.md) retains the original three Singapore Court of Appeal judgments and one English comparative judgment concerning negligence, deceit and directors' duties. Its bounded 28 October 2026 extension adds Singapore judicial authorities on corporate versus personal loss, reflective loss, derivative-action permission and selected remedies, with a question-by-question coverage map and identified subsequent treatment. This preparation does **not** convert SGX reporting duties into private causes of action. The two JSON ledger propositions remain `unreviewed`; exhaustive subsequent treatment and the current consolidated Companies Act still require direct verification.
 
 ## Evidence relationships and limits
 
