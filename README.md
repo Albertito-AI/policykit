@@ -1,64 +1,211 @@
-# RegNav Evidence Ledger and ESG Workbench
+# RegNav: sustainability evidence and regulatory review
 
-RegNav means Regulatory Navigator. This repository develops research tools for
-examining the evidence behind legal propositions, beginning with the questions
-raised by sustainability reporting and legal accountability in Asia.
+**Read reports. Trace the evidence. Inspect the basis for a decision.**
 
-Maintainer: **Albert Tan** · [Website](https://www.alberttansinhon.com/)
+RegNav, short for Regulatory Navigator, brings document extraction, source
+tracing, emissions calculations and structured evidence review into a local
+Python workflow. It helps researchers and reporting teams move from a passage
+in a sustainability report to an inspectable record of its source, assumptions,
+qualifications and review status.
+
+This repository contains the **ESG workbench** and **evidence ledger**. A separate
+**private research extension**, described below, adds checks for comparability,
+restatements, assurance scope, commitments and legal applicability.
+
+Developed by **Albert Tan** · [Website](https://www.alberttansinhon.com/)
 · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
 · [ORCID](https://orcid.org/0009-0001-8996-7933)
 
-**Status:** version 0.1 research prototype. See the
-[roadmap](docs/ROADMAP.md), [progress record](docs/PROGRESS.md) and
-[research standard](docs/RESEARCH_STANDARD.md). The
-[project status](docs/project_status.md) records available materials and the
-external evidence still needed.
+**Status:** working research prototype, version 0.1. The public workflow runs
+locally; model assistance is an explicit opt-in. Outputs remain candidates for
+human review. See [validation and scope](#validation-and-scope) and
+[rights and citation](#rights-and-citation).
 
-An offline register connecting scholarly propositions to their sources, pinpoint
-locations and recorded human review. It gives a legal researcher or editor a
-repeatable way to see which propositions still need attention.
+[Capabilities](#what-you-can-do-in-this-repository) ·
+[Fictional example](#see-the-evidence-in-a-fictional-report) ·
+[Run the demo](#run-the-public-demo) ·
+[Private extension](#private-research-extension) ·
+[Full workbench guide](docs/ESG_WORKBENCH.md)
 
-This is a working Python prototype. It checks the structure of the record and
-exports an evidence matrix. A `checked` entry records a person's declaration that
-they reviewed it. The core ledger alone does not retrieve sources, compare quotations,
-decide whether a source supports a proposition, determine current law, or certify
-factual accuracy.
+## What you can do in this repository
 
-## New optional ESG workbench
+| Task | Working capability | What you can inspect |
+| --- | --- | --- |
+| **Read sustainability reports** | Ingest PDF, text and Markdown; optionally extract tables or run local English OCR | Retained page text, physical PDF page numbers, parser details and explicit incomplete-extraction states |
+| **Find relevant disclosures** | Search local pages, extract configurable disclosure candidates and produce extractive summaries | Exact passages, field matches, surrounding context and disclosed candidate limits |
+| **Trace a figure to its source** | Retain document and page-text hashes, quotations and character offsets; check anchors before export | The source passage behind each candidate and whether its retained location matches |
+| **Use model-assisted extraction** | An opt-in adapter retrieves selected pages, requests structured model output and checks quotations and literal fields | Model/prompt records, selected context and rejected unsupported quotations or literal values; live evaluation remains pending |
+| **Calculate emissions inventories** | Import CSV/TSV or supported XLSX data; calculate with supplied, versioned factors and compatible units | Activity and factor records, inventory totals, facility totals grouped by entity and separate scope and Scope 2 accounting categories |
+| **Screen materiality and locate standards references** | Screen financial and impact perspectives separately; resolve exact framework/version/code combinations in supplied records | Explicit rubrics, scores, reasons, evidence, thresholds and source-reference records |
+| **Prepare accountable actions** | Turn supplied gaps and templates into proposed actions | Owners, deadlines, success criteria, optional budget ranges and missing inputs |
+| **Review and share the evidence** | Generate an offline HTML view, JSON, CSV, Markdown and compatible unreviewed ledger records | Candidate filters, links to retained source pages and a portable evidence record |
+| **Identify records needing reconsideration** | Compare saved ledgers; use the separate Source Watch experiment for listed file-byte changes | Changed propositions, source records and evidence links; linked claims whose review may need attention |
 
-The [ESG workbench](docs/ESG_WORKBENCH.md) adds local PDF, text and Markdown
-ingestion; page-preserving Markdown; optional OCR and table extraction; cited
-candidate extraction; local page retrieval; CSV/XLSX activity import; explicit
-emissions calculations; separate financial and impact materiality screening;
-exact supplied-standard lookup; and gap-based action planning. An offline HTML
-view links candidates to their retained source pages and exports unreviewed
-records to the original ledger. It is a research implementation, not an
-independently validated ESG platform or professional assurance service.
+The [workbench guide](docs/ESG_WORKBENCH.md) gives the contracts, commands and
+practical limits. Defaults include ten illustrative extraction fields.
+Materiality rubrics, emission factors and standards records must be supplied and
+reviewed for the intended use. A located quotation establishes where text occurs;
+it does not establish source truth or support for a proposed inference.
+
+## See the evidence in a fictional report
+
+The bundled [demo generator](examples/esg/make_demo.py) creates two original,
+clearly fictional sustainability PDFs. The generated example contains **two
+documents, five physical pages and 33 candidate passages**. These source passages
+are retained by the document workflow:
+
+| Fictional source | Physical PDF page | Retained passage |
+| --- | --- | --- |
+| 2024 report | 1 | Scope 1 emissions: 100 tCO2e. |
+| 2025 report | 1 | Scope 1 emissions: 110 tCO2e. |
+| 2025 report | 1 | The 2024 Scope 1 comparative is restated to 120 tCO2e. |
+| 2025 report | 1 | Boundary: Facilities A and B. Method changed after adding Facility B. |
+| 2025 report | 3 | Limited assurance covers Scope 1 emissions for Facility A only. |
+
+The HTML report places disclosure candidates beside navigable retained source
+pages. The extraction records preserve the source identity, exact quotation,
+page and offsets. This makes the next review questions visible: which prior
+figure is the justified comparator, did the boundary change, and what does the
+assurance statement actually cover?
+
+**Preview without running Python:** [download the generated HTML example](https://raw.githubusercontent.com/Albertito-AI/policykit/main/examples/esg/sample_report.html)
+and open the saved file in a browser. GitHub's
+[file view](examples/esg/sample_report.html) displays the HTML source; it is not
+a hosted application. This sample demonstrates extraction and source navigation.
+The calculation, screening and planning examples are separate commands below.
+
+## Run the public demo
+
+Use **Python 3.10 or newer**, from the root of a checkout you are permitted to
+use under [RIGHTS.md](RIGHTS.md). Install the optional Python PDF parser first:
+
+```bash
+python -m pip install '.[pdf]'
+```
+
+Choose input and output directory names that do not already exist. The following
+commands create the fictional PDFs, extract their disclosures, generate the
+HTML workbench and validate the resulting evidence ledger:
 
 ```bash
 python examples/esg/make_demo.py demo-input
-python -m regnav_esg run demo-input/fictional_2024.pdf demo-input/fictional_2025.pdf --output demo-output
+python -m regnav_esg run demo-input/fictional_2024.pdf demo-input/fictional_2025.pdf --output demo-output --source-url https://example.org/fictional-2024 --source-url https://example.org/fictional-2025 --jurisdiction FICTIONAL
+python -m regnav_evidence validate demo-output/ledger.json --json
+```
+
+**Open `demo-output/report.html` in your browser.** No API key is required for
+this demonstration. Its example source URLs are fictional identifiers and are
+never fetched. For real documents, supply the original source URLs; omitting
+them produces the workbench without a ledger export. Generated claims remain
+`unreviewed`, so review warnings are expected.
+
+| Output | Purpose |
+| --- | --- |
+| `report.html` | Offline review view with candidate filters and source-page navigation |
+| `documents.json` and `source-N.md` | Retained page text, parser details, hashes and page-labelled Markdown |
+| `extractions.json` and `candidates.csv` | Candidate passages, field matches and locations |
+| `assessments.json` | Results from explicitly supplied assessment inputs; none are inferred from the demo PDFs |
+| `ledger.json` | Unreviewed evidence records when original source URLs are supplied |
+
+### Try calculations, screening and planning
+
+These commands use the supplied fictional examples. The factors, thresholds,
+standards and budgets are demonstration inputs, not production defaults.
+
+```bash
+python -m regnav_esg import-activities examples/esg/activities.csv
 python -m regnav_esg inventory examples/esg/inventory.json
 python -m regnav_esg materiality examples/esg/materiality.json
+python -m regnav_esg standard examples/esg/standards.json 'Fictional Disclosure Framework' 'v1' 'METRIC-01'
 python -m regnav_esg plan examples/esg/plan.json
 ```
 
-Open `demo-output/report.html` locally. All demo inputs are fictional. PDF input
-requires optional `pypdf` or the installed `pdftotext` command. For Python PDF,
-table and spreadsheet support, install `python -m pip install '.[pdf,tables,excel]'`.
-Text/Markdown and the original ledger still use the standard library. Optional
-model-assisted extraction requires an explicitly selected model, credentials
-and network opt-in; its provider contract has mocked tests, not a live accuracy
-evaluation. See the guide for commands, contracts, limits and feature status.
+| Fictional fixture | Demonstrated output |
+| --- | --- |
+| Inventory | 250 kgCO2e Scope 1; 500 Scope 2 location-based; 200 Scope 2 market-based; 100 Scope 3. The 18 kg of biogenic CO2 remains separate. |
+| Materiality | The water topic scores 1.25 financially and 4.75 for impact under the supplied threshold of 3: screened out financially and screened in for impact. |
+| Action plan | One proposed action and one draft with missing fields; a supplied SGD 100–200 estimate is retained. |
 
-## Try it
+For optional table and spreadsheet support, install `'.[pdf,tables,excel]'`.
+OCR additionally requires local `pdftoppm` and Tesseract installations.
+See the guide for [document commands](docs/ESG_WORKBENCH.md#individual-document-commands),
+[model-assisted extraction](docs/ESG_WORKBENCH.md#optional-retrieval-and-model-extraction)
+and [operational data](docs/ESG_WORKBENCH.md#operational-data-and-calculations).
+The model adapter requires credentials, a chosen model and explicit network
+opt-in; its protocol tests use mocked responses.
 
-Start with the [ten-minute guide](docs/quickstart.md) for step-by-step commands,
-expected output and troubleshooting. It includes a paper route for readers
-without Python and a [generated sample report](docs/sample_report.md).
+## Private research extension
 
-Use Python 3.10 or newer. There are no third-party packages, API keys or network
-calls. Run these commands from this directory:
+**Availability: implemented in a separate private development package. Its code,
+detailed contracts and private development materials are not included in this
+repository or installed by the commands above.**
+
+The extension operationalises distinctions from Albert Tan's research using
+explicit evidence records. An adapter connects selected public-workbench
+extraction candidates to private review inputs, preserving their source anchors.
+Entity, boundary, methodology, period and other interpretive metadata must be
+supplied explicitly and reviewed.
+
+| Private capability | What the implementation checks |
+| --- | --- |
+| **Comparable annual figures and restatements** | Metric, unit, period, entity, boundary, methodology and factor information; retains original, restated and current figures and withholds incompatible comparisons |
+| **Assurance scope** | Supplied coverage, reporting period, entity, boundary and assurance level; flags claims extending beyond the supplied statement |
+| **Commitments and execution** | Prior plans against later supplied observations; distinguishes missing disclosure, reported completion/non-completion and supplied execution-evidence references |
+| **Review dependencies** | Changed dependencies behind a recorded review declaration; identifies the need for reconsideration |
+| **Local-duty applicability** | Supplied jurisdiction, dates, conditions and exemptions; keeps a framework reference distinct from the local source of a duty |
+| **Claims and corrective actions** | Distinguishes reporting assertions, assurance, compliance, alleged breach and supplied corrective powers; returns unresolved review questions |
+
+### Two demonstrated review outcomes
+
+**Changed basis:** the private PDF-linked example selects the extracted 100 and
+110 figures shown above. Operator-supplied metadata records the different
+boundaries and methods, while factor versions remain unknown. The result is
+`NOT_COMPARABLE`, with the percentage calculation withheld. The captured 120
+restatement passage remains available for review; it is not silently substituted.
+
+**Explicit restatement:** a separate fictional case supplies original prior
+100, restated prior 120 and current 110 records on a declared comparable basis.
+The extension retains all three and calculates approximately **−8.33%** against
+the restated baseline. It reports the numerical direction without declaring
+an environmental performance improvement.
+
+These are internal engineering demonstrations. Private development results are
+not independently reproducible from this public checkout. The extension does
+not supply an exhaustive validated legal-rule corpus, an assurance opinion,
+authenticated reviewer identity or a legal finding. Its description makes no
+claim that competitors lack similar capabilities. For a bounded evaluation,
+see [CONTRIBUTING.md](CONTRIBUTING.md) and [RIGHTS.md](RIGHTS.md).
+
+## Validation and scope
+
+| Evidence | What it establishes |
+| --- | --- |
+| **237 public tests passed locally** on Python 3.12.14, recorded 28 October 2026 | Regression behaviour, including the original 126 tests; see the [development record](docs/PROGRESS.md#local-esg-workbench-implementation) |
+| **CI passed on Python 3.10, 3.12 and 3.14** for the reviewed workbench commit | The [recorded workflow](https://github.com/Albertito-AI/policykit/actions/runs/40655921222) includes optional parser installation, focused integration checks and the fictional PDF workflow |
+| **A complete 217-page public report was ingested locally** | Execution of a real-PDF parser integration check; it is not an extraction accuracy benchmark |
+| **Reproducible fictional examples** | Inspectable inputs and expected engineering behaviour; not evidence of customer adoption or professional validation |
+
+The CI regression phase skips optional parser tests before dependencies are
+installed. A later step exercises those parsers; system OCR and `pdftotext`
+tests remain skipped on runners without their system dependencies. Test counts
+are not independent accuracy measurements.
+
+The next evaluation is a permitted report pair with independently checked
+reference data, plus a live operator-configured model test. Measure page-anchor
+accuracy, field coverage, table/OCR errors, abstentions and review effort.
+See the [roadmap](docs/ROADMAP.md) and [current project status](docs/project_status.md).
+
+The public workbench is a local, read-only review workflow. Authenticated
+multiuser editing, a hosted service, a complete standards/factor corpus,
+validated IFRS disclosure drafting and independently validated legal-rule packs
+are not included. Independent professional accuracy, commercial-platform parity
+and business outcomes remain unestablished.
+
+## Use the evidence ledger directly
+
+The core ledger works with supplied JSON records and has no third-party runtime
+dependencies, API keys or network calls. The [ten-minute guide](docs/quickstart.md)
+includes a paper route, troubleshooting and a [rendered sample report](docs/sample_report.md).
 
 ```bash
 python -m regnav_evidence validate examples/synthetic_ledger.json
@@ -67,182 +214,96 @@ python -m regnav_evidence report examples/synthetic_ledger.json --format csv --o
 python -m regnav_evidence init my-ledger.json --title "My research evidence register"
 ```
 
-The example intentionally contains one unreviewed proposition, one missing
-pinpoint and one contested proposition. Its **three warnings are expected**.
-All of its source texts and reviewer details are fictional training material;
-the complete mock texts are in [training_sources.md](examples/training_sources.md).
+The synthetic ledger deliberately produces **three review warnings**. Its
+sources and reviewers are fictional; the complete texts are in
+[training_sources.md](examples/training_sources.md).
 
-For a machine-readable validation result:
+Record narrow propositions, exact source versions and reproducible pinpoints.
+Classify evidence as `supports`, `qualifies`, `contradicts` or `context`.
+A `checked` entry records a person's declared review; the software does not
+authenticate that person or establish that a judgement occurred. Preserve
+unresolved disagreement as `contested`. See the [schema](docs/schema.md) and
+[review method](docs/review_method.md).
 
-```bash
-python -m regnav_evidence validate my-ledger.json --json
-python -m regnav_evidence validate my-ledger.json --strict
-```
-
-`validate` exits `0` when the structure has no errors, `1` for invalid input or
-structural errors, and `2` when `--strict` is used and warnings remain. Normal
-command-line usage errors also use exit `2`. Warnings may represent a legitimate
-unresolved disagreement. A strict failure therefore identifies work for a human
-reviewer; it is not a judgment that the research is wrong.
-
-## Compare two saved versions
-
-After saving an earlier snapshot of a ledger, use the new read-only comparison
-command to identify changes that may make recorded reviews stale:
+To identify changes after editing a saved ledger:
 
 ```bash
 python -m regnav_evidence compare ledger-before.json ledger-after.json
 python -m regnav_evidence compare ledger-before.json ledger-after.json --json
 ```
 
-Both snapshots must be structurally valid. The tool distinguishes source-version,
-proposition and evidence-link changes from access-date and review-declaration
-edits. It flags previously reviewed propositions for **human reconsideration**
-when their substantive record changes. It does not edit either ledger, check the
-legal source, invalidate a declaration or certify renewed review. A successful
-comparison exits `0`, even when substantive differences are reported; invalid
-snapshots exit `1`. See the [comparison instructions](docs/quickstart.md#after-editing-a-ledger-compare-saved-snapshots).
+Both inputs must be structurally valid snapshots. The comparison distinguishes
+substantive source, proposition and evidence-link changes from access-date and
+review-declaration edits. It flags affected prior reviews for human
+reconsideration without changing them. See the
+[comparison instructions](docs/quickstart.md#after-editing-a-ledger-compare-saved-snapshots)
+for exit codes and interpretation.
 
-## Source-file changes: a separate experiment
+JSON retains the complete record. Exported CSV fields that could start formulas
+are prefixed with an apostrophe; retain JSON for round trips. Outputs refuse
+accidental overwriting as documented in the quickstart. The core ledger alone
+does not retrieve sources, establish current law, validate court citation formats
+or generate an OSCOLA bibliography.
 
-Does a changed source leave a statement in your report needing another look?
-[Source Watch](experiments/source_watch/README.md) compares explicitly listed
-local files with a saved baseline and identifies their linked claim IDs.
-[Inspect the generated fictional example](experiments/source_watch/sample_report.json)
-without installing anything or providing contact details. The
-[evaluation guide](experiments/source_watch/README.md#consider-an-evaluation)
-explains fit, limits and how to discuss a bounded pilot. This is an experiment,
-not a production service or a determination that a legal claim is wrong.
+## Research, teaching and integration
 
-## For research and reporting agents
+| Route | Start here |
+| --- | --- |
+| **Source-file change experiment** | [Source Watch](experiments/source_watch/README.md) checks explicitly listed local files against a baseline and returns linked claim IDs; inspect the [fictional result](experiments/source_watch/sample_report.json) |
+| **Evidence handover experiment** | The [local adapter](experiments/evidence_handover/README.md) accepts one explicit JSON contract and retains supplied scope, process and review-history information |
+| **Local agent integration** | The [MCP gateway](experiments/agent_gateway/README.md), [fictional exchange](experiments/agent_gateway/sample_exchange.json) and [capability catalogue](experiments/agent_gateway/services.json) document local stdio operation; see the [collaboration guide](docs/AGENT_NETWORK.md) |
+| **Source-grounded legal case** | The [Singapore sustainability-reporting case](cases/singapore-sustainability-reporting/README.md) records two unreviewed propositions and five official source records, including a qualified Rule 703 cross-check; [case collection](cases/README.md) |
+| **Teaching and usability** | A [55-minute fictional exercise](teaching/README.md), source packet and [external evaluation protocol](docs/evaluation_protocol.md); independent educational benefits remain unevaluated |
 
-The [local MCP gateway](experiments/agent_gateway/README.md) lets a permitted
-client request the Source Watch check for an operator-selected collection.
-Start with the [generated fictional exchange](experiments/agent_gateway/sample_exchange.json)
-and [capability catalogue](experiments/agent_gateway/services.json) to inspect
-the result and its limits. The current transport is local stdio, with no public
-execution endpoint or automated billing.
+The legal case distinguishes source inspections on 23 and 26 October 2026 and
+remains AI-prepared and **unreviewed**. Its later authority mapping is separately
+documented. It does not assess an actual issuer, liability or remedies.
 
-The [collaboration guide](docs/AGENT_NETWORK.md) explains the proposed handover
-and the evidence needed before external delegation. To discuss one recurring
-workflow, use the existing [agent-pilot invitation](https://github.com/Albertito-AI/policykit/issues/12).
-State the client/version, the non-confidential task and the result you need.
-Keep source documents, private paths, credentials and billing details out of
-public comments. Read [RIGHTS.md](RIGHTS.md) before any execution or integration;
-an enquiry grants no additional permission. Any paid scope requires separately
-agreed terms. An independently reproduced result, actual collaboration and
-payment must be evidenced separately.
+The research direction includes Tan's work on
+[sustainability reporting in Singapore and Thailand](https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/)
+and [sustainability disclosure in China](https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/).
+These publications provide scholarly context; they do not evaluate or validate
+this software.
 
-## Record a proposition
+For one recurring agent workflow, use the existing
+[pilot invitation](https://github.com/Albertito-AI/policykit/issues/12).
+Describe the client/version, non-confidential task and desired result. Keep
+private documents, paths, credentials and billing details out of public comments.
+An enquiry grants no additional permission; paid scope requires separately
+agreed terms. There is no public execution endpoint or automated billing.
 
-1. Enter the exact source version or the date of the material consulted. Supply
-   its title, URL, source type and jurisdiction.
-2. State a proposition narrowly enough for its evidence to be examined.
-3. Link the relevant sources and record a page, paragraph, provision or other
-   reproducible pinpoint. Classify each link as `supports`, `qualifies`,
-   `contradicts` or `context`.
-4. Leave the proposition `unreviewed` until a person has examined the evidence.
-   A `checked` declaration requires a reviewer, date, evidence link and pinpoint.
-   Preserve significant disagreement using `contested`, or record how contrary
-   evidence was addressed in `review.resolution`.
-5. Run the validator and inspect the matrix. Correct the record and repeat the
-   substantive review when a source or proposition changes.
+## Development
 
-See [the schema](docs/schema.md) for the complete field specification and
-[the review method](docs/review_method.md) for a practical editorial workflow.
-
-## Source-grounded worked case
-
-The [Singapore sustainability reporting case](cases/singapore-sustainability-reporting/README.md)
-records two narrow propositions about report timing and internal review under
-SGX Mainboard rules, with five official source records and exact pinpoints, including a narrowly
-qualified Rule 703 disclosure-timing cross-check.
-It retains the provisions' qualifications and distinguishes source inspections
-on 23 and 26 October 2026. Both propositions remain **unreviewed**. This AI-prepared
-example does not assess an issuer, liability or remedies; independent human
-review is outstanding. See the [case collection](cases/README.md) for scope.
-
-## Teaching and evaluation
-
-The [55-minute teaching exercise](teaching/README.md) uses the complete
-fictional source packet to practise tracing a proposition to evidence,
-identifying qualifications and disagreement, and explaining the limits of a
-software report. It includes a learner handout, facilitator answer key,
-descriptive assessment rubric and blank feedback form. A paper or spreadsheet
-route requires no Python installation.
-
-The [external usability protocol](docs/evaluation_protocol.md) defines five
-tasks for an initial three-volunteer pilot. The materials are original,
-AI-assisted and unevaluated. No participants have been tested or educational
-benefits demonstrated in this release. See [RIGHTS.md](RIGHTS.md) before reuse.
-
-## Outputs and file handling
-
-Markdown reports contain an evidence matrix, a source register, human-review
-declarations and outstanding warnings. The CSV is a flat matrix with one row per
-evidence link. Claims without links retain a row. The JSON remains the complete,
-lossless record; report views do not include every optional note or access date.
-
-HTML and Markdown supplied as field text are escaped in Markdown reports. CSV
-fields that could start a spreadsheet formula are prefixed with an apostrophe,
-including formulas after whitespace or invisible control characters. This
-deliberately changes those exported cell values. Keep the JSON for round trips.
-
-`init` never overwrites an existing file. `report --output` also refuses an
-existing file unless `--force` is supplied. Even with `--force`, it refuses to
-overwrite the input ledger, including an existing hard link to that file.
-
-## Development checks
-
-Read [CONTRIBUTING.md](CONTRIBUTING.md) for bug reports, source-grounded case
-proposals, documentation feedback and pull requests. The
-[workstream guide](docs/WORKSTREAMS.md) coordinates maintenance, and the
-[release criteria](docs/release_readiness.md) define the evidence needed for
-a candidate decision.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), the [workstream guide](docs/WORKSTREAMS.md)
+and the [research standard](docs/RESEARCH_STANDARD.md). The
+[release criteria](docs/release_readiness.md) distinguish implementation checks
+from external evaluation and release decisions.
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-The suite exercises malformed input, duplicate identifiers and JSON keys,
-invalid references, date and URL checks, review metadata, contradictory evidence,
-CSV formula handling, Markdown escaping, command exit codes and file protection.
+Optional parser fixtures require the documented extras; install
+`'.[pdf,tables,excel,test]'` when exercising those paths and inspect any skips.
+Tests cover malformed input, source-anchor mismatches, calculation boundaries,
+review metadata, export escaping, formula handling and file protection.
 
-## Scope of this prototype
-
-The core ledger supports one JSON schema and local command-line use. It has
-no browser interface, authenticated multiuser workflow, automatic source
-retrieval, source-change detection or persistent review history. It does not
-validate a court citation format or generate an OSCOLA bibliography. A URL that
-passes the structural check may still be unavailable, irrelevant or incorrect.
-
-The design is intended for careful human review of research records. Independent
-field testing and evaluation of its effect on review quality remain to be done.
-
-## Intellectual context
-
-The project grows from questions about the relationship between a statement,
-its evidential basis and its legal consequences. Related scholarship includes
-[sustainability reporting in Singapore and Thailand](https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/)
-and [sustainability disclosure in China](https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/).
-These papers provide context for the research direction. This prototype has
-not been evaluated in those papers, and neither publication establishes its
-effectiveness.
-
-## Citation and rights
+## Rights and citation
 
 Use [CITATION.cff](CITATION.cff) to identify the software and cite the version
 actually used. No DOI has yet been assigned. See [RIGHTS.md](RIGHTS.md) before
-reuse; this public prototype is not currently supplied under an open-source
-licence. Existing linked material retains its own rights status.
+reuse: this public prototype is not currently supplied under an open-source
+licence. Public visibility does not grant a commercial reuse licence or rights
+to the separate private extension. Linked third-party material retains its own
+rights status.
 
-## Earlier starter packages
+<details>
+<summary>Earlier starter packages</summary>
 
-The original README linked these materials:
+The original [policykit-starter-v5.tar.gz](https://github.com/user-attachments/files/22344766/policykit-starter-v5.tar.gz)
+and [policykit-extras-v1.zip](https://github.com/user-attachments/files/22344754/policykit-extras-v1.zip)
+links are retained for continuity. These separate legacy archives were not
+reviewed as part of this prototype and are not dependencies of the workbench
+or evidence ledger.
 
-- [policykit-starter-v5.tar.gz](https://github.com/user-attachments/files/22344766/policykit-starter-v5.tar.gz)
-- [policykit-extras-v1.zip](https://github.com/user-attachments/files/22344754/policykit-extras-v1.zip)
-
-These links are retained for continuity. The archives are separate legacy
-material, have not been reviewed as part of this prototype, and are not
-dependencies of the evidence ledger.
+</details>

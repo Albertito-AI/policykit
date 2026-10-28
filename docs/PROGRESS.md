@@ -485,3 +485,40 @@ independently checked reference data and an operator-configured model. Record
 precision, recall, abstentions, missing coverage and review effort separately.
 No hosted service, customer adoption, full platform parity, assurance opinion or
 automated legal judgement is established.
+
+### README feature showcase and reproducible entry route
+
+Following the maintainer's request to make the upgraded capabilities clear on
+GitHub, rewrote the README around the public ESG workbench, concrete fictional
+outputs and a complete first-use route. The page now leads with a capability
+table, retained PDF passages, a downloadable HTML example and correctly ordered
+installation and execution instructions. The demo command includes fictional
+source URLs so it actually produces the advertised ledger export. Calculation,
+materiality and planning examples are explicitly separate from the saved HTML
+sample, whose assessment section is empty.
+
+Added a clearly labelled high-level description of the separate private
+research extension and its two fictional comparison outcomes. Its code,
+contracts, private artifacts and unpublished research remain outside the public
+repository. Corrected wording to distinguish supplied completion reports from
+verified performance and facility totals grouped by entity from separate entity
+aggregates. Preserved research attribution, rights, teaching and integration
+entry points. Updated the roadmap's component description and next evaluation
+step. No executable code, schema, fixture, dependency or rights file changed.
+
+On Python 3.12.14, executed the README's PDF generator, workbench, ledger
+validation, activity import, inventory, materiality, standards lookup, planning
+and core-ledger examples in a fresh temporary checkout using already available
+dependencies. The PDF workflow produced two documents, five physical pages and
+33 candidates; all five quoted passages matched their retained physical pages.
+Confirmed the stated calculation, screening and planning outputs, and the
+synthetic ledger's three expected warnings. Checked 56 relative file/section
+targets, Markdown fences and the absence of private paths or content; retrieved
+the newly linked public HTML download. The 237-test local result and three-version
+CI result linked in the README are the recorded implementation evidence, not a
+new local regression run or independent performance evaluation.
+
+Next action: have a permitted independent evaluator follow the README, record
+installation and interpretation difficulties, then evaluate a report pair with
+reference data and a configured model. Inspect any automatically triggered CI
+at the actual documentation commit before merge.
