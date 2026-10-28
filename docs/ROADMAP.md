@@ -6,17 +6,24 @@ Make the evidence and interpretive choices behind legal propositions easier to
 inspect. Begin with legal accountability in sustainability reporting across
 Asian jurisdictions. Build reusable methods before expanding coverage.
 
-## Current component
+## Current components
 
 Version 0.1 provides an offline evidence ledger, structural validation,
 Markdown and CSV reports, read-only comparison of saved snapshots,
-a synthetic worked example and regression tests.
-The code has no external runtime dependency. A complete fictional teaching
-exercise, external usability protocol, first-use guide and contribution routes
-are available. A narrow Singapore case records two unreviewed propositions
-against official primary sources. Real-world usefulness, educational benefit
-and legal dataset quality still require evaluation. See the
-[project status](project_status.md) for the evidence baseline.
+a synthetic worked example and regression tests. The optional
+[ESG workbench](ESG_WORKBENCH.md) adds report ingestion, source tracing,
+candidate extraction, local retrieval, explicit inventory calculations,
+materiality screening and action planning. Its PDF/table/spreadsheet parsers
+have documented optional dependencies; the core ledger and text workflow
+retain their standard-library implementation.
+
+The [README](../README.md) now provides a feature overview, concrete fictional
+outputs and a complete PDF-to-ledger quickstart, with the separately maintained
+private research extension clearly identified. Teaching materials, an external
+usability protocol and a narrow unreviewed Singapore case remain available.
+Real-world usefulness, educational benefit and legal dataset quality still
+require evaluation. See the [project status](project_status.md) for the evidence
+baseline.
 
 ## Completed safeguard: compare saved ledger versions
 
@@ -43,9 +50,11 @@ problems rather than adding speculative export formats.
 The maintainer's 28 October instruction adds a parallel, implemented technical
 workstream: the [local ESG workbench](ESG_WORKBENCH.md). Its next actionable
 item is a permissioned independent report-pair evaluation and a live,
-operator-configured model test. Measure anchor correctness, field coverage,
-OCR/table errors and review effort; use those results to prioritise further
-engineering. Do not equate implemented functions with commercial-platform parity.
+operator-configured model test. Have the evaluator follow the README entry route
+and record setup obstacles and output misunderstandings alongside anchor
+correctness, field coverage, OCR/table errors and review effort. Use those
+observations to prioritise further engineering. Do not equate implemented
+functions with commercial-platform parity.
 The source-review and teaching evaluation priorities below remain outstanding.
 
 1. **Obtain human review of the first worked case.** The
