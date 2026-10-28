@@ -48,7 +48,12 @@ problems rather than adding speculative export formats.
    should test the issuer's period, any assurance condition, actual internal
    review evidence, Rule 703 thresholds and exceptions, and each source link
    before declaring completion. The five-source case remains AI-prepared:
-   do not expand case volume ahead of independent human review.
+   preserve the independent human-review gate for every checked proposition.
+   Under the 26 October expansion instruction, bounded, issue-selected
+   [common law authority mapping](../cases/singapore-sustainability-reporting/common-law-authorities.md)
+   may proceed as **AI-prepared research** while the two existing SGX propositions
+   remain unreviewed. A source map does not authorise a checked legal finding,
+   an issuer-specific remedy or a claim of exhaustive subsequent treatment.
 2. **Run the first external usability pilot.** Use the prepared
    [protocol](evaluation_protocol.md) with three independent volunteers. Record
    task completion, assistance, misunderstandings and reproducible difficulties
