@@ -1,0 +1,29 @@
+{
+  "_notice": "FICTIONAL TRAINING DATA. Factors, sources, scores, people and budgets are invented solely to demonstrate software behaviour; they are not real-world guidance.",
+  "plan_id": "fictional-plan",
+  "as_of": "2026-10-28",
+  "gaps": [
+    {
+      "gap_id": "fictional-missing-pinpoint",
+      "description": "Record the source passage supporting the fictional metric",
+      "priority": "high",
+      "action": {
+        "title": "Locate and review the underlying source passage",
+        "owner": "Fictional review lead",
+        "due_date": "2026-11-04",
+        "success_criterion": "A reviewer records a reproducible pinpoint and reasons",
+        "budget": {
+          "currency": "SGD",
+          "min": "100",
+          "max": "200",
+          "basis": "Fictional caller-supplied estimate; not a quotation"
+        }
+      }
+    },
+    {
+      "gap_id": "fictional-boundary-change",
+      "description": "Explain the fictional year-on-year boundary change",
+      "priority": "high"
+    }
+  ]
+}
