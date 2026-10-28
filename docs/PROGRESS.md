@@ -542,3 +542,21 @@ Next action: use the existing usability protocol to record actual first-use
 friction and prior demo exposure when an authorised independent pilot occurs.
 This presentation change establishes no legal review, external adoption or
 measured usability benefit.
+
+## 29 October 2026
+
+### Contributor issue-routing clarification
+
+A maintainer-led community check found that the existing agent-interoperability
+issue form was missing from the contribution-route table. The guide also did
+not distinguish reports about the separately packaged Apache-2.0 RegNav Source
+Watch GitHub Action from reports about this repository's reserved-rights local
+Source Watch and MCP experiments. Updated `CONTRIBUTING.md` to direct reports to
+the appropriate existing issue tracker without creating another issue or
+altering licences, software behaviour or permission requirements.
+
+This correction is based on inspection of the two repositories' current public
+entry points. It is not an independent user complaint, completed external
+integration, verified adoption or commercial outcome. Next action: assess real
+incoming issues against the documented route, request only necessary synthetic
+reproduction details, and leave unresolved reports open.

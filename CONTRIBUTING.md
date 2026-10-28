@@ -20,6 +20,7 @@ the repository's New issue menu. One focused issue is usually sufficient.
 | Reproducible bug | Actual commands, a small synthetic input, expected and observed behaviour, software and Python versions | Show one command that fails on a public fixture or mishandles a documented input |
 | Source-grounded research case | A narrow proposition, jurisdiction, primary-source links, exact pinpoints, source versions and interpretive limits | Propose one sustainability-disclosure question with a small set of inspectable authorities |
 | Documentation or usability feedback | The page or task, what was unclear, what actually happened and a proposed correction if available | Clarify one instruction, report one observed obstacle or identify one misleading explanation |
+| Agent interoperability (local MCP gateway) | Client and protocol version, fictional task, and either an authorised observed result or a clearly unrun proposal | Use the agent-interoperability issue form for one bounded synthetic client check; describe permission limits and unresolved requirements |
 
 An untested suggestion is welcome when labelled as a suggestion. A report of
 one person's experience is not evidence of broad adoption or effectiveness.
@@ -34,6 +35,14 @@ The separate [Source Watch experiment](experiments/source_watch/README.md)
 compares listed local files against a saved baseline. Its
 [fictional generated report](experiments/source_watch/sample_report.json)
 can be inspected without installing software or providing contact details.
+
+The separately packaged [RegNav Source Watch GitHub Action](https://github.com/Albertito-AI/regnav-source-watch)
+has its own [issue tracker](https://github.com/Albertito-AI/regnav-source-watch/issues)
+and [contribution guidance](https://github.com/Albertito-AI/regnav-source-watch/blob/main/CONTRIBUTING.md).
+Report Action installation, workflow configuration, Action inputs or outputs and
+Marketplace packaging problems there. Report local Source Watch experiment or
+MCP gateway behaviour in this repository. The Action's Apache-2.0 licence does
+not extend to RegNav or alter this repository's [reserved rights](RIGHTS.md).
 
 For an observed error or unclear instruction, use the public bug or documentation
 issue form with a synthetic example. Name the Source Watch command and file,
