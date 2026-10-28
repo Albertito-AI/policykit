@@ -27,6 +27,29 @@ human review. See [validation and scope](#validation-and-scope) and
 [Private extension](#private-research-extension) ·
 [Full workbench guide](docs/ESG_WORKBENCH.md)
 
+## See it in action
+
+![The fictional ledger links two sources to three propositions and exports four evidence rows. Validation reports zero errors and three expected review warnings.](docs/demo/ledger-flow.svg)
+
+Supply the bundled [fictional ledger](examples/synthetic_ledger.json): three
+propositions, two source records and four evidence links. The observed run
+returned **0 structural errors and 3 expected warnings**: an unreviewed
+proposition, a missing pinpoint and a contested proposition.
+
+From the repository folder, with Python 3.10 or newer:
+
+```bash
+python -m regnav_evidence validate examples/synthetic_ledger.json
+python -m regnav_evidence report examples/synthetic_ledger.json --format markdown
+```
+
+[Inspect the resulting matrix](docs/sample_report.md) ·
+[Read the captured command output](docs/demo/observed-session.txt) ·
+[Follow the ten-minute guide](docs/quickstart.md)
+
+The diagram reflects the actual synthetic run. Source interpretation and
+substantive review remain with a person; existing [reuse rights](RIGHTS.md) apply.
+
 ## What you can do in this repository
 
 | Task | Working capability | What you can inspect |
