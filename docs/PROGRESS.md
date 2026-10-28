@@ -522,3 +522,23 @@ Next action: have a permitted independent evaluator follow the README, record
 installation and interpretation difficulties, then evaluate a report pair with
 reference data and a configured model. Inspect any automatically triggered CI
 at the actual documentation commit before merge.
+
+### README demonstration: an observed fictional ledger run
+
+Added a near-top “See it in action” section with a self-contained SVG showing
+the bundled ledger's two source records, three propositions, four evidence rows
+and explicit review gaps. The visual is a diagram of observed CLI fields, with
+a link to captured output and the existing generated matrix and quickstart.
+
+On Python 3.12.14, normal validation returned zero errors and the three expected
+UNREVIEWED_CLAIM, MISSING_PINPOINT and CONTESTED_CLAIM warnings, exiting 0. Strict
+validation exited 2. Markdown and CSV export both exited 0; the generated Markdown
+matched the existing sample's generated section and the CSV had four evidence
+rows. The public transcript identifies source revision
+17e173491f42ddf7f62bd40aae976d324bd5fe54. Runtime code, fixtures, review declarations
+and rights remain unchanged. Hosted checks are separate from these local results.
+
+Next action: use the existing usability protocol to record actual first-use
+friction and prior demo exposure when an authorised independent pilot occurs.
+This presentation change establishes no legal review, external adoption or
+measured usability benefit.

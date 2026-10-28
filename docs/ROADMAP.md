@@ -184,3 +184,13 @@ Preserve the original design in Git history, core-development/adoption ownership
 current human-review priorities, offline use, existing rights and no invented
 human declarations. No deployment, professional assurance or commercial outcome
 follows from internal implementation.
+
+## Demonstration entry and next observation
+
+The [README demonstration](../README.md#see-it-in-action) now connects the existing
+fictional ledger, actual command output and generated evidence matrix in one
+visual entry point. The next adoption action remains the prepared independent
+usability pilot: record prior exposure to this demo and actual difficulties in
+connecting warnings to source links. Use those observations to correct concrete
+friction. The demonstration does not establish that a pilot or human legal review
+has occurred, and it changes no runtime or reuse rights.

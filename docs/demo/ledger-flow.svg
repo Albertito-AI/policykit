@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc"><title id="title">From evidence records to a visible review queue</title><desc id="desc">Observed fictional ledger: two sources, three propositions, four evidence rows, zero structural errors and three expected warnings. Checked is a fictional review declaration.</desc><defs><linearGradient id="sky" x2="1" y2="1"><stop stop-color="#0d1728"/><stop offset="1" stop-color="#142941"/></linearGradient><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#7bd9d0"/></marker></defs><rect width="1200" height="560" rx="24" fill="url(#sky)"/><g font-family="DejaVu Sans,Arial,sans-serif"><text x="32" y="54" font-size="31" font-weight="700" fill="#f7fafc">From evidence records to a visible review queue</text><text x="32" y="87" font-size="18" fill="#b9cadd">Bundled fictional example · actual CLI results · Python 3.12.14</text>
+<rect x="32" y="122" width="250" height="312" rx="16" fill="#172b42" stroke="#40546b"/>
+<text x="52" y="157" font-size="14" fill="#7bd9d0">1 / INPUT</text>
+<text x="52" y="205" font-size="22" fill="#fff" font-weight="700">2 source records</text>
+<text x="52" y="242" font-size="22" fill="#e7eef5">3 propositions</text>
+<text x="52" y="289" font-size="19" fill="#b9cadd">Draft A + Draft B</text>
+<text x="52" y="319" font-size="19" fill="#b9cadd">Pinpoints and links</text>
+<text x="52" y="349" font-size="18" fill="#b9cadd">Declared review status</text>
+<text x="52" y="402" font-size="16" fill="#7bd9d0">Local JSON · offline</text>
+<rect x="306" y="122" width="440" height="312" rx="16" fill="#172b42" stroke="#40546b"/>
+<text x="326" y="157" font-size="14" fill="#7bd9d0">2 / EVIDENCE MATRIX</text>
+<rect x="326" y="181" width="400" height="65" rx="16" fill="#203b55" stroke="#203b55"/>
+<text x="342" y="207" font-size="20" fill="#fff" font-weight="700">CLAIM-logging</text>
+<text x="342" y="233" font-size="16" fill="#b9cadd">checked · fictional review declaration</text>
+<rect x="326" y="259" width="400" height="65" rx="16" fill="#3a3540" stroke="#3a3540"/>
+<text x="342" y="285" font-size="20" fill="#fff" font-weight="700">CLAIM-remedy</text>
+<text x="342" y="311" font-size="16" fill="#f2d58d">unreviewed · pinpoint missing</text>
+<rect x="326" y="337" width="400" height="65" rx="16" fill="#3a3540" stroke="#3a3540"/>
+<text x="342" y="363" font-size="20" fill="#fff" font-weight="700">CLAIM-timing</text>
+<text x="342" y="389" font-size="16" fill="#f2d58d">contested · conflicting source links</text>
+<rect x="770" y="122" width="398" height="312" rx="16" fill="#172b42" stroke="#40546b"/>
+<text x="790" y="157" font-size="14" fill="#7bd9d0">3 / STRUCTURAL RESULT</text>
+<text x="790" y="222" font-size="52" fill="#fff" font-weight="700">0</text>
+<text x="835" y="221" font-size="20" fill="#b9cadd">errors</text>
+<text x="969" y="222" font-size="52" fill="#f2d58d" font-weight="700">3</text>
+<text x="1014" y="221" font-size="20" fill="#f2d58d">warnings</text>
+<text x="790" y="279" font-size="18" fill="#f2d58d">UNREVIEWED_CLAIM</text>
+<text x="790" y="320" font-size="18" fill="#f2d58d">MISSING_PINPOINT</text>
+<text x="790" y="361" font-size="18" fill="#f2d58d">CONTESTED_CLAIM</text>
+<text x="790" y="405" font-size="16" fill="#b9cadd">Expected gaps remain visible.</text>
+<rect x="32" y="458" width="1136" height="57" rx="16" fill="#233c49" stroke="#233c49"/>
+<text x="52" y="494" font-size="22" fill="#b6efe5" font-weight="700">4 evidence rows exported to Markdown and CSV</text>
+<text x="32" y="541" font-size="15" fill="#b9cadd">Diagram of observed output. Structural checks leave substantive source review to a person.</text>
+</g></svg>

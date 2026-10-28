@@ -1,0 +1,79 @@
+Observed fictional demonstration
+Recorded UTC: 2026-10-28T08:56:08+00:00
+Implementation commit: 17e173491f42ddf7f62bd40aae976d324bd5fe54
+Runtime: Python 3.12.14
+All input sources, claims and reviewer details are fictional.
+
+$ python -m regnav_evidence validate examples/synthetic_ledger.json
+Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.
+WARNING UNREVIEWED_CLAIM $.claims[1]: No completed human review is declared for this proposition.
+WARNING MISSING_PINPOINT $.claims[1].evidence[0].pinpoint: Identify a page, paragraph, provision, section or other reproducible location.
+WARNING CONTESTED_CLAIM $.claims[2]: This proposition is recorded as contested; retain the disagreement in any summary.
+Structural checks: 0 error(s), 3 warning(s).
+Exit status: 0
+
+$ python -m regnav_evidence validate examples/synthetic_ledger.json --strict
+Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.
+WARNING UNREVIEWED_CLAIM $.claims[1]: No completed human review is declared for this proposition.
+WARNING MISSING_PINPOINT $.claims[1].evidence[0].pinpoint: Identify a page, paragraph, provision, section or other reproducible location.
+WARNING CONTESTED_CLAIM $.claims[2]: This proposition is recorded as contested; retain the disagreement in any summary.
+Structural checks: 0 error(s), 3 warning(s).
+Exit status: 2
+
+$ python -m regnav_evidence report examples/synthetic_ledger.json --format markdown
+# Synthetic training example: recording an internal review procedure
+
+Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.
+
+All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training\_sources.md for the complete mock texts.
+
+Sources: 2. Propositions: 3.
+User-declared statuses: 1 unreviewed, 1 checked, 1 contested.
+
+## Evidence matrix
+
+| Claim ID | Proposition | User-declared review | Source ID | Pinpoint | Relation |
+| --- | --- | --- | --- | --- | --- |
+| CLAIM-logging | Draft A states that requests are entered in a log before review. | checked | SRC-draft-a | A.2 | supports |
+| CLAIM-remedy | The drafts provide a further review procedure after an initial decision. | unreviewed | SRC-draft-b |  | context |
+| CLAIM-timing | The draft procedure specifies a response within five working days. | contested | SRC-draft-a | A.3 | supports |
+| CLAIM-timing | The draft procedure specifies a response within five working days. | contested | SRC-draft-b | B.2 | contradicts |
+
+## Source register
+
+| Source ID | Title | Type | Jurisdiction | Version / as of | URL |
+| --- | --- | --- | --- | --- | --- |
+| SRC-draft-a | Synthetic internal procedure, draft A (training fixture) | other | Fictional training setting | Draft A / 2025-01-01 | https://example.org/regnav-training/draft-a |
+| SRC-draft-b | Synthetic internal procedure, draft B (training fixture) | other | Fictional training setting | Draft B / 2025-01-01 | https://example.org/regnav-training/draft-b |
+
+## Human-review declarations
+
+| Claim ID | Reviewer | Review date | Treatment of contrary evidence |
+| --- | --- | --- | --- |
+| CLAIM-logging | Synthetic reviewer (training fixture) | 2025-01-02 |  |
+| CLAIM-remedy |  |  |  |
+| CLAIM-timing | Synthetic reviewer (training fixture) | 2025-01-02 |  |
+
+## Outstanding structural and review notices
+
+- UNREVIEWED\_CLAIM ($.claims\[1\]): No completed human review is declared for this proposition.
+- MISSING\_PINPOINT ($.claims\[1\].evidence\[0\].pinpoint): Identify a page, paragraph, provision, section or other reproducible location.
+- CONTESTED\_CLAIM ($.claims\[2\]): This proposition is recorded as contested; retain the disagreement in any summary.
+
+The ledger's JSON is the authoritative record. This matrix is a view of its recorded entries.
+[standard error]
+Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.
+notice: 3 warning(s); run validate for their details.
+Exit status: 0
+
+$ python -m regnav_evidence report examples/synthetic_ledger.json --format csv
+"Claim ID","Proposition","User-declared review","Reviewer","Review date","Source ID","Source title","Source type","Jurisdiction","Version","As of","URL","Pinpoint","Relation","Treatment of contrary evidence"
+"CLAIM-logging","Draft A states that requests are entered in a log before review.","checked","Synthetic reviewer (training fixture)","2025-01-02","SRC-draft-a","Synthetic internal procedure, draft A (training fixture)","other","Fictional training setting","Draft A","2025-01-01","https://example.org/regnav-training/draft-a","A.2","supports",""
+"CLAIM-remedy","The drafts provide a further review procedure after an initial decision.","unreviewed","","","SRC-draft-b","Synthetic internal procedure, draft B (training fixture)","other","Fictional training setting","Draft B","2025-01-01","https://example.org/regnav-training/draft-b","","context",""
+"CLAIM-timing","The draft procedure specifies a response within five working days.","contested","Synthetic reviewer (training fixture)","2025-01-02","SRC-draft-a","Synthetic internal procedure, draft A (training fixture)","other","Fictional training setting","Draft A","2025-01-01","https://example.org/regnav-training/draft-a","A.3","supports",""
+"CLAIM-timing","The draft procedure specifies a response within five working days.","contested","Synthetic reviewer (training fixture)","2025-01-02","SRC-draft-b","Synthetic internal procedure, draft B (training fixture)","other","Fictional training setting","Draft B","2025-01-01","https://example.org/regnav-training/draft-b","B.2","contradicts",""
+[standard error]
+Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.
+notice: 3 warning(s); run validate for their details.
+Exit status: 0
+
