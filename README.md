@@ -276,6 +276,7 @@ or generate an OSCOLA bibliography.
 | **Evidence handover experiment** | The [local adapter](experiments/evidence_handover/README.md) accepts one explicit JSON contract and retains supplied scope, process and review-history information |
 | **Local agent integration** | The [MCP gateway](experiments/agent_gateway/README.md), [fictional exchange](experiments/agent_gateway/sample_exchange.json) and [capability catalogue](experiments/agent_gateway/services.json) document local stdio operation; see the [collaboration guide](docs/AGENT_NETWORK.md) |
 | **Source-grounded legal case** | The [Singapore sustainability-reporting case](cases/singapore-sustainability-reporting/README.md) records two unreviewed propositions and five official source records, including a qualified Rule 703 cross-check; [case collection](cases/README.md) |
+| **Landmark and key case direction** | The [workflow rationale](docs/CASE_LAW_WORKFLOW.md) records the global ambition, case-selection criteria, proposition-level analysis, review gates and next development steps |
 | **Teaching and usability** | A [55-minute fictional exercise](teaching/README.md), source packet and [external evaluation protocol](docs/evaluation_protocol.md); independent educational benefits remain unevaluated |
 
 The legal case distinguishes source inspections on 23 and 26 October 2026 and

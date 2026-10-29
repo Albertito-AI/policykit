@@ -4,6 +4,12 @@ These examples connect narrow legal propositions to primary sources and exact
 pinpoints. They are research records, not assessments of an actual issuer or
 evidence of a completed human review.
 
+The [landmark and key case workflow rationale](../docs/CASE_LAW_WORKFLOW.md)
+records the collection's ambition, selection criteria, source-to-proposition
+method and development priorities. Consult its decision guide when choosing
+coverage or resolving uncertainty. Planned capabilities are labelled separately
+from the current case records.
+
 | Case | Scope and source date | Review status |
 | --- | --- | --- |
 | [Singapore sustainability reporting](singapore-sustainability-reporting/README.md) | SGX Mainboard reporting timing and internal review; official materials consulted on 23 October 2026 | AI-prepared; both propositions `unreviewed`; independent human review outstanding |
