@@ -71,6 +71,14 @@ The source-review and teaching evaluation priorities below remain outstanding.
    may proceed as **AI-prepared research** while the two existing SGX propositions
    remain unreviewed. A source map does not authorise a checked legal finding,
    an issuer-specific remedy or a claim of exhaustive subsequent treatment.
+   The [landmark and key case workflow rationale](CASE_LAW_WORKFLOW.md), recorded
+   on 29 October, guides this expansion. The next case-development action is to
+   agree and trial a small structured tranche from the existing map, coordinating
+   its contract with core development and preserving source pinpoints,
+   qualifications, treatment-search limits and unreviewed states. Record the
+   tranche's coverage and gaps. Global coverage, treatment automation and
+   application models remain development directions; actual qualified review
+   of legal propositions and independent usability evidence remain outstanding.
 2. **Run the first external usability pilot.** Use the prepared
    [protocol](evaluation_protocol.md) with three independent volunteers. Record
    task completion, assistance, misunderstandings and reproducible difficulties

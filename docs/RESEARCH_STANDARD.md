@@ -5,6 +5,11 @@ initial software records how a proposition relates to a source and where that
 relationship can be examined. The value of a future legal dataset will depend
 on the quality of the analysis entered into it.
 
+The [landmark and key case workflow rationale](CASE_LAW_WORKFLOW.md) applies this
+standard to case selection, proposition-level analysis, treatment, applications
+and the collection's long-term development. Use its decision guide alongside
+the requirements below.
+
 ## Source records
 
 Prefer the issuing institution's legal text or judgment. Record the source's

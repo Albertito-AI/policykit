@@ -560,3 +560,36 @@ entry points. It is not an independent user complaint, completed external
 integration, verified adoption or commercial outcome. Next action: assess real
 incoming issues against the documented route, request only necessary synthetic
 reproduction details, and leave unresolved reports open.
+
+### Landmark and key case workflow rationale
+
+At the maintainer's request, recorded the collection's agreed direction in
+[CASE_LAW_WORKFLOW.md](CASE_LAW_WORKFLOW.md). The guide sets out the global
+ambition, a practical decision guide, case-selection criteria, proposition-level
+provenance, later treatment, applicable instruments, conditional applications,
+coverage limits, review responsibilities and useful measures of progress. It
+identifies future structured records and automated maintenance as development
+directions and retains the actual AI-prepared status of the existing case map.
+
+Linked the guide from the root README, case collection, research standard and
+workstream instructions so ordinary case work encounters it. Updated the next
+case-development action in the roadmap while preserving the outstanding human
+review and external evaluation priorities. The existing source records, ledger,
+runtime, schema, rights and scheduled jobs are unchanged.
+
+Local documentation checks on Python 3.12.14 covered all seven changed Markdown
+files: 88 relative link targets and 13 section anchors resolved, fenced blocks
+were balanced and the diff passed whitespace checks. An AI documentation review
+inspected the complete guide and related changes for source/review distinctions,
+scope, ownership and private material. It prompted clearer separation of
+retention and republication permissions and explicit identification of party
+submissions within judgment analysis. This is an internal documentation review;
+it does not establish substantive human legal review. No executable examples
+or runtime behaviour changed, so no local software regression suite was rerun.
+Applicable GitHub CI remains separate evidence tied to the reviewed commit.
+
+Next action: agree and trial a small structured tranche from the existing
+Singapore authority map with core development, preserving source context and
+review status and publishing the tranche's coverage gaps. Publication of this
+guide establishes the recorded direction, rather than completion of the planned
+repository, independent legal review or demonstrated user benefit.

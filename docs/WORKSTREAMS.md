@@ -16,6 +16,12 @@ useful change, not a requirement to create a commit.
 | Release readiness | Changelog, citation metadata and release checks | A specific candidate assessed against the published criteria, with unresolved limitations retained |
 | Reach and impact | Public entry points and the project status record | Accurate links and attribution, or independently evidenced use and feedback recorded with permission |
 
+For case selection, legal-data automation and expansion decisions, consult the
+[landmark and key case workflow rationale](CASE_LAW_WORKFLOW.md). It is the
+shared guide to purpose, coverage, proposition-level analysis and review gates.
+Its structured-record requirements are a development direction; coordinate
+schema and command changes with core development through the process below.
+
 Broader academic collaboration and teaching work can supply concrete needs to
 these streams. Public repository records should contain relevant evidence and
 outputs, not private correspondence, unpublished manuscripts or business plans.
