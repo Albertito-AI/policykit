@@ -177,7 +177,10 @@ timeouts; POSIX workers additionally have memory/CPU/output limits. OCR is
 limited to twenty empty pages. Default field extraction retains at most twenty
 candidates per field; its lower-level API permits up to fifty. CSV import is
 bounded to 100,000 rows. These limits are implementation choices, not tested
-production capacity guarantees.
+production capacity guarantees. Supplying the same source bytes twice, including
+through different paths, is rejected before workspace creation: duplicate source
+identities would give the HTML view ambiguous page-link targets. Submit each
+source once; different versions must have distinct recorded source identities.
 
 The remaining evaluation work is a permissioned held-out corpus with independently
 checked page anchors, metrics, tables, OCR errors, missing disclosures, scopes

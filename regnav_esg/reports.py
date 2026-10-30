@@ -120,12 +120,16 @@ def render_html(documents, extractions, *, assessments=None, title="RegNav ESG W
         raise ValueError("Every document must have exactly one extraction")
     esc = lambda value: html.escape(str(value), quote=True)
     cards, sources = [], []
+    seen_source_anchors = set()
     count = 0
     page_count = sum(len(d.get("pages", [])) for d in documents)
     for document, extraction in zip(documents, extractions):
         _validate_pair(document, extraction)
         source = document["source"]
         sid = _safe_id(source["source_id"] + source["sha256"])
+        if sid in seen_source_anchors:
+            raise ValueError("Duplicate source identity would create ambiguous source-page links; supply each document once")
+        seen_source_anchors.add(sid)
         cards.append(f'<h2>{esc(source["filename"])}</h2><p class="muted">Source SHA-256: <code>{esc(source["sha256"])}</code></p>')
         for warning in document.get("warnings", []) + extraction.get("warnings", []):
             cards.append(f'<p class="notice">{esc(warning)}</p>')

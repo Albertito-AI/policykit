@@ -88,6 +88,20 @@ class WorkbenchTests(unittest.TestCase):
         self.assertIn('&lt;script&gt;', output)
         self.assertIn("Content-Security-Policy", output)
 
+    def test_duplicate_source_identity_rejected_before_html_workspace_creation(self):
+        # Same source bytes have the same automatic identity even if paths differ.
+        with self.assertRaisesRegex(ValueError, "Duplicate source identity"):
+            render_html([self.document, self.document], [self.extraction, self.extraction])
+
+        alternate_path = self.root / "same-content.md"
+        alternate_path.write_bytes(self.source.read_bytes())
+        destination = self.root / "ambiguous-workspace"
+        for paths in ([self.source, self.source], [self.source, alternate_path]):
+            with self.subTest(paths=[p.name for p in paths]):
+                with self.assertRaisesRegex(ValueError, "Duplicate source identity"):
+                    run_workbench(paths, destination)
+                self.assertFalse(destination.exists())
+
     def test_cli_empty_input_returns_incomplete_status(self):
         self.source.write_text("", encoding="utf-8")
         with patch("sys.stdout", new_callable=io.StringIO) as out:
