@@ -614,3 +614,24 @@ benchmark cases remain separate; no new independent reviewer has been observed.
 The next gate remains independent reproduction of the full reviewer workflow,
 including what source differences mean for a genuinely useful task. No new
 licence, customer processing authority, release or commercial claim is created.
+
+## 30 October 2026
+
+### ESG workbench: duplicate-source HTML navigation
+
+Inspection of the offline workbench identified that supplying the same source
+bytes twice gave both document cards the same automatic source identity and
+HTML fragment links. A source-page link in the second card could therefore
+open the first card's page, obscuring which input entry was being inspected.
+The ledger export already rejected duplicate source identities; the read-only
+HTML path did not.
+
+The HTML renderer now rejects repeated source anchors with an actionable
+message before building the workspace. A synthetic regression covers a direct
+renderer call, the same input path twice and a separate path containing the
+same bytes. It also checks that no partial output directory is created.
+Existing source extraction, schema, rights and review declarations are unchanged.
+
+The next gate is an independent first-use check of source navigation and
+candidate review. Passing engineering tests cannot establish extraction
+accuracy, human legal review, usability benefit or external adoption.

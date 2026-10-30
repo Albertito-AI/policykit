@@ -45,6 +45,16 @@ The JSON remains the authoritative record; exported formatting is not evidence
 that any proposition is correct. Follow up on concrete user-reported rendering
 problems rather than adding speculative export formats.
 
+## ESG workbench: duplicate-source navigation safeguard
+
+When identical source bytes are supplied twice, the default source identity
+and generated HTML page anchors coincide. The workbench now rejects these
+ambiguous duplicate inputs before writing a workspace. A synthetic regression
+covers duplicate paths and same-content copies, while ordinary single-source
+work remains supported. This is a source-navigation integrity correction,
+not verification of substantive evidence. Next, reproduce the first-use
+workflow independently and assess actual review effort and anchor usability.
+
 ## Next work in priority order
 
 The maintainer's 28 October instruction adds a parallel, implemented technical
