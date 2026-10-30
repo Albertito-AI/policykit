@@ -593,3 +593,24 @@ Singapore authority map with core development, preserving source context and
 review status and publishing the tranche's coverage gaps. Publication of this
 guide establishes the recorded direction, rather than completion of the planned
 repository, independent legal review or demonstrated user benefit.
+
+### 30 October 2026: newly linked source byte-drift attention
+
+The evidence-handover workflow captures source observations even for recorded
+files that are not yet linked to a claim. Its Source Watch baseline intentionally
+covers only previously linked files. An earlier comparison omitted the
+corresponding byte-drift notice when a previously unlinked file changed locally
+and was subsequently linked to an existing claim. A normal claim-link change was
+recorded, but the source-file divergence was not separately visible.
+
+The targeted correction compares the two observed SHA-256 values only when the
+source ID and local path are stable, its earlier links were absent, and it
+has a current claim link. It flags the newly linked claim without changing the
+raw Source Watch observations or claiming source authentication or legal truth.
+Additional fictional regression cases cover changed bytes, unchanged bytes and
+a previously missing baseline. The original eighteen disclosed synthetic
+benchmark cases remain separate; no new independent reviewer has been observed.
+
+The next gate remains independent reproduction of the full reviewer workflow,
+including what source differences mean for a genuinely useful task. No new
+licence, customer processing authority, release or commercial claim is created.

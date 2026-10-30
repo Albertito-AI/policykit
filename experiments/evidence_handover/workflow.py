@@ -433,6 +433,15 @@ def compare(before: Any, after_export: Any, root: str | Path,
                 codes.append("SOURCE_PATH_CHANGED")
             if old["status"] != "OBSERVED":
                 codes.append("BASELINE_NOT_OBSERVED")
+            # Source Watch deliberately excludes previously unlinked files.
+            # Compare the retained observation when such a file gains a link;
+            # this reports byte drift, not a new semantic or legal conclusion.
+            if (not oldmap.get(sid) and mapping.get(sid)
+                    and old["path"] == new["path"]
+                    and old["status"] == "OBSERVED"
+                    and new["status"] == "OBSERVED"
+                    and old["sha256"] != new["sha256"]):
+                codes.append("NEWLY_LINKED_SOURCE_BYTES_CHANGED")
         if new is not None and new["status"] != "OBSERVED":
             codes.append(new["status"])
         if not related:

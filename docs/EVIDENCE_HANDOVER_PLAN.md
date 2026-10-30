@@ -54,6 +54,11 @@ assertions below, not independent domain validation of the broader design criter
 | B17 | A labelled fictional historical declaration is preserved and flagged against changed content; no actual human review is claimed |
 | B18 | Unsafe cells are escaped in views, with original text retained in JSON |
 
+A later regression also covers a recorded but previously unlinked source becoming
+linked after its local bytes changed. Its snapshot hash is compared with current
+observed bytes without claiming the source was included in the original linked
+Source Watch baseline. A missing original observation remains explicitly unknown.
+
 Additional regressions test malformed inputs, limits, exclusive file creation,
 snapshot consistency, declaration constraints, CLI exit codes and the local MCP
 wire path. These tests use original fictional fixtures only. They do not reproduce

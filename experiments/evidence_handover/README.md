@@ -122,6 +122,14 @@ new file is discoverable here only if it appears in a subsequently supplied expl
 inventory. Unlinked sources remain identified as unmapped, with no inferred claim.
 A changed processing identifier does not prove why an output changed.
 
+A recorded source that was previously unlinked is outside Source Watch's linked
+baseline, even when its bytes were captured in the handover snapshot. If that
+same path and source ID later gain a claim link, the handover separately compares
+its retained and current SHA-256 values. Differing observed bytes raise
+`NEWLY_LINKED_SOURCE_BYTES_CHANGED` for the newly linked claim. A missing baseline
+remains unknown, and an unchanged digest establishes neither semantic identity
+nor legal correctness. The raw Source Watch report is not silently expanded.
+
 Source Watch still works at file granularity. Anchor counts and page locations are
 provided by the operator or an upstream process; this experiment does not locate
 quotes in PDFs, verify match counts, convert units, resolve reporting boundaries
