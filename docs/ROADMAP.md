@@ -217,3 +217,7 @@ usability pilot: record prior exposure to this demo and actual difficulties in
 connecting warnings to source links. Use those observations to correct concrete
 friction. The demonstration does not establish that a pilot or human legal review
 has occurred, and it changes no runtime or reuse rights.
+
+## 30 October 2026: legal case research gate
+
+The common-law map now includes a focused source-inspected financial-auditor tranche under [Singapore sustainability reporting](../cases/singapore-sustainability-reporting/common-law-authorities.md): *Deloitte v Hin Leong* [2026] SGCA 33 and its cited *JSI Shipping* and *PlanAssure* decisions. It distinguishes a company's statutory-audit engagement, factual causation, contractual remoteness and contributory fault from any still-unverified investor right against a sustainability assurer. This is issue-based legal research and changes no ledger review state. Next case action: obtain an actual usable assurance-engagement scope and period-specific statutory text, and independently examine the evidence for possible investor standing before proposing new reviewed propositions. Do not create a generic insurer/assurer liability entry from financial-audit analogies. Coordinate structured case-record work with core development; independent human legal review remains the condition for a checked claim.
