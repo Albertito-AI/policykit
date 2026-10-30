@@ -183,6 +183,11 @@ observations, preserves supplied review history and offers an opt-in local MCP t
 The eighteen disclosed engineering cases now have runnable tests and a generated
 result; independent workflow evaluation remains outstanding.
 
+An additional handover regression now checks byte divergence for a previously
+unlinked, recorded source when it first gains a claim link. This preserves the
+distinction between the existing Source Watch linked-file report and the full
+snapshot's retained source observations.
+
 The next action is one permitted independent reproduction and inspection of an
 actual export. Do not claim customer compatibility from the fictional contract.
 Use existing simpler tools when adequate. Fix observed defects before expanding

@@ -44,6 +44,25 @@ class HandoverTests(unittest.TestCase):
         self.original = copy.deepcopy(self.export)
         self.before = w.snapshot(self.export, self.root)
 
+    def add_unlinked_fixture_source(self, *, present=True):
+        self.export["sources"].append({
+            "id": "annex", "title": "FICTIONAL unlinked annex",
+            "url": "https://example.invalid/fictional-annex.txt",
+            "source_type": "other", "jurisdiction": "FICTIONAL",
+            "version": "training-v1", "path": "fictional-annex.txt",
+        })
+        self.export["inventory"].append("fictional-annex.txt")
+        path = self.root / "fictional-annex.txt"
+        if present:
+            path.write_bytes(b"FICTIONAL annex baseline")
+        self.before = w.snapshot(self.export, self.root)
+        return path
+
+    def link_annex_to_first_claim(self):
+        link = copy.deepcopy(self.export["records"][0]["evidence"][0])
+        link.update(source_id="annex", pinpoint="Fictional annex, line 1", anchor=None)
+        self.export["records"][0]["evidence"].append(link)
+
     def report(self, history=None):
         return w.compare(self.before, self.export, self.root, history)
 
@@ -153,6 +172,42 @@ class HandoverTests(unittest.TestCase):
         self.assertEqual(report["inventory"]["outside_watch"], ["new-public-source.txt"])
         self.assertIn("INVENTORY_OUTSIDE_WATCH", self.codes(report))
         self.assertFalse(report["inventory"]["directory_scanned"])
+
+    def test_newly_linked_unwatched_source_byte_drift(self):
+        path = self.add_unlinked_fixture_source()
+        old_digest = next(row["sha256"] for row in self.before["source_observations"]
+                          if row["id"] == "annex")
+        path.write_bytes(b"FICTIONAL annex revised before linking")
+        self.link_annex_to_first_claim()
+        report = self.report()
+        flags = [row for row in report["attention"]
+                 if row["code"] == "NEWLY_LINKED_SOURCE_BYTES_CHANGED"]
+        self.assertEqual([row["claim_id"] for row in flags], ["claim1"])
+        self.assertEqual(report["source_watch"]["observation"], "UNCHANGED_BYTES")
+        self.assertNotIn("annex", {row["id"] for row in report["source_watch"]["files"]})
+        current = next(row for row in report["current_sources"] if row["id"] == "annex")
+        self.assertNotEqual(current["sha256"], old_digest)
+        self.assertEqual(current["status"], "OBSERVED")
+        self.assertIn("RECORDED_CLAIM_MATERIAL", self.codes(report))
+
+    def test_newly_linked_unwatched_source_unchanged_bytes(self):
+        self.add_unlinked_fixture_source()
+        self.link_annex_to_first_claim()
+        report = self.report()
+        self.assertNotIn("NEWLY_LINKED_SOURCE_BYTES_CHANGED", self.codes(report))
+        self.assertIn("RECORDED_CLAIM_MATERIAL", self.codes(report))
+        self.assertEqual(report["source_watch"]["observation"], "UNCHANGED_BYTES")
+
+    def test_newly_linked_source_without_baseline_does_not_infer_drift(self):
+        path = self.add_unlinked_fixture_source(present=False)
+        path.write_bytes(b"FICTIONAL first observed content")
+        self.link_annex_to_first_claim()
+        report = self.report()
+        self.assertIn("BASELINE_NOT_OBSERVED", self.codes(report))
+        self.assertNotIn("NEWLY_LINKED_SOURCE_BYTES_CHANGED", self.codes(report))
+        self.assertEqual(
+            next(row["status"] for row in report["current_sources"]
+                 if row["id"] == "annex"), "OBSERVED")
 
     def test_B14_duplicate_identity(self):
         self.export["records"].append(copy.deepcopy(self.export["records"][0]))
