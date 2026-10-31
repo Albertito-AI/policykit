@@ -55,6 +55,17 @@ work remains supported. This is a source-navigation integrity correction,
 not verification of substantive evidence. Next, reproduce the first-use
 workflow independently and assess actual review effort and anchor usability.
 
+## ESG activity import: concealed formula-like prefixes
+
+CSV, TSV and optional XLSX activity imports now reject a formula-like opening
+character even when hidden after leading Unicode format/control characters.
+The earlier guard only stripped ordinary whitespace; it missed examples such
+as a word joiner followed by `=`. This prevents those strings from being
+accepted as ordinary activity identifiers or headings. It does not evaluate
+formulas, modify retained values or establish how every spreadsheet program
+will handle such text. Continue to prioritise real first-use observations and
+source-navigation evaluation; expand import rules only for a reproducible case.
+
 ## Next work in priority order
 
 The maintainer's 28 October instruction adds a parallel, implemented technical

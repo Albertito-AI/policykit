@@ -142,8 +142,12 @@ standards and budgets in those examples are fictional, not production defaults.
 For tabular imports, a mapping is `{canonical_field: exact_column_header}`.
 Dates use `YYYY-MM-DD`; decimal strings use a dot without thousands separators.
 An explicit mapping permits deliberate exclusion of unrelated columns. Formula
-cells and ambiguous spreadsheet decimals or dates are rejected. XLSX with
-multiple sheets requires `--sheet`; TSV requires `--delimiter` with a literal tab.
+cells and ambiguous spreadsheet decimals or dates are rejected. The formula-like
+text check also rejects leading `=`, `+`, `-` or `@` concealed by whitespace
+or Unicode format/control characters, including inside text-formatted XLSX
+cells. It does not execute formulas, normalise source text or certify how
+external spreadsheet programs will interpret every input. XLSX with multiple
+sheets requires `--sheet`; TSV requires `--delimiter` with a literal tab.
 
 Emissions calculations preserve the original activity and factor records,
 version, validity interval, source URL and pinpoint. Scope 2 location-based and
