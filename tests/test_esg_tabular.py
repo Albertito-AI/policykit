@@ -88,6 +88,41 @@ class TabularTests(unittest.TestCase):
             with self.subTest(value=value), self.assertRaisesRegex(ValueError, "Formula"):
                 import_activity_rows(self.path)
 
+    def test_hidden_unicode_formula_prefixes_rejected_in_csv(self):
+        # These initial format characters are not removed by str.lstrip().
+        for value in ("\u2060=1+1", "\u200b@SUM(1)", "\ufeff+SUM(1)", " \u200e\t-SUM(1)"):
+            row = ROW.copy()
+            row[0] = value
+            self.write([HEADERS, row])
+            with self.subTest(value=repr(value)), self.assertRaisesRegex(ValueError, "Formula-like cell"):
+                import_activity_rows(self.path)
+
+    def test_hidden_formula_prefix_in_header_is_rejected(self):
+        headers = HEADERS.copy()
+        headers[0] = "\u2060=HYPERLINK('fictional')"
+        self.write([headers, ROW])
+        with self.assertRaisesRegex(ValueError, "Formula-like cell"):
+            import_activity_rows(self.path)
+
+    def test_benign_format_prefix_does_not_change_input(self):
+        row = ROW.copy()
+        row[1] = "\u2060fictional-entity"
+        self.write([HEADERS, row])
+        self.assertEqual(import_activity_rows(self.path)[0]["entity_id"], row[1])
+
+    @unittest.skipIf(openpyxl is None, "optional openpyxl is not installed")
+    def test_xlsx_hidden_formula_like_text_is_rejected(self):
+        path = Path(self.temp.name) / "activities.xlsx"
+        workbook = openpyxl.Workbook()
+        workbook.active.append(HEADERS)
+        row = ROW.copy()
+        row[0] = "\u2060=1+1"
+        workbook.active.append(row)
+        workbook.save(path)
+        workbook.close()
+        with self.assertRaisesRegex(ValueError, "Formula-like cell"):
+            import_activity_rows(path)
+
     def test_rows_may_not_drop_or_gain_cells(self):
         for row in (ROW[:-1], ROW + ["extra"]):
             self.write([HEADERS, row])

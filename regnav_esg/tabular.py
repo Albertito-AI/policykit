@@ -11,6 +11,7 @@ from datetime import date, datetime
 from decimal import Decimal
 from pathlib import Path
 import re
+import unicodedata
 from zipfile import BadZipFile, ZipFile
 
 
@@ -56,7 +57,17 @@ def _header_map(headers, mapping):
 
 
 def _formula(value, row, column):
-    if isinstance(value, str) and value.lstrip().startswith(("=", "+", "@", "-")):
+    if not isinstance(value, str):
+        return
+    # Spreadsheet-bound text may conceal a formula prefix behind invisible
+    # Unicode format/control characters that str.lstrip() does not remove.
+    # Inspect a prefix only; do not normalise or modify the supplied value.
+    offset = 0
+    while offset < len(value) and (
+        value[offset].isspace() or unicodedata.category(value[offset]) in {"Cc", "Cf"}
+    ):
+        offset += 1
+    if value[offset:].startswith(("=", "+", "@", "-")):
         raise ValueError(f"Formula-like cell rejected at row {row}, column {column}")
 
 

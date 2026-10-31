@@ -641,3 +641,26 @@ accuracy, human legal review, usability benefit or external adoption.
 On 30 October 2026, the Legal Evidence Cases lane inspected official Singapore judgments *Deloitte & Touche LLP v Hin Leong Trading* [2026] SGCA 33, *JSI Shipping* [2007] SGCA 40 and *PlanAssure* [2007] SGCA 41, recording paragraph-specific holdings and qualifications in the existing common law authority map. The 2026 Court of Appeal distinguished breach, factual causation, contractual remoteness and available defences, and struck out an audited company's trading-loss claim as too remote. The 2007 judgments locate audit-verification standards and fact-sensitive contributory fault. The selection is informed by the published reporting-versus-liability framework and a proposed distinction between accurate content and evidence of proper preparation. That proposed distinction is not settled law or a new verified judicial rule. No private manuscript text or working register is published. The existing first tranches and original SGX JSON ledger remain unchanged and unreviewed.
 
 This is documentary case research, not a software change, legal clearance or external case review. Checked references are official eLitigation HTML with inspection date 30 October 2026. Subsequent treatment was sampled through the 2026 decision's citations, not exhaustively traced. SGX sustainability assurance, independent investor duty, relevant contractual terms, current statute and loss quantification remain unresolved. No benefit, customer adoption or completed qualified human review was observed. Next: seek primary assurance-engagement terms/recognised rights and verify current statutory context before attempting an issuer-specific or investor proposition.
+
+### 31 October 2026: concealed formula-like activity cells
+
+The ESG activity importer rejected visible `=`, `+`, `-` and `@` cell
+prefixes, including ordinary whitespace before them, but Python's
+`str.lstrip()` does not remove many Unicode format characters. A direct
+synthetic prefix probe found that a word joiner or zero-width space could
+precede an otherwise formula-like cell without triggering that guard.
+
+The bounded correction inspects leading whitespace and Unicode control/format
+characters before applying the existing formula-like prefix rejection. It
+leaves input text unchanged, does not evaluate a formula, and continues to
+accept benign identifiers containing format characters without a dangerous
+prefix. Focused fictional CSV tests cover concealed prefixes, headers and
+benign text; optional XLSX coverage checks a text-typed disguised prefix.
+The output CSV's separate escape guard is not weakened.
+
+This is a conservative import-validation improvement, not evidence that any
+particular spreadsheet executed a disguised formula. The software regression
+suite and GitHub checks must be verified at the reviewed PR revision. All
+substantive legal propositions remain unreviewed, and independent usability
+and reporting-value evaluations remain outstanding. Next: preserve these
+regressions and seek a permissioned end-to-end reviewer observation.
