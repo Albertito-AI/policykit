@@ -13,7 +13,7 @@ from regnav_esg.extract import extract_candidates
 from regnav_esg.ingest import ingest_document
 from regnav_esg.io import read_json
 from regnav_esg.reports import render_html, to_ledger
-from regnav_esg.workflow import run_workbench
+from regnav_esg.workflow import run_workbench, write_new
 from regnav_esg.workflow import _csv_text
 from regnav_evidence.validation import validate
 
@@ -104,7 +104,7 @@ class WorkbenchTests(unittest.TestCase):
 
     def test_interrupted_output_removes_partial_workspace_and_allows_retry(self):
         destination = self.root / "interrupted-workspace"
-        original_write = __import__("regnav_esg.workflow", fromlist=["write_new"]).write_new
+        original_write = write_new
         attempts = []
 
         def interrupted_writer(path, content):
