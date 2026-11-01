@@ -74,8 +74,7 @@ page labels are not inferred.
 
 For an output-write error or Python interruption, the workbench attempts to
 remove the files from its newly created workspace and then the empty directory.
-A successful command can be retried at that original destination after this
-cleanup. Abrupt process termination, disk failure during cleanup, or concurrent
+If the cleanup completes, the command can be retried at the same destination. Abrupt process termination, disk failure during cleanup, or concurrent
 writes can still leave incomplete files. Inspect such directories before
 manually removing them; do not treat their presence as a completed report.
 
