@@ -73,8 +73,24 @@ def run_workbench(paths, output, *, config=None, assessment=None, source_urls=No
     for index, document in enumerate(documents, 1):
         contents[f"source-{index}.md"] = document_to_markdown(document)
     destination.mkdir(parents=False, exist_ok=False)
-    for name, text in contents.items():
-        write_new(destination / name, text)
+    created = []
+    try:
+        for name, text in contents.items():
+            target = destination / name
+            created.append(target)
+            write_new(target, text)
+    except BaseException:
+        # Best-effort rollback of planned output paths in this new workspace.
+        for target in reversed(created):
+            try:
+                target.unlink(missing_ok=True)
+            except OSError:
+                pass
+        try:
+            destination.rmdir()
+        except OSError:
+            pass  # Preserve any unexpected contents rather than removing them.
+        raise
     return {"status": "completed", "output_directory": str(destination.resolve()),
             "files": list(contents), "documents": len(documents),
             "review_status": "unreviewed", "ledger_exported": ledger is not None}

@@ -72,6 +72,12 @@ that a passage supports a proposed inference or that the source is true. Physica
 PDF page numbers are distinct from form-feed segments in text files; printed
 page labels are not inferred.
 
+For an output-write error or Python interruption, the workbench attempts to
+remove the files from its newly created workspace and then the empty directory.
+If the cleanup completes, the command can be retried at the same destination. Abrupt process termination, disk failure during cleanup, or concurrent
+writes can still leave incomplete files. Inspect such directories before
+manually removing them; do not treat their presence as a completed report.
+
 ## Individual document commands
 
 ```bash
