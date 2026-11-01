@@ -80,7 +80,7 @@ def run_workbench(paths, output, *, config=None, assessment=None, source_urls=No
             created.append(target)
             write_new(target, text)
     except BaseException:
-        # Best-effort rollback for this new workspace. Never remove other files.
+        # Best-effort rollback of planned output paths in this new workspace.
         for target in reversed(created):
             try:
                 target.unlink(missing_ok=True)
