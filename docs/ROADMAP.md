@@ -235,7 +235,7 @@ The common-law map now includes a focused source-inspected financial-auditor tra
 
 ## 1 November 2026: interrupted output-write recovery
 
-The ESG workbench now attempts to remove only the filenames it created if an
+The ESG workbench now attempts to remove its planned output filenames if an
 output write raises an exception, and removes its new directory only if empty.
 A synthetic failure test writes partial data on the second file before raising
 an error, verifies cleanup, and retries the complete ordinary workflow.
