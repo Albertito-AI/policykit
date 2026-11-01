@@ -232,3 +232,17 @@ has occurred, and it changes no runtime or reuse rights.
 ## 30 October 2026: legal case research gate
 
 The common-law map now includes a focused source-inspected financial-auditor tranche under [Singapore sustainability reporting](../cases/singapore-sustainability-reporting/common-law-authorities.md): *Deloitte v Hin Leong* [2026] SGCA 33 and its cited *JSI Shipping* and *PlanAssure* decisions. It distinguishes a company's statutory-audit engagement, factual causation, contractual remoteness and contributory fault from any still-unverified investor right against a sustainability assurer. This is issue-based legal research and changes no ledger review state. Next case action: obtain an actual usable assurance-engagement scope and period-specific statutory text, and independently examine the evidence for possible investor standing before proposing new reviewed propositions. Do not create a generic insurer/assurer liability entry from financial-audit analogies. Coordinate structured case-record work with core development; independent human legal review remains the condition for a checked claim.
+
+## 1 November 2026: interrupted output-write recovery
+
+The ESG workbench now attempts to remove only the filenames it created if an
+output write raises an exception, and removes its new directory only if empty.
+A synthetic failure test writes partial data on the second file before raising
+an error, verifies cleanup, and retries the complete ordinary workflow.
+Previously this could leave a misleading partial workspace that blocked retry.
+This is best-effort process-level cleanup, not a transactional filesystem or
+a guarantee against abrupt termination and concurrent writers.
+
+Next priority remains a permissioned independent first-use review, including
+source navigation and whole-task effort. Preserve unreviewed legal claims and
+record actual failure or usability evidence before adding further features.

@@ -102,6 +102,29 @@ class WorkbenchTests(unittest.TestCase):
                     run_workbench(paths, destination)
                 self.assertFalse(destination.exists())
 
+    def test_interrupted_output_removes_partial_workspace_and_allows_retry(self):
+        destination = self.root / "interrupted-workspace"
+        original_write = __import__("regnav_esg.workflow", fromlist=["write_new"]).write_new
+        attempts = []
+
+        def interrupted_writer(path, content):
+            attempts.append(Path(path).name)
+            if len(attempts) == 2:
+                # Simulate a partial file created immediately before a disk error.
+                with Path(path).open("x", encoding="utf-8") as handle:
+                    handle.write("FICTIONAL INCOMPLETE OUTPUT")
+                raise OSError("fictional output interruption")
+            original_write(path, content)
+
+        with patch("regnav_esg.workflow.write_new", side_effect=interrupted_writer):
+            with self.assertRaisesRegex(OSError, "fictional output interruption"):
+                run_workbench([self.source], destination, source_urls=["https://example.org/fictional"])
+        self.assertEqual(attempts, ["documents.json", "extractions.json"])
+        self.assertFalse(destination.exists())
+        successful = run_workbench([self.source], destination, source_urls=["https://example.org/fictional"])
+        self.assertEqual(successful["status"], "completed")
+        self.assertTrue((destination / "ledger.json").is_file())
+
     def test_cli_empty_input_returns_incomplete_status(self):
         self.source.write_text("", encoding="utf-8")
         with patch("sys.stdout", new_callable=io.StringIO) as out:

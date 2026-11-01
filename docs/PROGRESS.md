@@ -664,3 +664,24 @@ suite and GitHub checks must be verified at the reviewed PR revision. All
 substantive legal propositions remain unreviewed, and independent usability
 and reporting-value evaluations remain outstanding. Next: preserve these
 regressions and seek a permissioned end-to-end reviewer observation.
+
+## 1 November 2026
+
+### ESG workbench output-write interruption recovery
+
+The local workbench previously created its final directory and then wrote
+individual report files sequentially. A later write exception could leave
+partly written JSON/CSV/HTML and prevent a retry using the documented output
+path. Added best-effort exception cleanup of filenames reserved by that
+invocation, followed by removal of the new directory if empty. Exceptions
+continue to propagate; an output failure is never reported as success.
+A fictional regression simulates a partial second file and verifies that the
+ordinary workflow can be retried without overwriting existing outputs.
+
+This change does not claim atomic multi-file publication, recovery from process
+termination without exception handling, protection against concurrent writers,
+improved extraction accuracy, a completed human review or measured user savings.
+The current version's relevant unit and hosted checks are to be recorded against
+the exact PR/merge revisions. The next external gate remains a permitted
+independent full-workflow reproduction with observed setup, checking and
+correction effort.
