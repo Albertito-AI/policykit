@@ -250,3 +250,12 @@ a guarantee against abrupt termination and concurrent writers.
 Next priority remains a permissioned independent first-use review, including
 source navigation and whole-task effort. Preserve unreviewed legal claims and
 record actual failure or usability evidence before adding further features.
+
+## Foundations paper and Wiki publication
+
+The owner-requested [whitepaper](../wiki/Whitepaper.md) explains first principles,
+public-interest purpose and proposed progression. Next documentation action:
+initialise the GitHub Wiki, let the bounded publisher run and verify the actual page.
+This documentation work does not complete the independent report-pair evaluation,
+live-model check or qualified legal review above. Keep the paper aligned with
+observed capabilities and preserve disagreements and unsuccessful evaluations.
