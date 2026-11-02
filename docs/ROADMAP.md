@@ -93,10 +93,14 @@ The source-review and teaching evaluation priorities below remain outstanding.
    remain unreviewed. A source map does not authorise a checked legal finding,
    an issuer-specific remedy or a claim of exhaustive subsequent treatment.
    The [landmark and key case workflow rationale](CASE_LAW_WORKFLOW.md), recorded
-   on 29 October, guides this expansion. The next case-development action is to
-   agree and trial a small structured tranche from the existing map, coordinating
-   its contract with core development and preserving source pinpoints,
-   qualifications, treatment-search limits and unreviewed states. Record the
+   on 29 October, guides this expansion. The 2 November case research pass corrected a particular **appeal-treatment risk**:
+   *Tan Woo Thian* [2021] SGCA 20 dismissed the negligence claim on causation while
+   expressly leaving the professional fact-finder's duty to non-clients **open**;
+   *CLAAS* [2010] SGCA 3 maps a separate contractual-third-party route. The next
+   case action is to verify the full current Contracts (Rights of Third Parties)
+   Act, engagement-specific beneficiary/reliance terms and any later treatment,
+   **then** agree and trial a small structured tranche with core development.
+   Preserve source pinpoints, qualifications and unreviewed states. Record the
    tranche's coverage and gaps. Global coverage, treatment automation and
    application models remain development directions; actual qualified review
    of legal propositions and independent usability evidence remain outstanding.

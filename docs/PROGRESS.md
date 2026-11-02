@@ -685,3 +685,15 @@ The current version's relevant unit and hosted checks are to be recorded against
 the exact PR/merge revisions. The next external gate remains a permitted
 independent full-workflow reproduction with observed setup, checking and
 correction effort.
+
+## 2 November 2026
+
+### Case map: appellate causation correction and third-party rights
+
+**Issue and baseline:** The existing 30 October map correctly distinguished financial-audit analogies from unverified sustainability assurance, but its contractual-privity gap lacked a Singapore third-party-rights authority and a directly pertinent appellate treatment of a published professional fact-finding report. The next risk was incorrectly treating a negative High Court duty analysis as definitively affirmed when an appeal existed.
+
+**Evidence and change:** Opened official eLitigation HTML for *Tan Woo Thian* [2020] SGHC 171 [57], [74]–[80], [87]–[92] and the actual appeal, *Tan Woo Thian* [2021] SGCA 20 [6]–[12], [14]–[19]. The Court of Appeal dismissed the negligence appeal on **lack of causal evidence of actual loss**, while expressly leaving the duty question **undecided**. Opened *CLAAS Medical Centre* [2010] SGCA 3 [25]–[30], [33]–[37], which distinguishes intended and incidental contractual beneficiaries under the then-applicable Contracts (Rights of Third Parties) Act. The official current-statute search result displayed the 2020 Revised Edition's s 2(1)–(4), but direct Singapore Statutes Online full-text retrieval returned **HTTP 403**. The complete current Act was therefore not independently opened. These documents concern corporate investigation and shareholder non-compete, not an ESG assurance engagement.
+
+**Delivery and testing:** Extended only the existing `cases/singapore-sustainability-reporting/common-law-authorities.md` authority map, its dated source/change row and two relevant issue-coverage cells. Preserved prior tranches, original SGX ledger, all two `unreviewed` statuses and source records. Updated the roadmap's next case gate. This is AI source inspection and documentation, not a new ledger claim, legal opinion, test of external counsel, completed human review or release. The documentary source links/pinpoints were inspected; the repository change and any actual CI result require commit-specific verification before claiming a pass.
+
+**Intellectual context and next evidence:** The private knowledge foundation's distinction between reporting, preparation and legal consequence informed issue selection; it supplies **no legal holding** and no private text was copied. Next: directly inspect current CRTPA exceptions and full s 2, obtain the relevant assurance engagement and any promised third-party benefit/reliance limitations, and search subsequent treatment before moving to a checked legal proposition. For fictional Investor B, existence of actual causally linked damage is distinct from quantification. Cash cost and owner effort were **not recorded**, not assumed zero. Independent use is unknown.
