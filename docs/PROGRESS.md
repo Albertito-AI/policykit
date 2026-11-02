@@ -697,3 +697,16 @@ correction effort.
 **Delivery and testing:** Extended only the existing `cases/singapore-sustainability-reporting/common-law-authorities.md` authority map, its dated source/change row and two relevant issue-coverage cells. Preserved prior tranches, original SGX ledger, all two `unreviewed` statuses and source records. Updated the roadmap's next case gate. This is AI source inspection and documentation, not a new ledger claim, legal opinion, test of external counsel, completed human review or release. The documentary source links/pinpoints were inspected; the repository change and any actual CI result require commit-specific verification before claiming a pass.
 
 **Intellectual context and next evidence:** The private knowledge foundation's distinction between reporting, preparation and legal consequence informed issue selection; it supplies **no legal holding** and no private text was copied. Next: directly inspect current CRTPA exceptions and full s 2, obtain the relevant assurance engagement and any promised third-party benefit/reliance limitations, and search subsequent treatment before moving to a checked legal proposition. For fictional Investor B, existence of actual causally linked damage is distinct from quantification. Cash cost and owner effort were **not recorded**, not assumed zero. Independent use is unknown.
+
+### Owner-requested foundations whitepaper, 2 November 2026
+
+Added an original AI-assisted Wiki-source paper covering proposition-level evidence,
+source and review distinctions, the comparability problem, public-interest purpose,
+ideal progression and measurable defeat conditions. It preserves reserved rights,
+the private-extension boundary and all unreviewed legal states. Added a bounded
+publisher that preserves existing Wiki content and records an initialisation blocker
+rather than claiming a live page. Local checks cover source links and six publisher
+preservation/refusal cases; hosted results are recorded against the actual commit.
+No independent user, legal or social-benefit evaluation is implied. Next: initialise
+the Wiki and verify page readback; the existing independent report-pair and qualified
+source-review priorities remain unchanged.
