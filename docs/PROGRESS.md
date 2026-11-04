@@ -710,3 +710,15 @@ preservation/refusal cases; hosted results are recorded against the actual commi
 No independent user, legal or social-benefit evaluation is implied. Next: initialise
 the Wiki and verify page readback; the existing independent report-pair and qualified
 source-review priorities remain unchanged.
+
+## 4 November 2026
+
+### Case map: non-party assurance-contract benefit, remedy and forum
+
+**Question and baseline:** The 2 November map distinguished third-party contract benefits from independent tort duty, but did not separately cover a non-party's contractual remedy, available promisor defences, potential duplicate recovery and the procedural forum. An inaccurate leap from an exclusion/indemnity benefit to an automatic right to arbitrate would be especially misleading for a sustainability-assurance example.
+
+**Sources actually inspected:** Opened official Singapore eLitigation judgments *VKC v VJZ* [2021] SGCA 72 [53]–[65] and *Low Jun Hong v Hong Qi Yu* [2026] SGHCR 11 [23]–[25], [34]–[49]. The Court of Appeal rejected third-party reliance on an exclusive-jurisdiction clause via an implied benefit; the subsequent Registrar decision rejected inferred arbitration-stay rights in a different contract notwithstanding expressly conferred defensive benefits. Opened *Independent State of Papua New Guinea v PNG Sustainable Development Program Ltd* [2016] SGHC 19 [36]–[38] for the historical company constitution exclusion. The official Singapore Statutes Online search index showed the 2020 Revised Edition and relevant CRTPA ss 2, 4, 6–9, but **direct statute pages returned HTTP 403**. That index is a lead, not a full-text direct verification of the current Act.
+
+**Change and scope:** Added a fifth issue-selected tranche and one coverage row to the existing Singapore common-law authority map, plus its dated source/change entry. Preserved earlier tranches. The structured SGX JSON ledger and its two `unreviewed` statuses remain unchanged. Private knowledge foundation's distinction between the communication, authority and legal consequence informed issue selection only; it was not published as independent legal authority or copied into GitHub.
+
+**Verification and limits:** Checked the original judgment locations, documentary links and diff. The exact PR/CI outcome must be independently checked before calling any automated run passed; documentation checking does not verify legal accuracy. No actual ESG assurance engagement, beneficiary designation, investor loss, limitation period, appellate outcome for the 2026 Registrar case or third-party remedy has been established. No qualified human review or external adoption is claimed. Cash cost and human effort are unknown, not zero. Next: obtain a period-matched assurance contract, full current statute and subsequent judicial treatment; then seek independent legal review before any checked proposition.
