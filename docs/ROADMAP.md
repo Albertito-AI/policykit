@@ -237,6 +237,10 @@ has occurred, and it changes no runtime or reuse rights.
 
 The common-law map now includes a focused source-inspected financial-auditor tranche under [Singapore sustainability reporting](../cases/singapore-sustainability-reporting/common-law-authorities.md): *Deloitte v Hin Leong* [2026] SGCA 33 and its cited *JSI Shipping* and *PlanAssure* decisions. It distinguishes a company's statutory-audit engagement, factual causation, contractual remoteness and contributory fault from any still-unverified investor right against a sustainability assurer. This is issue-based legal research and changes no ledger review state. Next case action: obtain an actual usable assurance-engagement scope and period-specific statutory text, and independently examine the evidence for possible investor standing before proposing new reviewed propositions. Do not create a generic insurer/assurer liability entry from financial-audit analogies. Coordinate structured case-record work with core development; independent human legal review remains the condition for a checked claim.
 
+## 4 November 2026: third-party assurance-contract remedies and forum
+
+The Singapore [authority map](../cases/singapore-sustainability-reporting/common-law-authorities.md) now distinguishes third-party contractual entitlement, remedies, defences, limitation and dispute forum, anchored in opened *VKC* [2021] SGCA 72 and *Low Jun Hong* [2026] SGHCR 11. The official 2020 Revised Edition of the Contracts (Rights of Third Parties) Act was visible in an indexed search record, but direct retrieval of the consolidated statute returned HTTP 403; this is **not** a completed full statutory check. Next case gate: obtain the applicable actual assurance contract, directly verify the current statute and any appeal from the Registrar's ruling, then assess how each clause affects an identified claimant. Preserve the two unreviewed ledger propositions; the source map creates no third-party ESG entitlement or actual remedy.
+
 ## 1 November 2026: interrupted output-write recovery
 
 The ESG workbench now attempts to remove its planned output filenames if an
