@@ -8,6 +8,30 @@ not proof of a published GitHub release, archival deposit or DOI.
 This page defines the evidence needed to decide whether a particular commit
 is ready for a release. It does not schedule automatic publication.
 
+## Installed-wheel reproduction
+
+The build/distribution gate now has a repeatable check:
+`python scripts/check_installed_wheel.py` from a checkout with Python and
+the build backend available. It builds a wheel, inspects the complete archive
+member list, creates a temporary virtual environment and runs both installed
+console scripts from a directory outside the checkout. The source fixture is
+copied to that directory before validation; ESG text ingestion and a Markdown
+evidence export are checked. A temporary wheel's size, SHA-256 and full member
+manifest are printed in the CI log, but no publication or retained release
+artifact follows from a successful job.
+
+The expected wheel packages are `regnav_evidence` and `regnav_esg`.
+`experiments/`, `examples/`, `tests/` and the private extension are not
+wheel contents. Source-only Source Watch, MCP and evidence handover require
+the authorised repository workflow. The test checks engineering packaging
+only, not third-party reuse permissions, optional PDF/OCR support, independent
+human use, legal accuracy or production readiness.
+
+Before any formal release, reconcile `CITATION.cff`'s Evidence Ledger-only
+description with the proposed workbench distribution identity, inspect the
+actual candidate archive and decide the intended distribution scope. Keep
+unpublished draft releases and existing rights unchanged.
+
 ## Software update on 28 October 2026
 
 The [ESG workbench](ESG_WORKBENCH.md) is an added, separately invoked research

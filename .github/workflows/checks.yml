@@ -54,3 +54,5 @@ jobs:
           python -m regnav_evidence validate cases/singapore-sustainability-reporting/ledger.json --json
           python -m regnav_evidence report cases/singapore-sustainability-reporting/ledger.json --format markdown --output /tmp/regnav-sgx-case.md
           python -m regnav_evidence report cases/singapore-sustainability-reporting/ledger.json --format csv --output /tmp/regnav-sgx-case.csv
+      - name: Check isolated installed wheel and distribution scope
+        run: python scripts/check_installed_wheel.py

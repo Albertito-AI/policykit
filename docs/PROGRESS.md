@@ -738,3 +738,20 @@ source-review priorities remain unchanged.
 ### 9 November 2026: Singapore assurance-contract authority and costs boundary
 
 The case collection's existing common-law map gained a tightly scoped analysis of *Lee Hsueh Ching v Loh Kia Hui* [2025] SGHC 258, opened directly on Singapore eLitigation, at [160]–[180], [183]–[185] and [189]–[191]. It identifies an expressly protected former employee under CRTPA ss 2(1)(a), 2(3), but preserves the court's distinct costs discretion, the contractual reasonableness boundary and refusal to shift costs of an unsuccessful third-party claim. Neither the case nor the provision establishes a right for a reader of a public ESG report to sue an assurer. The official CRTPA index returned more relevant provisions and a current-version selector; direct full-Act retrieval still returned HTTP 403, so full-current-statute inspection remains incomplete. A bounded case-title search disclosed no verified appeal disposal; this is not a comprehensive treatment check. The two existing SGX propositions remain unreviewed, and no human reviewer, software change, new commercial offer or independent benefit is claimed. Documentation-only work; verify the exact PR/merge and remote CI result separately. Next: obtain the actual engagement form and full legislation before a third-party-rights conclusion; check appellate treatment and have a qualified independent reviewer assess the map.
+
+## 10 November 2026: installed-wheel reproducibility gate
+
+The release lane added `scripts/check_installed_wheel.py` and connected it to
+the existing Python 3.10/3.12/3.14 CI matrix. It builds the distribution, prints
+its file manifest and SHA-256, then checks a fresh virtual-environment installation
+and both command-line interfaces from outside the checkout. The test is
+deliberately separate from checkout-local examples and does not download or
+upload private material. It expects only the ledger and ESG packages in the
+wheel; research experiments and fixtures remain source-tree components.
+Consult exact-commit CI for execution outcomes, not this implementation note.
+
+This addresses the previously untested clean-install path as an engineering
+gate. It does not create a released distribution or verify optional PDF parsers,
+independent use, legal conclusions or rights. The intended release identity
+and `CITATION.cff` scope remain a distinct release decision. No version
+bump, release tag, customer entitlement or licensing change is introduced.

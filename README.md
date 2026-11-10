@@ -97,6 +97,17 @@ and open the saved file in a browser. GitHub's
 a hosted application. This sample demonstrates extraction and source navigation.
 The calculation, screening and planning examples are separate commands below.
 
+## Source checkout and installable wheel
+
+The `regnav-workbench` wheel installs the `regnav_evidence` and
+`regnav_esg` Python packages and their command-line tools. The separate
+Source Watch, local MCP and evidence-handover experiments, demo generators
+and fictional fixtures are in this **source repository**, outside the wheel.
+The checkout-based walkthrough below uses source-tree examples and optional
+PDF dependencies; installing the wheel alone does not install that entire
+walkthrough or create a hosted service. See the
+[release-readiness distinction](docs/release_readiness.md#installed-wheel-reproduction).
+
 ## Run the public demo
 
 Use **Python 3.10 or newer**, from the root of a checkout you are permitted to

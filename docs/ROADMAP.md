@@ -268,3 +268,14 @@ observed capabilities and preserve disagreements and unsuccessful evaluations.
 ## 6 November 2026: limitation source gate for the Singapore case
 
 The [Singapore authority map](../cases/singapore-sustainability-reporting/common-law-authorities.md) now distinguishes accrual of actionable damage, discovery of facts triggering the alternative statutory period, continuing consequences and truly new breaches. Opened *Lian Kok Hong* [2008] SGCA 30 and its identified subsequent appellate application in *IPP Financial Advisers* [2020] SGCA 47. The latter concerned an investor's negligent-misrepresentation claim and found it time-barred. These are historical judgments, not an ESG limitation opinion. Current consolidated Limitation Act s 24A direct retrieval failed (HTTP 403); do not infer that the historical statutory text is unchanged. Next case gate: inspect the period-matched current Act, any further appellate treatment and the actual pleaded cause, accrual facts and knowledge before proposing a deadline or human-checked legal proposition. Preserve the unchanged unreviewed SGX ledger and existing assurance-contract evidence gates.
+
+## Release packaging verification
+
+The release lane has added a reproducible isolated-wheel check to the CI
+matrix. Its result is evaluated at each exact head; it must not be confused
+with an authorised published release or independent first use. The separately
+maintained source-tree experiments are deliberately excluded from the wheel.
+The next release decision is to reconcile citation/distribution identity,
+inspect the intended candidate archive and confirm the applicable rights and
+user-facing scope before any formal release. Continue the independent-user
+and qualified human legal-review gates in their respective lanes.
