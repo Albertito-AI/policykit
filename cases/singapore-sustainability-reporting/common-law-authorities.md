@@ -171,7 +171,7 @@ The indexed text distinguishes: **(i)** s 2, express enforcement or an appropria
 
 ## 11 November 2026: statutory-audit purpose, non-client duty and specific loss
 
-**Seventh issue-selected, AI-prepared tranche; Singapore Court of Appeal; official judgment HTML inspected 11 November 2026.** An identified defect in the earlier map was its reliance on general *Spandeck* and financial-auditor analogies without directly recording Singapore's appellate decision about an auditor's duty to an individual shareholder who was also a bank guarantor. The two following judgments supply an adverse duty decision and **one identified later appellate treatment**. No exhaustive citator search or sustainability-assurance holding is claimed.
+**Issue-selected, AI-prepared tranche; Singapore Court of Appeal; official judgment HTML inspected 11 November 2026.** An identified defect in the earlier map was its reliance on general *Spandeck* and financial-auditor analogies without directly recording Singapore's appellate decision about an auditor's duty to an individual shareholder who was also a bank guarantor. The two following judgments supply an adverse duty decision and **one identified later appellate treatment**. No exhaustive citator search or sustainability-assurance holding is claimed.
 
 | Official primary judgment, jurisdiction, decision date and pinpoint | Narrow result material to the ESG research question | Qualification, contrary consideration and subsequent treatment |
 | --- | --- | --- |
