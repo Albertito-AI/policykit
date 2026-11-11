@@ -27,10 +27,17 @@ the authorised repository workflow. The test checks engineering packaging
 only, not third-party reuse permissions, optional PDF/OCR support, independent
 human use, legal accuracy or production readiness.
 
-Before any formal release, reconcile `CITATION.cff`'s Evidence Ledger-only
-description with the proposed workbench distribution identity, inspect the
-actual candidate archive and decide the intended distribution scope. Keep
-unpublished draft releases and existing rights unchanged.
+The citation now identifies **RegNav Workbench: evidence ledger and ESG review**,
+matching the existing `regnav-workbench` package and its two installed components.
+The source version remains `0.1.0`; a citation should also identify the commit
+actually used while changes remain unreleased. This resolves the earlier
+Evidence Ledger-only citation description without renaming console commands,
+publishing a release, changing rights or including the private extension.
+
+Before a formal release, inspect the actual candidate archive and its current
+checks, confirm the intended publication and rights, and record the exact
+revision. Keep unrelated unpublished draft releases unchanged. The completed
+metadata correction does not complete the independent-user or legal-review gates.
 
 ## Software update on 28 October 2026
 

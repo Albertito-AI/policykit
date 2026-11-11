@@ -325,8 +325,13 @@ review metadata, export escaping, formula handling and file protection.
 
 ## Rights and citation
 
-Use [CITATION.cff](CITATION.cff) to identify the software and cite the version
-actually used. No DOI has yet been assigned. See [RIGHTS.md](RIGHTS.md) before
+Use [CITATION.cff](CITATION.cff) to identify **RegNav Workbench: evidence ledger
+and ESG review**, the two-package `regnav-workbench` distribution. Cite the
+version and commit actually used and identify the relevant component. The
+citation covers `regnav_evidence` and `regnav_esg`; checkout-only experiments
+and the separate private extension are outside the wheel's scope. The source
+version `0.1.0` is not a released tag or archival identifier. No DOI has yet
+been assigned. See [RIGHTS.md](RIGHTS.md) before
 reuse: this public prototype is not currently supplied under an open-source
 licence. Public visibility does not grant a commercial reuse licence or rights
 to the separate private extension. Linked third-party material retains its own

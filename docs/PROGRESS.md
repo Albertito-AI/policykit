@@ -1,5 +1,22 @@
 # Development progress
 
+## 11 November 2026: workbench citation scope reconciled
+
+Updated the Evidence Ledger-only citation title and description to identify the
+existing `regnav-workbench` distribution and both installed components,
+`regnav_evidence` and `regnav_esg`. README and release guidance now distinguish
+that scope from checkout-only experiments and the separate private extension.
+The author identity, source version `0.1.0`, console commands and reserved rights
+are unchanged. No release, DOI or independent validation is asserted.
+
+On Python 3.12.14, `python scripts/check_installed_wheel.py` passed: the built
+wheel contained 26 members, its installed imports resolved inside the fresh
+virtual environment, and both console scripts worked outside the checkout.
+The fictional ledger and text-ingestion/report path passed. These are packaging
+observations; optional parsers and independent use were not tested in this pass.
+Next: assess an exact publication candidate against the remaining release
+criteria, including archive scope, applicable rights and honest evaluation limits.
+
 ## 23 October 2026
 
 ### Starting point

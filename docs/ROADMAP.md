@@ -276,7 +276,8 @@ The release lane has added a reproducible isolated-wheel check to the CI
 matrix. Its result is evaluated at each exact head; it must not be confused
 with an authorised published release or independent first use. The separately
 maintained source-tree experiments are deliberately excluded from the wheel.
-The next release decision is to reconcile citation/distribution identity,
-inspect the intended candidate archive and confirm the applicable rights and
-user-facing scope before any formal release. Continue the independent-user
+The citation now describes the existing `regnav-workbench` distribution's
+evidence ledger and ESG components. Next, inspect the intended candidate archive
+and confirm the applicable publication rights and user-facing scope before any
+formal release. Continue the independent-user
 and qualified human legal-review gates in their respective lanes.
