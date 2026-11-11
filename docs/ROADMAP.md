@@ -92,6 +92,7 @@ The source-review and teaching evaluation priorities below remain outstanding.
    may proceed as **AI-prepared research** while the two existing SGX propositions
    remain unreviewed. A source map does not authorise a checked legal finding,
    an issuer-specific remedy or a claim of exhaustive subsequent treatment.
+   The 11 November bounded source correction adds the previously omitted *Ikumene* [1993] SGCA 50 [24]–[30], [32]–[38] on the statutory auditor's purpose, guarantor standing and causation, and checks *Tan Juay Pah* [2012] SGCA 17 [69]–[72] as express later appellate treatment. This does not decide investor-facing sustainability assurance duty. Future case research should test further subsequent treatment and the actual engagement before inferring a claimant or remedy; independent human review remains compulsory.
    The 9 November case-law pass adds an express-third-party indemnity and judicial-costs distinction from *Lee Hsueh Ching* [2025] SGHC 258 [160]–[180], [183]–[191]. It strengthens the contract-specific issue map without inferring an ESG investor's right. The official current-version CRTPA index now supplies provision-level text, but direct full-Act reading still returns 403. The next legal gate is full consolidated text, a real engagement contract and appellate-treatment review; the original SGX ledger remains unreviewed.
    The [landmark and key case workflow rationale](CASE_LAW_WORKFLOW.md), recorded
    on 29 October, guides this expansion. The 2 November case research pass corrected a particular **appeal-treatment risk**:
