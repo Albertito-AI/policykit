@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "Please cite the version of RegNav Evidence Ledger that you actually use. Citation metadata does not grant a reuse licence."
+message: "Please cite the version and commit of RegNav Workbench that you actually use, identifying the evidence ledger or ESG workflow where relevant. Citation metadata does not grant a reuse licence."
 type: software
-title: "RegNav Evidence Ledger"
+title: "RegNav Workbench: evidence ledger and ESG review"
 authors:
   - family-names: "Tan"
     given-names: "Sin Hon Albert"
@@ -9,7 +9,7 @@ authors:
 version: "0.1.0"
 repository-code: "https://github.com/Albertito-AI/policykit"
 url: "https://github.com/Albertito-AI/policykit"
-abstract: "An offline research prototype that checks evidence-register structure and exports proposition-to-source matrices. Human-review declarations are recorded explicitly. The software does not verify legal or factual truth."
+abstract: "A local research prototype containing an evidence ledger and an environmental, social and governance workbench. The ledger checks record structure, compares saved records and exports proposition-to-source matrices. The workbench ingests supplied reports, traces candidate disclosures and supports explicit calculations and review. Optional model assistance requires separate configuration. The software does not verify legal or factual truth or establish completed human review."
 keywords:
   - legal research
   - evidence
