@@ -9,7 +9,7 @@ authors:
 version: "0.1.0"
 repository-code: "https://github.com/Albertito-AI/policykit"
 url: "https://github.com/Albertito-AI/policykit"
-abstract: "A local research prototype containing an evidence ledger and an ESG workbench. The ledger checks record structure, compares saved records and exports proposition-to-source matrices. The workbench ingests supplied reports, traces candidate disclosures and supports explicit calculations and review. Optional model assistance requires separate configuration. The software does not verify legal or factual truth or establish completed human review."
+abstract: "A local research prototype containing an evidence ledger and an environmental, social and governance workbench. The ledger checks record structure, compares saved records and exports proposition-to-source matrices. The workbench ingests supplied reports, traces candidate disclosures and supports explicit calculations and review. Optional model assistance requires separate configuration. The software does not verify legal or factual truth or establish completed human review."
 keywords:
   - legal research
   - evidence
