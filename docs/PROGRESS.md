@@ -755,3 +755,15 @@ gate. It does not create a released distribution or verify optional PDF parsers,
 independent use, legal conclusions or rights. The intended release identity
 and `CITATION.cff` scope remain a distinct release decision. No version
 bump, release tag, customer entitlement or licensing change is introduced.
+
+## 11 November 2026
+
+### Singapore authority map: *Ikumene* as a non-client audit duty and causation boundary
+
+**Scope and reason:** The existing sustainability-assurance discussion referenced other statutory financial-audit cases but omitted Singapore's direct appellate decision concerning an individual shareholder who also guaranteed a company's credit facilities. This is a source-selection/evidence defect, not a new SGX claim. The private knowledge foundation's reporting-versus-liability distinction informed the choice of issue; no private reference text has been copied into the public case.
+
+**Primary judgments inspected:** Singapore eLitigation HTML for *Ikumene Singapore Pte Ltd v Leong Chee Leng* [1993] SGCA 50 [17]–[30], [32]–[38] and *Tan Juay Pah v Kimly Construction* [2012] SGCA 17 [69]–[75]. *Ikumene* rejected the guarantor's personal claim on duty and causation and distinguished shareholder loss belonging to the company. The later Court of Appeal decision expressly discussed *Ikumene* [70]–[72] under *Spandeck*, a specific subsequent-treatment finding but not an exhaustive citator result.
+
+**Change and limits:** Added one bounded section, a dated source/change row and a refined duty-coverage entry in `cases/singapore-sustainability-reporting/common-law-authorities.md`. The source reasoning is historical and confined to its statutory audit context; neither case decides an ESG assurance provider's investor-facing liability. The five-source SGX ledger and both `unreviewed` propositions remain unchanged. The applicable current Companies Act and CRTPA texts, any actual engagement or relevant investor reliance and further judicial treatment remain unverified. Human legal review has not occurred.
+
+**Execution evidence:** Documentation and pinpoints were inspected against official judgment text. Local `git` access failed DNS resolution for github.com, so no local full-regression run or local CLI ledger report is claimed. GitHub connector comparison and exact-commit CI/readback must be reconciled separately; any workflow pass belongs only to the SHA on which it ran. The intended beneficiary is a legal researcher testing duty, claimant and causation before inferring remedy. Independent use, customer demand, cost and owner effort are unknown, not zero. Next: current period-specific statute and engagement evidence, further adverse-treatment check and independent qualified human review.
