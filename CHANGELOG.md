@@ -1,5 +1,15 @@
 # Changelog
 
+## Published source snapshot: 13 November 2026
+
+The [RegNav archival source snapshot](https://github.com/Albertito-AI/policykit/releases/tag/archive-2026-11-13) records commit
+`9e5f3f5a7c9da1c38a46fae5ce3b3efe4ac5b3ba` for preservation and citation.
+This is a GitHub archival release of the existing source tree, **not** a new
+versioned workbench distribution or production/customer acceptance. It adds no
+binary release asset, changes no runtime version and grants no reuse licence.
+The repository's `.zenodo.json` specifies closed archival files; an assigned
+Zenodo DOI or completed external deposit requires separate confirmation.
+
 ## Unreleased: optional ESG workbench
 
 - Added a separately invoked local ESG workbench without changing the core
@@ -56,8 +66,8 @@ contract. Its licence and v0.1.0 release do not change this repository's
 - Added coordination, release-readiness and evidence-of-use records.
 
 These unreleased additions do not change the recorded software version or
-establish an independent evaluation, published policykit release, general reuse
-licence, archival DOI, deployment or customer adoption.
+establish independent evaluation, a new versioned workbench distribution,
+general reuse rights, a verified DOI, deployment or customer adoption.
 
 ## 0.1.0
 

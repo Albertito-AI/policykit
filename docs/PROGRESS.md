@@ -796,3 +796,22 @@ bump, release tag, customer entitlement or licensing change is introduced.
 **Bounded change:** Updated the existing case map's limitation coverage row, added a pinpointed appellate tranche, and added a dated source/change record. Roadmap updated to preserve the current-statute and fact-specific review gate. The existing Singapore SGX `ledger.json`, five source records, two `unreviewed` legal propositions, tests, software, rights and commercial enquiry content are unchanged. No actual issuer, investor, engagement, litigation instruction, expert clearance or new cause of action is asserted.
 
 **Verification and state:** The official judgment's result and pinpoints were inspected, including the text's 2025 version label; this is **AI source inspection**, not independent legal review or a complete subsequent-treatment search. GitHub branch, diff and exact-head checks require separate confirmation before reporting merge/CI status. Prior direct current-Limitation-Act retrieval was blocked; the Act was not reopened on unchanged access conditions and the current statutory consolidation remains unverified. No local regression or report-generation result is claimed before an actual execution record. Cash cost, owner time and independent adoption are UNKNOWN. The intended beneficiary is a legal researcher avoiding a false limitation assurance. **Next:** inspect any further appellate treatment, obtain the applicable full consolidated statute and actual cause/remedy/knowledge evidence, then obtain qualified independent human review before a checked legal declaration.
+
+### Release-state correction: dated source archive versus functional distribution
+
+On 13 November 2026, GitHub published the archival source snapshot
+`archive-2026-11-13` at commit `9e5f3f5a7c9da1c38a46fae5ce3b3efe4ac5b3ba`.
+The release description identifies preservation/citation, not a new supported
+software version. This documentation correction reconciles the changelog and
+release-readiness criteria against that actual release and the unchanged
+`0.1.0` wheel metadata. Source archive has no added binary assets; the
+existing untagged draft is still unpublished. External Zenodo DOI/deposit
+remains NOT_VERIFIED without an actual provider record.
+
+Evidence: GitHub release/tag and exact-commit hosted checks, inspected on
+13 November 2026. No runtime behaviour, legal-source interpretation, rights,
+licence, private material, API, financial account or release tag is changed.
+This is a release-documentation correction, not a new product release or
+independent evaluation. Next: assess a bounded functional candidate's
+distribution identity, exact wheel and rights; retain independent-user and
+human legal-review gaps. Human time, independent adoption and proceeds: UNKNOWN.

@@ -3,10 +3,38 @@
 RegNav currently identifies its software as **0.1.0**, a research prototype.
 The package, [citation metadata](../CITATION.cff) and
 [changelog](../CHANGELOG.md) use that version. A version string in source is
-not proof of a published GitHub release, archival deposit or DOI.
+not proof of a versioned software release, external deposit or DOI.
 
 This page defines the evidence needed to decide whether a particular commit
 is ready for a release. It does not schedule automatic publication.
+
+## Published source archive versus software release (13 November 2026)
+
+GitHub published the [RegNav archival source snapshot](https://github.com/Albertito-AI/policykit/releases/tag/archive-2026-11-13) on
+13 November 2026. Its tag resolves to
+`9e5f3f5a7c9da1c38a46fae5ce3b3efe4ac5b3ba`, the same commit identified
+in the release description. There are no separately uploaded release assets.
+The source tree is publicly inspectable subject to its existing
+[reserved rights](../RIGHTS.md); the package remains version `0.1.0`.
+The corresponding commit's Python 3.10, 3.12 and 3.14 GitHub Actions checks
+passed. They support the tested implementation, not independent usability or
+professional legal verification.
+
+This **published GitHub archival release** must be distinguished from a
+**formal versioned software distribution**. The dated source snapshot includes
+the implemented features but does not promote them as a new supported product
+version, publish an installed-wheel binary or establish customer acceptance.
+The pre-existing untagged draft release remains unpublished. The
+[Zenodo metadata](../.zenodo.json) declares `access_right: closed`.
+Neither that declaration nor this GitHub release proves that Zenodo assigned a
+DOI or completed an external deposit; verify the actual provider record before
+claiming or citing either outcome. No new licence is granted.
+
+The next functional-release decision must identify the exact candidate source
+and wheel, intended audience, package contents, licence and support scope,
+citation version and outstanding independent-use and human legal-review gates.
+Preserve immutable archival tags and the distinct
+[Source Watch Action](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0).
 
 ## Installed-wheel reproduction
 
