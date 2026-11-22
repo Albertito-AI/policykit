@@ -285,3 +285,12 @@ evidence ledger and ESG components. Next, inspect the intended candidate archive
 and confirm the applicable publication rights and user-facing scope before any
 formal release. Continue the independent-user
 and qualified human legal-review gates in their respective lanes.
+
+## 22 November 2026: optional parser security maintenance
+
+The `pdf` extra now requires pypdf 7.1.1 or a later compatible 7.x release.
+See the [dated verification](DEPENDENCY_SECURITY_2026-11-22.md) for the advisory
+basis, tested PDF workflow and five unrelated optional test skips. The next
+security action is a resolved, hash-verified deployment environment with current
+advisory review and existing parser worker limits retained. This maintenance
+does not complete the independent report-pair or human legal-review gates.

@@ -13,7 +13,7 @@ license = {text = "All rights reserved. See RIGHTS.md; no general reuse licence 
 dependencies = []
 
 [project.optional-dependencies]
-pdf = ["pypdf>=5,<7"]
+pdf = ["pypdf>=7.1.1,<8"]
 tables = ["pdfplumber>=0.11,<0.12"]
 excel = ["openpyxl>=3.1,<4"]
 test = ["reportlab>=4,<5"]
