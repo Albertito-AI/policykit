@@ -1,5 +1,17 @@
 # Development progress
 
+## 22 November 2026: optional PDF parser security floor
+
+Raised the `pdf` extra from `pypdf>=5,<7` to `pypdf>=7.1.1,<8` because the
+old ceiling excluded published parser fixes. The dated
+[dependency validation record](DEPENDENCY_SECURITY_2026-11-22.md) identifies
+upstream advisories, the verified wheel digest, actual parser exposure and
+residual limits. On isolated Linux/CPython 3.12.14 with pypdf 7.1.1, 241 tests
+passed and five unrelated optional-dependency cases were skipped. The fictional
+two-PDF workflow retained five pages, 33 unreviewed claims and parser-version
+receipts. Next: retain worker isolation and use resolved, hash-verified
+dependencies for deployment; independent legal and first-use gates remain.
+
 ## 11 November 2026: workbench citation scope reconciled
 
 Updated the Evidence Ledger-only citation title and description to identify the
