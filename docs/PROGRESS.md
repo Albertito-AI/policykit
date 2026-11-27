@@ -1,5 +1,11 @@
 # Development progress
 
+## 27 November 2026 | Singapore and Thailand disclosure comparison
+
+Added a [worked comparison for the 2023 reporting year](../cases/singapore-thailand-disclosure-2023/README.md) and a [blank worksheet for a second reader](../cases/singapore-thailand-disclosure-2023/worksheet.md). Four propositions pair sustainability targets and stakeholder reporting in historical SGX Mainboard instruments and the Thai original of the prescribed annual form. Each proposition awaits independent human review.
+
+On CPython 3.12.14 the ledger validator returned zero structural errors and four expected review warnings. The CSV contains seven source links and the regression suite passed all 247 tests, including a comparison of the published CSV against the ledger export. The next research step is an independent reading of the Thai conditional and the Singapore exclusion provision, with any disagreement tied to the text.
+
 ## 22 November 2026: optional PDF parser security floor
 
 Raised the `pdf` extra from `pypdf>=5,<7` to `pypdf>=7.1.1,<8` because the

@@ -27,6 +27,8 @@ human review. See [validation and scope](#validation-and-scope) and
 [Private extension](#private-research-extension) ·
 [Full workbench guide](docs/ESG_WORKBENCH.md)
 
+Researchers comparing disclosure rules can start with the [Singapore–Thailand case for 2023](cases/singapore-thailand-disclosure-2023/README.md). It pairs the two jurisdictions on targets and stakeholder reporting, with numbered provisions and a downloadable evidence table.
+
 ## See it in action
 
 ![The fictional ledger links two sources to three propositions and exports four evidence rows. Validation reports zero errors and three expected review warnings.](docs/demo/ledger-flow.svg)

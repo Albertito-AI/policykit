@@ -78,6 +78,8 @@ observations to prioritise further engineering. Do not equate implemented
 functions with commercial-platform parity.
 The source-review and teaching evaluation priorities below remain outstanding.
 
+The [2023 Singapore–Thailand pilot](../cases/singapore-thailand-disclosure-2023/README.md) is ready for a second reading. Recode both target provisions from the dated source texts before opening the supplied ledger. Record the reporting verb and each condition, then trace any disagreement to the relevant clause or Thai wording.
+
 1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
    retains two unreviewed propositions, now including a narrow Mainboard

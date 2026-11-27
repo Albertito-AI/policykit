@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "title": "Targets and stakeholder disclosure in Singapore and Thailand, 31 December 2023",
+  "description": "Four AI-prepared textual propositions in two matched comparisons. Each refers to a reporting instrument applicable at the 31 December 2023 snapshot. Independent human review is outstanding. The comparison contains no issuer-level findings.",
+  "sources": [
+    {
+      "id": "sg-rule-711b-2022",
+      "title": "Singapore Exchange, Mainboard Listing Rule 711B",
+      "url": "https://rulebook.sgx.com/node/6528/revisions/26623/view",
+      "source_type": "regulation",
+      "jurisdiction": "Singapore (SGX Mainboard)",
+      "version": "SGX archived version effective 1 January 2022 to 31 December 2024",
+      "accessed": "2026-11-27",
+      "notes": "Exchange listing rule. Paragraph (2) deals with the exclusion of a primary component."
+    },
+    {
+      "id": "sg-guide-76-2022",
+      "title": "Singapore Exchange, Mainboard Practice Note 7.6, Sustainability Reporting Guide",
+      "url": "https://rulebook.sgx.com/node/6532/revisions/26630/view",
+      "source_type": "guidance",
+      "jurisdiction": "Singapore (SGX Mainboard)",
+      "version": "SGX archived version effective 1 January 2022 to 31 December 2024",
+      "accessed": "2026-11-27",
+      "notes": "Paragraph 1.1 describes the guide's function. The cited provisions concern preparation of a sustainability report."
+    },
+    {
+      "id": "th-form-56-1-2023",
+      "title": "Thai Capital Market Supervisory Board, Form 56-1 One Report attached to Notification Tor Jor. 7/2566",
+      "url": "https://publish.sec.or.th/nrs/9731s.pdf",
+      "source_type": "regulation",
+      "jurisdiction": "Thailand",
+      "version": "Thai form dated 25 April 2023, for financial years ending 31 December 2023 onwards as stated on its cover",
+      "accessed": "2026-11-27",
+      "notes": "Prescribed annual registration statement / annual report. Pinpoints refer to the printed pages of the official Thai original. English descriptions in this ledger are working translations."
+    }
+  ],
+  "claims": [
+    {
+      "id": "sg-targets-2023",
+      "text": "SGX Mainboard Rule 711B lists targets as a primary reporting component. An issuer excluding that component must identify the exclusion, describe its alternative and give reasons. The guide recommends giving the coming year's targets for each material ESG factor identified.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {
+          "source_id": "sg-rule-711b-2022",
+          "pinpoint": "Rule 711B(1)(c)",
+          "relation": "supports"
+        },
+        {
+          "source_id": "sg-rule-711b-2022",
+          "pinpoint": "Rule 711B(2), first sentence",
+          "relation": "qualifies"
+        },
+        {
+          "source_id": "sg-guide-76-2022",
+          "pinpoint": "Paragraph 4.1(d), first sentence",
+          "relation": "supports"
+        }
+      ],
+      "notes": "Rule 711B(2), second sentence, refers specifically to the climate-disclosure component in (1)(aa) for identified industries. The proposition concerns targets in (1)(c)."
+    },
+    {
+      "id": "th-targets-2023",
+      "text": "The Thai form directs a company to disclose its organisational sustainability objectives if it has any, aligned with its business strategy over the short term, long term or both.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {
+          "source_id": "th-form-56-1-2023",
+          "pinpoint": "Part 1, section 3.1, printed p. 11, second paragraph",
+          "relation": "supports"
+        }
+      ],
+      "notes": "The existence of objectives is a condition in the form's text. The provision addresses disclosure of objectives at organisational level."
+    },
+    {
+      "id": "sg-stakeholders-2023",
+      "text": "The SGX guide recommends reporting the material outcomes of the issuer's engagement with stakeholders.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {
+          "source_id": "sg-guide-76-2022",
+          "pinpoint": "Paragraph 3.6, second paragraph, final sentence",
+          "relation": "supports"
+        }
+      ],
+      "notes": "The object of disclosure in this passage is the material outcome of engagement."
+    },
+    {
+      "id": "th-stakeholders-2023",
+      "text": "The Thai form directs a company to identify key internal and external stakeholder groups connected to its value chain and summarise their expectations. It recommends describing how the company responds to those expectations.",
+      "review_status": "unreviewed",
+      "evidence": [
+        {
+          "source_id": "th-form-56-1-2023",
+          "pinpoint": "Part 1, section 3.2.2, printed p. 11, identification and expectations clause",
+          "relation": "supports"
+        },
+        {
+          "source_id": "th-form-56-1-2023",
+          "pinpoint": "Part 1, section 3.2.2, printed p. 11, final clause on the company's response",
+          "relation": "supports"
+        }
+      ],
+      "notes": "The original Thai uses ให้ for the identification instruction and ควร for describing the response."
+    }
+  ]
+}
