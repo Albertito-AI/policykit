@@ -1,5 +1,11 @@
 # Development progress
 
+## 27 November 2026 | Follow the 2023 case into 2025
+
+The [two-year disclosure dataset](https://github.com/Albertito-AI/sg-th-disclosure-data) extends the original RegNav case to 2025. The case index and original case now point readers to the eight observations and their evidence. Two separately prepared AI readings of the 2025 materials are documented there. Independent human legal review is outstanding.
+
+On CPython 3.12.14 all 247 RegNav regression tests passed. The next research step is a bilingual review of the Thai qualifications and a check of the applicable Singapore provisions for the reporting year.
+
 ## 27 November 2026 | Singapore and Thailand disclosure comparison
 
 Added a [worked comparison for the 2023 reporting year](../cases/singapore-thailand-disclosure-2023/README.md) and a [blank worksheet for a second reader](../cases/singapore-thailand-disclosure-2023/worksheet.md). Four propositions pair sustainability targets and stakeholder reporting in historical SGX Mainboard instruments and the Thai original of the prescribed annual form. Each proposition awaits independent human review.

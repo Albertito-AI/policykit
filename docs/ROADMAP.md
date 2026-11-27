@@ -78,7 +78,7 @@ observations to prioritise further engineering. Do not equate implemented
 functions with commercial-platform parity.
 The source-review and teaching evaluation priorities below remain outstanding.
 
-The [2023 Singapore–Thailand pilot](../cases/singapore-thailand-disclosure-2023/README.md) is ready for a second reading. Recode both target provisions from the dated source texts before opening the supplied ledger. Record the reporting verb and each condition, then trace any disagreement to the relevant clause or Thai wording.
+For the [two-year Singapore–Thailand dataset](https://github.com/Albertito-AI/sg-th-disclosure-data), the next step is a bilingual human reading of the Thai target condition and response verb, together with an independent check of the Singapore exclusion route. Record differences with the observation ID and source pinpoint.
 
 1. **Obtain human review of the first worked case.** The
    [Singapore example](../cases/singapore-sustainability-reporting/README.md)
