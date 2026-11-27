@@ -8,6 +8,8 @@ If a sustainability report omits targets, what would each instrument ask the rea
 
 [Open the evidence ledger](ledger.json) · [Download the evidence rows as CSV](evidence.csv)
 
+[Compare these observations with the 2025 reporting year](https://github.com/Albertito-AI/sg-th-disclosure-data). The two-year dataset tracks the target provisions and the change in numbering of the Singapore stakeholder guidance.
+
 ## Compare the provisions
 
 | Question | Singapore, SGX Mainboard | Thailand, ordinary Form 56-1 One Report |
