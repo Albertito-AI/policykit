@@ -13,6 +13,7 @@ from the current case records.
 | Case | Scope and source date | Review status |
 | --- | --- | --- |
 | [Singapore sustainability reporting](singapore-sustainability-reporting/README.md) | SGX Mainboard reporting timing and internal review; official materials consulted on 23 October 2026 | AI-prepared; both propositions `unreviewed`; independent human review outstanding |
+| [Singapore and Thailand, 2023 reporting](singapore-thailand-disclosure-2023/README.md) | Two matched questions on sustainability targets and stakeholder reporting, using the historical SGX Mainboard instruments and the Thai SEC’s 2023 standard form | Four AI-prepared propositions open to independent review |
 
 Each case records its jurisdiction, source versions, qualifications and unresolved
 questions. The JSON ledger is the complete record; a generated matrix is a view
